@@ -7,7 +7,7 @@ format:
     documentclass: scrartcl
     papersize: letter
     pdf-engine: xelatex
-    fontsize: 9pt
+    fontsize: 8pt
     geometry:
       - margin=0.5in
       - heightrounded
@@ -127,8 +127,6 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \end{itemize}
 } \\
 
-\newpage
-
 \textbf{Clinical Sub-investigator} & \textbf{Mar 2022 - Mar 2023}\\
 \multicolumn{2}{p{18cm}}{\textbf{Via Libre Association}} \\
 \multicolumn{2}{p{18cm}}{\textbf{Lima (Peru)}} \\
@@ -139,6 +137,8 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \item Participated and organized activities for community outreach and participant retention crafted for the queer community.
 \end{itemize}
 } \\
+
+\newpage
 
 \textbf{Research Assistant} & \textbf{Mar 2019 - Aug 2023}\\
 \multicolumn{2}{p{18cm}}{\textbf{CRONICAS Center of Excellence in Chronic Diseases}} \\
@@ -275,7 +275,7 @@ make_ordered_list_filtered(pubs, "peer_reviewed")
 & \textbf{Consortium of Universities for Global Health, USA} \\
 & Collaborating with international co-trainees to address global health challenges and provide student perspectives on global health issues such as COVID-19, racial disparities, climate change, and research involvement of global health students. \\
 
-&\\
+\newpage
 
 \textbf{Mar 2014 - current} & \textbf{Emeritus member and External advisor} \\
 & \textbf{\href{https://cem.edu.pe/adiecs/}{Association for the Development of Student's Research in Health Sciences (ADIECS)}, Lima - Peru} \\
