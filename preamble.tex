@@ -8,9 +8,10 @@
 \usepackage{enumitem} % Customizing
 \usepackage{marvosym} % Allows the use of symbols
 \usepackage{parskip} % Spacing adjustments
-\usepackage{ragged2e}
+\usepackage{ragged2e} % Justified text
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 \usepackage{titlesec} % Custom section headers
+\usepackage{booktabs} % For professional-looking tables
 
 % Main font
 
@@ -24,7 +25,25 @@
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 
 % Headers
-
+  
+% Format for \section
 \titleformat{\section}
-  {\normalfont\Large\bfseries\centering}
-  {\thesection}{1em}{}
+  {\normalfont\Large\bfseries\centering}          % Format applied to the whole title
+  {\thesection}{1em}{}                              % Label format and spacing
+
+% Format for \subsection
+\titleformat{\subsection}
+  {\normalfont\large\bfseries\raggedright}          % Format: normal font, large size, bold, right alignment
+  {\thesubsection}{1em}{}                           % Label format and spacing
+
+% Format for \subsubsection
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\raggedright}     % Format: normal font, normal size, bold, right alignment
+  {\thesubsubsection}{1em}{}                        % Label format and spacing
+  
+  % Table centering
+\let\oldtable\table
+\let\endoldtable\endtable
+\renewenvironment{table}[1][h!]
+  {\oldtable[#1]\center}
+  {\endcenter\endoldtable}
