@@ -88,7 +88,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Meta-analyzing data to estimate the incidence of lower respiratory tract infections due to human metapneumovirus globally and across all ages from 2010-2023.
+\item Pooling epidemiological data of lower respiratory tract infections due to human metapneumovirus globally and across all ages from 2010 to 2023 using a Bayesian meta-regression tool.
 \item Estimated population-attributable fractions and standardized mortality ratios for socially excluded groups in high-income countries.
 \item Analyzed data from public sources using Bayesian methods and Monte Carlo simulation to estimate the overlap proportion between socially excluded groups in high-income countries.
 \end{itemize}
@@ -232,10 +232,11 @@ make_ordered_list_filtered(teaching, "seminar")
 \textbf{Computer and programming skills:} 
 \begin{itemize}
 \item \textbf{Programming languages:} R, Python, bash
-\item \textbf{Statistical software:} Stata, SPSS, G*Power
+\item \textbf{Statistical software:} Stata, SPSS, SAS, G*Power
 \item \textbf{Data visualization and reporting:} Shiny, ArcGIS, \LaTeX, Markdown,
 \item \textbf{Data management and wrangling:} SQL, REDCap
-\item \textbf{Development tools:} Git, GitHub, Docker, VSCode 
+\item \textbf{Project management:} Jira, Asana, Trello
+\item \textbf{Development tools:} Git, GitHub, Docker, VSCode, Confluence, Bitbucket 
 \item \textbf{Computing environments:} Linux/Unix, Windows, ssh
 \end{itemize}
 
@@ -280,6 +281,10 @@ make_ordered_list_filtered(pubs, "peer_reviewed")
 \textbf{Mar 2014 - current} & \textbf{Emeritus member and External advisor} \\
 & \textbf{\href{https://cem.edu.pe/adiecs/}{Association for the Development of Student's Research in Health Sciences (ADIECS)}, Lima - Peru} \\
 & Peruvian student association funded in 2008 by students from the Universidad Nacional Mayor de San Marcos to develop capacity of both hard (e.g., epidemiological study designs, data analysis) and soft skills (e.g., teamwork communication, problem-solving) for biomedical underserved students. \\
+
+\textbf{Feb 2025 - current} & \textbf{Member} \\
+& \textbf{America’s Network for Chronic Disease Surveillance (AMNET)} \\
+& Regional organization that promotes chronic disease monitoring, knowledge implementation, and public health capacity building throughout the Americas. AMNET fosters collaboration between governmental and non-governmental entities to improve health professional training in disease surveillance, prevention, and control. \\
 \end{longtable}
 
 \subsection{Mentoring}
