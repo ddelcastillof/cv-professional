@@ -88,9 +88,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Pooling epidemiological data of lower respiratory tract infections due to human metapneumovirus globally and across all ages from 2010 to 2023 using a Bayesian meta-regression tool.
-\item Estimated population-attributable fractions and standardized mortality ratios for socially excluded groups in high-income countries.
-\item Analyzed data from public sources using Bayesian methods and Monte Carlo simulation to estimate the overlap proportion between socially excluded groups in high-income countries.
+\item Pooling epidemiological data of lower respiratory tract infections due to human metapneumovirus from 2010 to 2023 using Python and R.
+\item Estimated population-attributable fractions and standardized mortality ratios for socially excluded groups in high-income countries using R.
+\item Analyzed data from public sources using Markov Chain Monte Carlo algorithms to estimate the overlap proportion between socially excluded groups in high-income countries using R.
 \end{itemize}
 } \\
 
@@ -99,9 +99,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
-\item Designing a scoping review protocol and performing evidence synthesis for mapping potential indicators for implementing mental health policy in data-limited settings.
-\item Led the design of a mixed-method study to assess the effectiveness of implementation strategies for pediatric burn care in a Peruvian healthcare setting.
-\item Crafted communication strategies with stakeholders to implement later phases of the project.
+\item Conducted a scoping review protocol and performing evidence synthesis for mapping potential indicators for implementing mental health policy in data-limited settings.
+\item Designed of a mixed-method study protocol to assess the effectiveness of implementation strategies for pediatric burn care in a Peruvian healthcare setting.
+\item Crafted communication strategies with stakeholders to inform results from the mixed-methods study.
 \end{itemize}
 } \\
 
@@ -147,7 +147,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \begin{itemize}
 \item Coordinated focus groups and on-field work across four Peruvian regions to co-design an intervention for patients with cognitive impairment and their caregivers.
 \item Contributed to research grant proposals in hypertension, diabetes, cancer, and multimorbidity projects by conducting systematic reviews and preliminary data analysis.
-\item Co-authored scientific manuscripts in the topics mentioned above which included longitudinal data analyses, meta-analyses, and unsupervised machine learning methods.
+\item Co-authored scientific manuscripts in the topics mentioned above which included longitudinal data analyses, meta-analyses, and unsupervised machine learning methods using Stata and R.
 \end{itemize}
 } \\
 
@@ -156,11 +156,6 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \section{\underline{Additional Education}}
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
-\textbf{Graduate Certificate Maternal and Child Health} & \textbf{Nov 2023 – May 2025} \\
-\textbf{University of Washington, Seattle - USA} &\\
-
-&\\
-
 \textbf{Professional Certificate in Clinical Research} & \textbf{Sep 2021 – Apr 2022} \\
 \textbf{Universidad Peruana Cayetano Heredia, Lima - Peru} &\\
 \end{longtable}
@@ -275,13 +270,11 @@ make_ordered_list_filtered(pubs, "peer_reviewed")
 \textbf{Jan 2025 - current} & \textbf{Trainee Advisory Committee Member} \\
 & \textbf{Consortium of Universities for Global Health, USA} \\
 & Collaborating with international co-trainees to address global health challenges and provide student perspectives on global health issues such as COVID-19, racial disparities, climate change, and research involvement of global health students. \\
-
-\newpage
-
+& \\
 \textbf{Mar 2014 - current} & \textbf{Emeritus member and External advisor} \\
 & \textbf{\href{https://cem.edu.pe/adiecs/}{Association for the Development of Student's Research in Health Sciences (ADIECS)}, Lima - Peru} \\
 & Peruvian student association funded in 2008 by students from the Universidad Nacional Mayor de San Marcos to develop capacity of both hard (e.g., epidemiological study designs, data analysis) and soft skills (e.g., teamwork communication, problem-solving) for biomedical underserved students. \\
-
+& \\
 \textbf{Feb 2025 - current} & \textbf{Member} \\
 & \textbf{America’s Network for Chronic Disease Surveillance (AMNET)} \\
 & Regional organization that promotes chronic disease monitoring, knowledge implementation, and public health capacity building throughout the Americas. AMNET fosters collaboration between governmental and non-governmental entities to improve health professional training in disease surveillance, prevention, and control. \\
