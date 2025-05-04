@@ -88,7 +88,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Pooling epidemiological data of lower respiratory tract infections due to human metapneumovirus from 2010 to 2023 using Python and R.
+\item Pooling epidemiological data of lower respiratory tract infections due to human metapneumovirus from 2010 to 2023 using the package meta in R and Python functions.
 \item Estimated population-attributable fractions and standardized mortality ratios for socially excluded groups in high-income countries using R.
 \item Analyzed data from public sources using Markov Chain Monte Carlo algorithms to estimate the overlap proportion between socially excluded groups in high-income countries using R.
 \end{itemize}
