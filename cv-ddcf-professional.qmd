@@ -266,7 +266,10 @@ make_ordered_list_filtered(pubs, "peer_reviewed")
 \section{\underline{Leadership and Service}}
 \subsection{Professional Service}
 \begin{longtable}{>{\raggedright\arraybackslash}p{4cm} p{14cm}}
-
+\textbf{Feb 2025 - current} & \textbf{Member} \\
+& \textbf{America’s Network for Chronic Disease Surveillance (AMNET)} \\
+& Regional organization that promotes chronic disease monitoring, knowledge implementation, and public health capacity building throughout the Americas. AMNET fosters collaboration between governmental and non-governmental entities to improve health professional training in disease surveillance, prevention, and control. \\
+& \\
 \textbf{Jan 2025 - current} & \textbf{Trainee Advisory Committee Member} \\
 & \textbf{Consortium of Universities for Global Health, USA} \\
 & Collaborating with international co-trainees to address global health challenges and provide student perspectives on global health issues such as COVID-19, racial disparities, climate change, and research involvement of global health students. \\
@@ -274,10 +277,6 @@ make_ordered_list_filtered(pubs, "peer_reviewed")
 \textbf{Mar 2014 - current} & \textbf{Emeritus member and External advisor} \\
 & \textbf{\href{https://cem.edu.pe/adiecs/}{Association for the Development of Student's Research in Health Sciences (ADIECS)}, Lima - Peru} \\
 & Peruvian student association funded in 2008 by students from the Universidad Nacional Mayor de San Marcos to develop capacity of both hard (e.g., epidemiological study designs, data analysis) and soft skills (e.g., teamwork communication, problem-solving) for biomedical underserved students. \\
-& \\
-\textbf{Feb 2025 - current} & \textbf{Member} \\
-& \textbf{America’s Network for Chronic Disease Surveillance (AMNET)} \\
-& Regional organization that promotes chronic disease monitoring, knowledge implementation, and public health capacity building throughout the Americas. AMNET fosters collaboration between governmental and non-governmental entities to improve health professional training in disease surveillance, prevention, and control. \\
 \end{longtable}
 
 \subsection{Mentoring}
