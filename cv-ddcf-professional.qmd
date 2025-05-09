@@ -51,9 +51,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 ```{r address, include = FALSE, echo = FALSE, eval=FALSE}
 \par\centering{\textit{Address:} 4545 8th Ave NE, Seattle, WA 98105}
 \vspace{-5pt}
-```
 \par\centering{\textit{Mobile:} +1 (206) 605 5077}
 \vspace{-5pt}
+```
 \par\centering{\textit{Email:} ddelcastillo.f@gmail.com}
 \vspace{-5pt}
 \par\centering{\href{https://www.linkedin.com/in/darwin-del-castillo-md/}{LinkedIn} | \href{https://github.com/ddelcastillof}{Github}}
@@ -70,14 +70,11 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 
 \textbf{Master in Public Health (MPH)} & \textbf{Sep 2023 – May 2025} \\
 \textbf{University of Washington, Seattle - USA} & \\
-\textit{Thesis: }“Cost-effectiveness analysis of a household salt substitute intervention on reducing community-wide blood pressure in Northern Peru” & \\
 
 &\\
 
 \textbf{Medical Doctor (MD)} & \textbf{Mar 2013 – Dec 2020} \\
 \textbf{Universidad Nacional Mayor de San Marcos, Lima - Peru} &\\
-\textit{Thesis: }“Childhood Obesity and Its Effect on Academic Achievement: An Analysis of the Young Lives Study between 2009 and 2016” &\\
-
 \end{longtable}
 \section{\underline{Professional Experience}}
 
@@ -88,9 +85,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Pooling epidemiological data of lower respiratory tract infections due to human metapneumovirus from 2010 to 2023 using the package meta in R and Python functions.
-\item Estimated population-attributable fractions and standardized mortality ratios for socially excluded groups in high-income countries using R.
-\item Analyzed data from public sources using Markov Chain Monte Carlo algorithms to estimate the overlap proportion between socially excluded groups in high-income countries using R.
+\item Pooled epidemiological estimates of lower respiratory tract infections from ~80 countries between 2010 and 2023 using the R package meta and internal Bayesian regression models.
+\item Estimated the overlap proportion between homeless, substance drug abusers, and prisoners using a Bayesian Markov Chain Monte Carlo model.
+\item Created cleaning pipelines for inpatient and outpatient data from Ecuador and Colombia with Python libraries. 
 \end{itemize}
 } \\
 
@@ -100,7 +97,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
 \item Conducted a scoping review protocol and performing evidence synthesis for mapping potential indicators for implementing mental health policy in data-limited settings.
-\item Designed of a mixed-method study protocol to assess the effectiveness of implementation strategies for pediatric burn care in a Peruvian healthcare setting.
+\item Designed a mixed-methods data-analysis protocol to assess the effectiveness of implementation strategies for pediatric burn care in a Peruvian healthcare setting.
 \item Crafted communication strategies with stakeholders to inform results from the mixed-methods study.
 \end{itemize}
 } \\
@@ -226,7 +223,7 @@ make_ordered_list_filtered(teaching, "seminar")
 \begin{justify}
 \textbf{Computer and programming skills:} 
 \begin{itemize}
-\item \textbf{Programming languages:} R, Python, bash
+\item \textbf{Programming languages:} R (tidyverse, meta, rJAGS), Python (pandas, NumPy, black, pytest), bash
 \item \textbf{Statistical software:} Stata, SPSS, SAS, G*Power
 \item \textbf{Data visualization and reporting:} Shiny, ArcGIS, \LaTeX, Markdown,
 \item \textbf{Data management and wrangling:} SQL, REDCap
@@ -263,6 +260,10 @@ pubs <- get_cv_sheet('pubs') %>%
 make_ordered_list_filtered(pubs, "peer_reviewed")
 ```
 
+```{r}
+#| name: leadership
+#| include: false
+#| eval: false
 \section{\underline{Leadership and Service}}
 \subsection{Professional Service}
 \begin{longtable}{>{\raggedright\arraybackslash}p{4cm} p{14cm}}
@@ -278,11 +279,16 @@ make_ordered_list_filtered(pubs, "peer_reviewed")
 & \textbf{\href{https://cem.edu.pe/adiecs/}{Association for the Development of Student's Research in Health Sciences (ADIECS)}, Lima - Peru} \\
 & Peruvian student association funded in 2008 by students from the Universidad Nacional Mayor de San Marcos to develop capacity of both hard (e.g., epidemiological study designs, data analysis) and soft skills (e.g., teamwork communication, problem-solving) for biomedical underserved students. \\
 \end{longtable}
+```
+
+```{r}
+#| name: mentees
+#| include: false
+#| eval: false
 
 \subsection{Mentoring}
 \subsubsection{Undergraduate thesis}
-```{r}
-#| name: mentees
+
 mentees <- get_cv_sheet('advising') |>
   arrange(date_start) |> 
   mutate(
@@ -301,6 +307,8 @@ mentees <- get_cv_sheet('advising') |>
 ```{r}
 #| results: asis
 #| name: mentees_table
+#| include: false
+#| eval: false
 mentees |> 
   filter(complete == 0) |>
   make_ordered_list_filtered("ug")
