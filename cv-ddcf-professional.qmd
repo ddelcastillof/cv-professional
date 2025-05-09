@@ -223,7 +223,7 @@ make_ordered_list_filtered(teaching, "seminar")
 \begin{justify}
 \textbf{Computer and programming skills:} 
 \begin{itemize}
-\item \textbf{Programming languages:} R (tidyverse, meta, rJAGS), Python (pandas, NumPy, black, pytest), bash
+\item \textbf{Programming languages:} R, Python (pandas, NumPy, Matplotlib, Jupyter notebook), bash
 \item \textbf{Statistical software:} Stata, SPSS, SAS, G*Power
 \item \textbf{Data visualization and reporting:} Shiny, ArcGIS, \LaTeX, Markdown,
 \item \textbf{Data management and wrangling:} SQL, REDCap
