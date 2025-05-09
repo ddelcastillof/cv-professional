@@ -100,7 +100,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
 \item Conducted a scoping review protocol and performing evidence synthesis for mapping potential indicators for implementing mental health policy in data-limited settings.
-\item Designed of a mixed-method study protocol to assess the effectiveness of implementation strategies for pediatric burn care in a Peruvian healthcare setting.
+\item Designed a mixed-method study protocol to assess the effectiveness of implementation strategies for pediatric burn care in a Peruvian healthcare setting.
 \item Crafted communication strategies with stakeholders to inform results from the mixed-methods study.
 \end{itemize}
 } \\
@@ -158,6 +158,16 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 \textbf{Professional Certificate in Clinical Research} & \textbf{Sep 2021 – Apr 2022} \\
 \textbf{Universidad Peruana Cayetano Heredia, Lima - Peru} &\\
+\end{longtable}
+
+\section{\underline{Licensure and certification}}
+
+\begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
+\textbf{Peruvian College of Physicians}, Membership No. 94534 &  \textbf{Aug 2021 – Aug 2026} \\
+& \\
+\textbf{National Registry of Investigators, RENACYT}, Investigator Level VII (P0160977) & \textbf{Feb 2024 – Feb 2026} \\
+& \\
+\textbf{CITI Program}, Good Clinical Practice and ICH (GCP), Credential ID 65079238 & \textbf{Sep 2023 – Mar 2026}
 \end{longtable}
 
 ```{r teaching, eval = FALSE, include = FALSE, echo = FALSE}
@@ -262,6 +272,8 @@ pubs <- get_cv_sheet('pubs') %>%
 #| results: asis
 make_ordered_list_filtered(pubs, "peer_reviewed")
 ```
+
+\newpage
 
 \section{\underline{Leadership and Service}}
 \subsection{Professional Service}
