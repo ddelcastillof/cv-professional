@@ -88,9 +88,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Pooling epidemiological data of lower respiratory tract infections due to human metapneumovirus from 2010 to 2023 using the package meta in R and Python functions.
-\item Estimated population-attributable fractions and standardized mortality ratios for socially excluded groups in high-income countries using R.
-\item Analyzed data from public sources using Markov Chain Monte Carlo algorithms to estimate the overlap proportion between socially excluded groups in high-income countries using R.
+\item Pooled epidemiological data of lower respiratory tract infections using the package meta in R and internal Python functions.
+\item Created cleaning pipelines for EHR data from Colombia using Python (pandas, pydantic, etc.).
+\item Estimated the overlap proportion between homelessness, substance drug abusers, and prisoners in high-income countries using Markov Chain Monte Carlo algorithms with R.
 \end{itemize}
 } \\
 
@@ -234,16 +234,28 @@ make_ordered_list_filtered(teaching, "seminar")
 \section{\underline{Skills}}
 
 \begin{justify}
-\textbf{Computer and programming skills:} 
+\textbf{Technical skills:} 
 \begin{itemize}
-\item \textbf{Programming languages:} R, Python, bash
-\item \textbf{Statistical software:} Stata, SPSS, SAS, G*Power
-\item \textbf{Data visualization and reporting:} Shiny, ArcGIS, \LaTeX, Markdown,
-\item \textbf{Data management and wrangling:} SQL, REDCap
-\item \textbf{Project management:} Jira, Asana, Trello
-\item \textbf{Development tools:} Git, GitHub, Docker, VSCode, Confluence, Bitbucket 
-\item \textbf{Computing environments:} Linux/Unix, Windows, ssh
+\item \textbf{Programming & Scripting} R, Python, bash
+\item \textbf{Statistical & Analytical Software:} Stata, SPSS
+\item \textbf{Data Visualization & GIS:} Shiny, ArcGIS
+\item \textbf{Databases & Query Languages:} SQL (MySQL)
+\item \textbf{Version Control & DevOps:} Git, GitHub, Bitbucket, Docker
+\item \textbf{Development Environments:}: RStudio, VS Code, Jupyter Notebooks
+\item \textbf{Operating Systems & Platforms:} Linux/Unix, Windows (SSH)
+\item \textbf{Documentation & Collaboration:} LaTeX, Markdown, Confluence
 \end{itemize}
+
+```{r}
+#| name: other_skills
+#| eval: false
+#| include: false
+#| echo: false
+
+\item \textbf{Data management and wrangling:} REDCap
+\item \textbf{Project management:} Jira, Asana, Trello
+
+```
 
 \textbf{Languages:} 
 \begin{longtable}{>{\centering\arraybackslash}p{6cm}>{\centering\arraybackslash}p{6cm}>{\centering\arraybackslash}p{6cm}}
