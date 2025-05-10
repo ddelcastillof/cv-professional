@@ -236,14 +236,14 @@ make_ordered_list_filtered(teaching, "seminar")
 \begin{justify}
 \textbf{Technical skills:} 
 \begin{itemize}
-\item \textbf{Programming & Scripting} R, Python, bash
-\item \textbf{Statistical & Analytical Software:} Stata, SPSS
-\item \textbf{Data Visualization & GIS:} Shiny, ArcGIS
-\item \textbf{Databases & Query Languages:} SQL (MySQL)
-\item \textbf{Version Control & DevOps:} Git, GitHub, Bitbucket, Docker
+\item \textbf{Programming \& Scripting} R, Python, bash
+\item \textbf{Statistical \& Analytical Software:} Stata, SPSS
+\item \textbf{Data Visualization \& GIS:} Shiny, ArcGIS
+\item \textbf{Databases \& Query Languages:} SQL (MySQL)
+\item \textbf{Version Control \& DevOps:} Git, GitHub, Bitbucket, Docker
 \item \textbf{Development Environments:}: RStudio, VS Code, Jupyter Notebooks
-\item \textbf{Operating Systems & Platforms:} Linux/Unix, Windows (SSH)
-\item \textbf{Documentation & Collaboration:} LaTeX, Markdown, Confluence
+\item \textbf{Operating Systems \& Platforms:} Linux/Unix, Windows (SSH)
+\item \textbf{Documentation \& Collaboration:} LaTeX, Markdown, Confluence
 \end{itemize}
 
 ```{r}
