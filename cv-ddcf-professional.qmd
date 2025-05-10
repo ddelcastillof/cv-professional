@@ -48,24 +48,34 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 
 \par\centering{\Large{\textbf{Darwin Del Castillo, MD MPH}}}
 \vspace{-5pt}
+\par\centering{\textit{Email:} \href{mailto:ddelcastillo.f@gmail.com}{ddelcastillo.f@gmail.com}}
 ```{r address, include = FALSE, echo = FALSE, eval=FALSE}
 \par\centering{\textit{Address:} 4545 8th Ave NE, Seattle, WA 98105}
 \vspace{-5pt}
 \par\centering{\textit{Mobile:} +1 (206) 605 5077}
 \vspace{-5pt}
 ```
-\par\centering{\textit{Email:} ddelcastillo.f@gmail.com}
-\vspace{-5pt}
-\par\centering{\href{https://www.linkedin.com/in/darwin-del-castillo-md/}{LinkedIn} | \href{https://github.com/ddelcastillof}{Github}}
-\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
-\vspace{-10pt}
+\begin{minipage}[c]{0.65\textwidth}
+\begin{itemize}
+\item \textbf{Languages:} English (proficient), Spanish (native)
+\item \textbf{Programming languages:} R, Python, SQL (MySQL), bash
+\item \textbf{Other:} Linux/Unix, HPC (Slurm), \LaTeX, Markdown, VSCode, Jupyter Notebooks, Quarto, Docker, Git, Shiny (R)
+\end{itemize}
+\end{minipage}
+\begin{minipage}[c]{0.3\textwidth}
+\centering
+\faLinkedin \href{https://www.linkedin.com/in/darwin-del-castillo-md/}{/darwin-del-castillo} \\ 
+\faGithub \href{https://github.com/ddelcastillof}{/ddelcastillof}
+\end{minipage}
+\vspace{-2.5pt}
 
 ```{r brief bio, eval = FALSE, include = FALSE, echo = FALSE}
 \section{\underline{Summary}}
 \justifying{Medical doctor and global health scientist with extensive experience bridging the gap between epidemiological methods and healthcare data science. I am committed to transforming early-life health outcomes through innovative research and data-driven solutions. I have collaborated with a diversity of global health institutions and managing research teams that translates data findings into actionable public health information.}
 ```
-\section{\underline{Education}}
-
+\section{Education}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
 \textbf{Master in Public Health (MPH)} & \textbf{Sep 2023 – May 2025} \\
@@ -76,81 +86,75 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textbf{Medical Doctor (MD)} & \textbf{Mar 2013 – Dec 2020} \\
 \textbf{Universidad Nacional Mayor de San Marcos, Lima - Peru} &\\
 \end{longtable}
-\section{\underline{Professional Experience}}
+
+\section{Professional Experience}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
 \textbf{Graduate Research Assistant} & \textbf{Jul 2024 - Current} \\
-\multicolumn{2}{p{18cm}}{\textbf{Clinical Informatics Team, Institute for Health Metrics and Evaluation}} \\
+\multicolumn{2}{p{18cm}}{\textbf{Institute for Health Metrics and Evaluation}} \\
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Pooled epidemiological estimates of lower respiratory tract infections from ~80 countries between 2010 and 2023 using the R package meta and internal Bayesian regression models.
-\item Estimated the overlap proportion between homeless, substance drug abusers, and prisoners using a Bayesian Markov Chain Monte Carlo model.
-\item Created cleaning pipelines for inpatient and outpatient data from Ecuador and Colombia with Python libraries. 
+\item Conducted a comprehensive meta-analysis of lower respiratory tract infection rates across 80 countries using the R meta package, then applied Bayesian regressions to model epidemiological measures
+\item Developed and executed Bayesian MCMC workflows to quantify overlap among homeless populations, substance users, and incarcerated individuals across 22 high-income countries, producing real-world evidence for targeted health burden stratification.
+\item Updated version-controlled scripts to automate data quality checks of EHR datasets from Ecuador and Colombia. 
 \end{itemize}
 } \\
-
+\\
 \textbf{Graduate Research Assistant} & \textbf{Jun 2024 - Mar 2025} \\
 \multicolumn{2}{p{18cm}}{\textbf{Department of Global Health}} \\
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
-\item Conducted a scoping review protocol and performing evidence synthesis for mapping potential indicators for implementing mental health policy in data-limited settings.
-\item Designed a mixed-methods data-analysis protocol to assess the effectiveness of implementation strategies for pediatric burn care in a Peruvian healthcare setting.
-\item Crafted communication strategies with stakeholders to inform results from the mixed-methods study.
+\item Synthesized clinical and research evidence into actionable insights and reports to support evidence-based policy and program decisions regarding mental health.
+\item Analyzed pediatric clinical and outcome data to evaluate effectiveness of burn injury interventions and guide improvements in care protocols.
+\item Engaged with Ministry of Health officials and hospital stakeholders to align pediatric burn care strategies with national healthcare priorities.
 \end{itemize}
 } \\
-
+\\
 \textbf{Graduate Research Assistant}  & \textbf{Sep 2023 - Mar 2024} \\
-\multicolumn{2}{p{18cm}}{\textbf{Health Population Research Center, Department of Health Systems and Population Health}} \\
+\multicolumn{2}{p{18cm}}{\textbf{Health Population Research Center}} \\
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
-\item Carried out on-phone interviews for the ReOpening Schools Safely and Educating Youth Study post-survey assessments.
-\item Facilitated the submission of materials in Spanish to the IRB for Alzheimer’s Disease Research Center (ADRC).
-\item Conducted preliminary analyses for the Outreach, Engagement, and Recruitment module of the ADRC Clinical Core Study project.
+\item Implemented standardized remote data-collection workflows to capture patient-reported outcomes.
+\item Managed full lifecycle of IRB submissions—including translation and localization of Spanish-language documents—for the Alzheimer’s Disease Research Center, ensuring compliance with regulatory requirements.
+\item Synthesized early engagement and outreach data into interactive dashboards and concise summary reports, enabling program managers to make timely adjustments to recruitment strategies.
 \end{itemize}
 } \\
-
-\textbf{Research Consultant} & \textbf{Jan 2023 - Jan 2024} \\
-\multicolumn{2}{p{18cm}}{\textbf{Health Technology Assessment Direction, Health Technology Assessment and Research Institute}} \\
+\\
+\textbf{RWE Consultant} & \textbf{Jan 2023 - Jan 2024} \\
+\multicolumn{2}{p{18cm}}{\textbf{Health Technology Assessment and Research Institute}} \\
 \multicolumn{2}{p{18cm}}{\textbf{Social Security Health System, Lima (Peru)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Elaborated policy documents of new pharmaceutical products for Peru’s social health insurance using a mixture of real-world evidence and economic data.
-\item Conducted systematic reviews of anti-cancerous and immunosuppressant drugs regarding efficacy and economic impact.
-\item Evaluated the budget impact of introducing new pharmacological products in Peruvian social health insurance.
+\item Structured and consolidated multi-source health data (surveillance, clinical studies) to provide comprehensive insights into healthcare outcomes.
+\item Conducted budget impact and cost-effectiveness assessments to prioritize funding for high-impact health interventions under national budgets.
+\item Presented data-driven recommendations and evidence summaries to policymakers and partners, supporting strategic purchasing decisions.
 \end{itemize}
 } \\
-
-\textbf{Clinical Sub-investigator} & \textbf{Mar 2022 - Mar 2023}\\
-\multicolumn{2}{p{18cm}}{\textbf{Via Libre Association}} \\
-\multicolumn{2}{p{18cm}}{\textbf{Lima (Peru)}} \\
-\multicolumn{2}{p{18cm}}{%
-\begin{itemize}
-\item Recruited patients identified as queer for clinical studies in STI and HIV prevention and treatment.
-\item Performed clinical procedures and activities associated with the normal operation of clinical trials funded by NIH and pharmaceutical companies.
-\item Participated and organized activities for community outreach and participant retention crafted for the queer community.
-\end{itemize}
-} \\
-
-\newpage
-
+\\
 \textbf{Research Assistant} & \textbf{Mar 2019 - Aug 2023}\\
 \multicolumn{2}{p{18cm}}{\textbf{CRONICAS Center of Excellence in Chronic Diseases}} \\
 \multicolumn{2}{p{18cm}}{\textbf{Universidad Peruana Cayetano Heredia, Lima (Peru)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Coordinated focus groups and on-field work across four Peruvian regions to co-design an intervention for patients with cognitive impairment and their caregivers.
-\item Contributed to research grant proposals in hypertension, diabetes, cancer, and multimorbidity projects by conducting systematic reviews and preliminary data analysis.
-\item Co-authored scientific manuscripts in the topics mentioned above which included longitudinal data analyses, meta-analyses, and unsupervised machine learning methods using Stata and R.
+\item Led stakeholder workshops and focus groups across four regions to co-design patient-centered interventions, translating qualitative insights into quantifiable outcome metrics.
+\item Conducted real-world evidence synthesis and preliminary data analyses to support grant proposals for hypertension, diabetes, and multimorbidity studies, informing funding decisions.
+\item Co-authored peer-reviewed manuscripts and technical reports, communicating complex analytical findings in clear, executive-ready summaries for academic and policy audiences.
 \end{itemize}
 } \\
 
+\newpage
+
 \end{longtable}
 
-\section{\underline{Additional Education}}
+\section{Additional Education}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 \textbf{Professional Certificate in Clinical Research} & \textbf{Sep 2021 – Apr 2022} \\
@@ -218,18 +222,25 @@ make_ordered_list_filtered(teaching, "seminar")
 \section{\underline{Advising}}
 ```
 
+```{r}
+#| include: false
+#| eval: false
+#| echo: false
+#| name: skills_old
+
 \section{\underline{Skills}}
 
 \begin{justify}
 \textbf{Computer and programming skills:} 
 \begin{itemize}
-\item \textbf{Programming languages:} R, Python (pandas, NumPy, Matplotlib, Jupyter notebook), bash
-\item \textbf{Statistical software:} Stata, SPSS, SAS, G*Power
-\item \textbf{Data visualization and reporting:} Shiny, ArcGIS, \LaTeX, Markdown,
-\item \textbf{Data management and wrangling:} SQL, REDCap
-\item \textbf{Project management:} Jira, Asana, Trello
-\item \textbf{Development tools:} Git, GitHub, Docker, VSCode, Confluence, Bitbucket 
-\item \textbf{Computing environments:} Linux/Unix, Windows, ssh
+\item \textbf{Programming \& Scripting} R, Python, bash
+\item \textbf{Statistical \& Analytical Software:} Stata, SPSS
+\item \textbf{Data Visualization \& GIS:} Shiny, ArcGIS
+\item \textbf{Databases \& Query Languages:} SQL (MySQL)
+\item \textbf{Version Control \& DevOps:} Git, GitHub, Bitbucket, Docker
+\item \textbf{Development Environments:}: RStudio, VS Code, Jupyter Notebooks
+\item \textbf{Operating Systems \& Platforms:} Linux/Unix, Windows (SSH)
+\item \textbf{Documentation \& Collaboration:} LaTeX, Markdown, Confluence
 \end{itemize}
 
 \textbf{Languages:} 
@@ -237,8 +248,11 @@ make_ordered_list_filtered(teaching, "seminar")
 English: Fluent & Spanish: Native & Portuguese: Working proficiency
 \end{longtable}
 \end{justify}
+```
 
-\section{\underline{Publications}}
+\section{Publications \hspace{1cm} ORCID: 0000-0002-8609-0312}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 \subsection{Peer-reviewed publications}
 ```{r importing pubs, include = F, echo = F}
 pubs <- get_cv_sheet('pubs') %>%
@@ -332,3 +346,20 @@ mentees |>
 } \\
 
 ```
+
+\section{Other activities}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{4cm} p{14cm}}
+\textbf{Dec 2024 - current} & \textbf{Lecturer: Introduction to Epidemiology.} Universidad Científica del Sur. I'm teaching fourth-year medical students basic concepts of clinical epidemiology with focus in basic study designs and identification of bias.
+\end{longtable}
+
+\section{Memberships}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\begin{itemize}
+ \item International Epidemiological Association (2020 - Current)
+ \item Peruvian College of Physicians (2021 - Current)
+ \item Consortium of Universities for Global Health (2023 - Current)
+ \item America’s Network for Chronic Disease Surveillance (2025 - Current)
+\end{itemize}
