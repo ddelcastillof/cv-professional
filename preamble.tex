@@ -12,6 +12,7 @@
 \usepackage{geometry} % Required for adjusting page dimensions and margins
 \usepackage{titlesec} % Custom section headers
 \usepackage{booktabs} % For professional-looking tables
+\usepackage{fontawesome5} % FontAwesome icons
 
 % Main font
 
@@ -27,13 +28,13 @@
 % Headers
   
 % Format for \section
-\titleformat{\section}
-  {\normalfont\Large\bfseries\centering}          % Format applied to the whole title
-  {\thesection}{1em}{}                              % Label format and spacing
+\titleformat{\section}                                        % Format for section
+  {\normalfont\normalsize\bfseries\raggedright\uppercase}          % Format for the title: normal font, normal size, bold, right alignment, uppercase
+  {\thesection}{1em}{}                                        % Label format and spacing
 
 % Format for \subsection
-\titleformat{\subsection}
-  {\normalfont\large\bfseries\raggedright}          % Format: normal font, large size, bold, right alignment
+\titleformat{\subsection}                           % Format for subsection
+  {\normalfont\normalsize\bfseries\raggedright}          % Format: normal font, normal size, bold, right alignment
   {\thesubsection}{1em}{}                           % Label format and spacing
 
 % Format for \subsubsection
