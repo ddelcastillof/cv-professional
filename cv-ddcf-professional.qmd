@@ -48,24 +48,22 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 
 \par\centering{\Large{\textbf{Darwin Del Castillo, MD MPH}}}
 \vspace{-5pt}
+\par\centering{\textit{Email:} \href{mailto:ddelcastillo.f@gmail.com}{ddelcastillo.f@gmail.com}}
 ```{r address, include = FALSE, echo = FALSE, eval=FALSE}
 \par\centering{\textit{Address:} 4545 8th Ave NE, Seattle, WA 98105}
 \vspace{-5pt}
-```
 \par\centering{\textit{Mobile:} +1 (206) 605 5077}
-\vspace{-5pt}
-\par\centering{\textit{Email:} ddelcastillo.f@gmail.com}
-\vspace{-5pt}
-\par\centering{\href{https://www.linkedin.com/in/darwin-del-castillo-md/}{LinkedIn} | \href{https://github.com/ddelcastillof}{Github}}
-\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
-\vspace{-10pt}
+```
+\par\centering \faLinkedin \href{https://www.linkedin.com/in/darwin-del-castillo-md/}{/darwin-del-castillo} | \faGithub \href{https://github.com/ddelcastillof}{/ddelcastillof}
+\vspace{-2.5pt}
 
 ```{r brief bio, eval = FALSE, include = FALSE, echo = FALSE}
 \section{\underline{Summary}}
 \justifying{Medical doctor and global health scientist with extensive experience bridging the gap between epidemiological methods and healthcare data science. I am committed to transforming early-life health outcomes through innovative research and data-driven solutions. I have collaborated with a diversity of global health institutions and managing research teams that translates data findings into actionable public health information.}
 ```
-\section{\underline{Education}}
-
+\section{Education}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
 \textbf{Master in Public Health (MPH)} & \textbf{Sep 2023 – May 2025} \\
@@ -79,7 +77,10 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textit{Thesis: }“Childhood Obesity and Its Effect on Academic Achievement: An Analysis of the Young Lives Study between 2009 and 2016” &\\
 
 \end{longtable}
-\section{\underline{Professional Experience}}
+
+\section{Professional experience}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
@@ -94,6 +95,8 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \end{itemize}
 } \\
 
+\\
+
 \textbf{Graduate Research Assistant} & \textbf{Jun 2024 - Mar 2025} \\
 \multicolumn{2}{p{18cm}}{\textbf{Department of Global Health}} \\
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
@@ -104,6 +107,8 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \item Crafted communication strategies with stakeholders to inform results from the mixed-methods study.
 \end{itemize}
 } \\
+
+\\
 
 \textbf{Graduate Research Assistant}  & \textbf{Sep 2023 - Mar 2024} \\
 \multicolumn{2}{p{18cm}}{\textbf{Health Population Research Center, Department of Health Systems and Population Health}} \\
@@ -116,6 +121,8 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \end{itemize}
 } \\
 
+\\
+
 \textbf{Research Consultant} & \textbf{Jan 2023 - Jan 2024} \\
 \multicolumn{2}{p{18cm}}{\textbf{Health Technology Assessment Direction, Health Technology Assessment and Research Institute}} \\
 \multicolumn{2}{p{18cm}}{\textbf{Social Security Health System, Lima (Peru)}} \\
@@ -126,6 +133,8 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \item Evaluated the budget impact of introducing new pharmacological products in Peruvian social health insurance.
 \end{itemize}
 } \\
+
+\\
 
 \textbf{Clinical Sub-investigator} & \textbf{Mar 2022 - Mar 2023}\\
 \multicolumn{2}{p{18cm}}{\textbf{Via Libre Association}} \\
@@ -153,14 +162,18 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 
 \end{longtable}
 
-\section{\underline{Additional Education}}
+\section{Additional Education}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 \textbf{Professional Certificate in Clinical Research} & \textbf{Sep 2021 – Apr 2022} \\
 \textbf{Universidad Peruana Cayetano Heredia, Lima - Peru} &\\
 \end{longtable}
 
-\section{\underline{Licensure and certification}}
+\section{Licensure and certification}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 \textbf{Peruvian College of Physicians}, Membership No. 94534 &  \textbf{Aug 2021 – Aug 2026} \\
@@ -231,39 +244,48 @@ make_ordered_list_filtered(teaching, "seminar")
 \section{\underline{Advising}}
 ```
 
-\section{\underline{Skills}}
+\section{Skills}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 
-\begin{justify}
-\textbf{Technical skills:} 
-\begin{itemize}
-\item \textbf{Programming \& Scripting} R, Python, bash
-\item \textbf{Statistical \& Analytical Software:} Stata, SPSS
-\item \textbf{Data Visualization \& GIS:} Shiny, ArcGIS
-\item \textbf{Databases \& Query Languages:} SQL (MySQL)
-\item \textbf{Version Control \& DevOps:} Git, GitHub, Bitbucket, Docker
-\item \textbf{Development Environments:}: RStudio, VS Code, Jupyter Notebooks
-\item \textbf{Operating Systems \& Platforms:} Linux/Unix, Windows (SSH)
-\item \textbf{Documentation \& Collaboration:} LaTeX, Markdown, Confluence
-\end{itemize}
-
+\begin{minipage}[c]{0.65\textwidth}
+  \begin{justify}
+    \vspace{1mm}
+    \subsection{Technical skills:} 
+    \vspace{1mm}
+      \begin{itemize}
+        \item \textbf{Programming \& Scripting} R, Python, bash
+        \item \textbf{Statistical \& Analytical Software:} Stata, SPSS
+        \item \textbf{Data Visualization \& GIS:} Shiny, ArcGIS
+        \item \textbf{Databases \& Query Languages:} SQL (MySQL)
+        \item \textbf{Version Control \& DevOps:} Git, GitHub, Bitbucket, Docker
+        \item \textbf{Development Environments:}: RStudio, VS Code, Jupyter Notebooks
+        \item \textbf{Operating Systems \& Platforms:} Linux/Unix, Windows (SSH)
+        \item \textbf{Documentation \& Collaboration:} LaTeX, Markdown, Confluence
+      \end{itemize}
+  \end{justify}
+\end{minipage}
+\begin{minipage}[c]{0.30\textwidth}
+  \begin{justify}
+  \subsection{Languages:} 
+      \begin{itemize}
+        \item English: Fluent
+        \item Spanish: Native
+     \end{itemize}
+  \end{justify}
+\end{minipage}
 ```{r}
 #| name: other_skills
 #| eval: false
 #| include: false
 #| echo: false
-
 \item \textbf{Data management and wrangling:} REDCap
 \item \textbf{Project management:} Jira, Asana, Trello
-
 ```
 
-\textbf{Languages:} 
-\begin{longtable}{>{\centering\arraybackslash}p{6cm}>{\centering\arraybackslash}p{6cm}>{\centering\arraybackslash}p{6cm}}
-English: Fluent & Spanish: Native & Portuguese: Working proficiency
-\end{longtable}
-\end{justify}
-
-\section{\underline{Publications}}
+\section{Publications \hspace{1cm} ORCID: 0000-0002-8609-0312}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 \subsection{Peer-reviewed publications}
 ```{r importing pubs, include = F, echo = F}
 pubs <- get_cv_sheet('pubs') %>%
@@ -287,7 +309,9 @@ make_ordered_list_filtered(pubs, "peer_reviewed")
 
 \newpage
 
-\section{\underline{Leadership and Service}}
+\section{Leadership and Service}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 \subsection{Professional Service}
 \begin{longtable}{>{\raggedright\arraybackslash}p{4cm} p{14cm}}
 \textbf{Feb 2025 - current} & \textbf{Member} \\
