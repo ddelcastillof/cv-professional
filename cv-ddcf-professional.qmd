@@ -351,7 +351,7 @@ mentees |>
 \vspace{-1.5em}
 \textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{>{\raggedright\arraybackslash}p{4cm} p{14cm}}
-\textbf{Dec 2024 - current} & \textbf{Lecturer: Introduction to Epidemiology.} Universidad Científica del Sur. I'm teaching fourth-year medical students basic concepts of clinical epidemiology with focus in basic study designs and identification of bias.
+\textbf{Jan 2025 - current} & \textbf{Lecturer: Introduction to Epidemiology.} Universidad Científica del Sur. I'm teaching fourth-year medical students basic concepts of clinical epidemiology with focus in basic study designs and identification of bias.
 \end{longtable}
 
 \section{Memberships}
