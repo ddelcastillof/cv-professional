@@ -29,12 +29,12 @@
   
 % Format for \section
 \titleformat{\section}                                        % Format for section
-  {\normalfont\normalsize\bfseries\raggedright\uppercase}          % Format for the title: normal font, normal size, bold, right alignment, uppercase
+  {\normalfont\normalsize\bfseries\raggedright\uppercase}     % Format for the title: normal font, normal size, bold, right alignment, uppercase
   {\thesection}{1em}{}                                        % Label format and spacing
 
 % Format for \subsection
 \titleformat{\subsection}                           % Format for subsection
-  {\normalfont\normalsize\bfseries\raggedright}          % Format: normal font, normal size, bold, right alignment
+  {\normalfont\normalsize\bfseries\raggedright}     % Format: normal font, normal size, bold, right alignment
   {\thesubsection}{1em}{}                           % Label format and spacing
 
 % Format for \subsubsection
@@ -43,8 +43,8 @@
   {\thesubsubsection}{1em}{}                        % Label format and spacing
   
   % Table centering
-\let\oldtable\table
-\let\endoldtable\endtable
-\renewenvironment{table}[1][h!]
-  {\oldtable[#1]\center}
-  {\endcenter\endoldtable}
+\let\oldtable\table                                 % Save the original table environment
+\let\endoldtable\endtable                           % Save the original endtable environment
+\renewenvironment{table}[1][h!]                     % Redefine the table environment
+  {\oldtable[#1]\center}                            % Center the table
+  {\endcenter\endoldtable}                          % End the centering and the table environment
