@@ -59,7 +59,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \begin{itemize}
 \item \textbf{Languages:} English (proficient), Spanish (native)
 \item \textbf{Programming languages:} R, Python, SQL (MySQL), bash
-\item \textbf{Other:} Linux/Unix, HPC (Slurm), \LaTeX, Markdown, VSCode, Jupyter Notebooks, Quarto, Docker, Git, Shiny (R)
+\item \textbf{Other:} Linux/Unix, HPC (Slurm), \LaTeX, Markdown, VSCode, Jupyter Notebooks, Quarto, Docker, Git, Shiny (R), REDCap
 \end{itemize}
 \end{minipage}
 \begin{minipage}[c]{0.3\textwidth}
@@ -99,7 +99,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
 \item Conducted a comprehensive meta-analysis of lower respiratory tract infection rates across 80 countries using the R meta package, then applied Bayesian regressions to model epidemiological measures
-\item Developed and executed Bayesian MCMC workflows to quantify overlap among homeless populations, substance users, and incarcerated individuals across 22 high-income countries, producing real-world evidence for targeted health burden stratification.
+\item Developed and executed Bayesian MCMC workflows to quantify the overlap among homeless populations, substance users, and incarcerated individuals across 22 high-income countries, producing real-world evidence for targeted health burden stratification.
 \item Updated version-controlled scripts to automate data quality checks of EHR datasets from Ecuador and Colombia. 
 \end{itemize}
 } \\
