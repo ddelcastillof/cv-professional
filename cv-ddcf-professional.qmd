@@ -46,26 +46,22 @@ gscholar_page <- paste0("https://scholar.google.com/citations?user=", gscholar_i
 text_gs <- invisible(gscholar_stats(url = gscholar_page))
 ```
 
-\par\centering{\Large{\textbf{Darwin Del Castillo, MD MPH}}}
-\vspace{-5pt}
-\par\centering{\textit{Email:} \href{mailto:ddelcastillo.f@gmail.com}{ddelcastillo.f@gmail.com}}
-```{r address, include = FALSE, echo = FALSE, eval=FALSE}
-\par\centering{\textit{Address:} 4545 8th Ave NE, Seattle, WA 98105}
-\vspace{-5pt}
-\par\centering{\textit{Mobile:} +1 (206) 605 5077}
-\vspace{-5pt}
-```
+\begin{center}
+\Large{\textbf{Darwin Del Castillo, MD, MPH}}
+\end{center}
+\vspace{-2.5pt}
 \begin{minipage}[c]{0.65\textwidth}
 \begin{itemize}
 \item \textbf{Languages:} English (proficient), Spanish (native)
 \item \textbf{Programming languages:} R, Python, SQL (MySQL), bash
-\item \textbf{Other:} Linux/Unix, HPC (Slurm), \LaTeX, Markdown, VSCode, Jupyter Notebooks, Quarto, Docker, Git, Shiny (R), REDCap
+\item \textbf{Other:} Linux/Unix, HPC (Slurm), \LaTeX, Markdown, VSCode, Jupyter Notebooks, Quarto, Docker, Git, Shiny (R), REDCap, ArcGIS
 \end{itemize}
 \end{minipage}
 \begin{minipage}[c]{0.3\textwidth}
 \centering
 \faLinkedin \href{https://www.linkedin.com/in/darwin-del-castillo-md/}{/darwin-del-castillo} \\ 
-\faGithub \href{https://github.com/ddelcastillof}{/ddelcastillof}
+\faGithub \href{https://github.com/ddelcastillof}{/ddelcastillof} \\
+\faEnvelope \href{mailto:ddelcastillo.f@gmail.com}{/ddelcastillo.f@gmail.com}
 \end{minipage}
 \vspace{-2.5pt}
 
