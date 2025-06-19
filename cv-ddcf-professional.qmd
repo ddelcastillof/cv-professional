@@ -47,7 +47,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 ```
 
 \begin{center}
-\Large{\textbf{Darwin Del Castillo, MD MPH}}
+\Large{\textbf{Darwin Del Castillo, MD, MPH}}
 \end{center}
 \vspace{-2.5pt}
 \begin{minipage}[c]{0.65\textwidth}
@@ -57,9 +57,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \item \textbf{Other:} Linux/Unix, HPC (Slurm), \LaTeX, Markdown, VSCode, Jupyter Notebooks, Quarto, Docker, Git, Shiny (R), REDCap, ArcGIS
 \end{itemize}
 \end{minipage}
-\begin{minipage}[c]{0.3\textwidth}
+\begin{minipage}[c]{0.35\textwidth}
 \centering
-\faLinkedin \href{https://www.linkedin.com/in/darwin-del-castillo-md/}{/darwin-del-castillo} \\ 
+\faLinkedin \href{https://www.linkedin.com/in/darwin-del-castillo/}{/darwin-del-castillo} \\ 
 \faGithub \href{https://github.com/ddelcastillof}{/ddelcastillof} \\
 \faEnvelope \href{mailto:ddelcastillo.f@gmail.com}{/ddelcastillo.f@gmail.com}
 \end{minipage}
@@ -74,7 +74,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
-\textbf{Master in Public Health (MPH)} & \textbf{Sep 2023 – May 2025} \\
+\textbf{Master of Public Health (MPH)} & \textbf{Sep 2023 – Jun 2025} \\
 \textbf{University of Washington, Seattle - USA} & \\
 
 &\\
@@ -94,9 +94,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Conducted a comprehensive meta-analysis of lower respiratory tract infection rates across 80 countries using the R meta package, then applied Bayesian regressions to model epidemiological measures
-\item Developed and executed Bayesian MCMC workflows to quantify the overlap among homeless populations, substance users, and incarcerated individuals across 22 high-income countries, producing real-world evidence for targeted health burden stratification.
-\item Updated version-controlled scripts to automate data quality checks of EHR datasets from Ecuador and Colombia. 
+\item Modeling epidemiological data of lower respiratory tract infections due to human metapneumovirus from 2010 to 2023 using meta-analysis information in R and Bayesian meta-regression suites (DisMod-MR).
+\item Analyzed data from public sources using Bayesian methods and Monte Carlo simulation to estimate the overlap proportion between socially excluded groups in high-income countries using the packages rJAGS and rstan.
+\item Estimated population attributable fractions among substance drug abusers, prisoners, and people experiencing homelessness from 22 high-income countries using previously-calculated SMR as inputs.
 \end{itemize}
 } \\
 \\
@@ -105,9 +105,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
-\item Synthesized clinical and research evidence into actionable insights and reports to support evidence-based policy and program decisions regarding mental health.
-\item Analyzed pediatric clinical and outcome data to evaluate effectiveness of burn injury interventions and guide improvements in care protocols.
-\item Engaged with Ministry of Health officials and hospital stakeholders to align pediatric burn care strategies with national healthcare priorities.
+\item Synthesized clinical and research evidence into a scoping review to support the creation of indicators to guide mental health policy.
+\item Designed a mixed-method study protocol to assess the effectiveness of implementation strategies for pediatric burn care in a Peruvian healthcare setting.
+\item Crafted communication strategies with stakeholders to inform results from the mixed-methods study.
 \end{itemize}
 } \\
 \\
@@ -116,9 +116,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
-\item Implemented standardized remote data-collection workflows to capture patient-reported outcomes.
-\item Managed full lifecycle of IRB submissions—including translation and localization of Spanish-language documents—for the Alzheimer’s Disease Research Center, ensuring compliance with regulatory requirements.
-\item Synthesized early engagement and outreach data into interactive dashboards and concise summary reports, enabling program managers to make timely adjustments to recruitment strategies.
+\item Gathered sociodemographic and utlization data as part of a clinical trial post-assesment survey.
+\item Translated IRB submission materials from Spanish to English for the Alzheimer’s Disease Research Center.
+\item Synthesized early engagement and outreach data into visualisation tools and summary tables, enabling program managers to make adjustments to recruitment strategies.
 \end{itemize}
 } \\
 \\
@@ -127,9 +127,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{\textbf{Social Security Health System, Lima (Peru)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Structured and consolidated multi-source health data (surveillance, clinical studies) to provide comprehensive insights into healthcare outcomes.
+\item Structured and consolidated multi-source health data (surveillance data, clinical studies) to generate data for health technology assessments.
 \item Conducted budget impact and cost-effectiveness assessments to prioritize funding for high-impact health interventions under national budgets.
-\item Presented data-driven recommendations and evidence summaries to policymakers and partners, supporting strategic purchasing decisions.
+\item Presented data-driven recommendations and evidence summaries to policymakers and partners, supporting strategic purchasing decisions for the Social Security System.
 \end{itemize}
 } \\
 \\
@@ -138,9 +138,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{\textbf{Universidad Peruana Cayetano Heredia, Lima (Peru)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Led stakeholder workshops and focus groups across four regions to co-design patient-centered interventions, translating qualitative insights into quantifiable outcome metrics.
-\item Conducted real-world evidence synthesis and preliminary data analyses to support grant proposals for hypertension, diabetes, and multimorbidity studies, informing funding decisions.
-\item Co-authored peer-reviewed manuscripts and technical reports, communicating complex analytical findings in clear, executive-ready summaries for academic and policy audiences.
+\item Led workshops and focus groups with participants and community healthworkers across four regions to co-design patient-centered interventions.
+\item Conducted real-world evidence synthesis and preliminary data analyses to support grant proposals for hypertension, diabetes, cancer, and multimorbidity studies.
+\item Co-authored peer-reviewed manuscripts, communicating complex analytical findings for academic and policy audiences.
 \end{itemize}
 } \\
 
@@ -347,7 +347,7 @@ mentees |>
 \vspace{-1.5em}
 \textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{>{\raggedright\arraybackslash}p{4cm} p{14cm}}
-\textbf{Jan 2025 - current} & \textbf{Lecturer: Introduction to Epidemiology.} Universidad Científica del Sur. I'm teaching fourth-year medical students basic concepts of clinical epidemiology with focus in basic study designs and identification of bias.
+\textbf{Jan 2025 - current} & \textbf{Lecturer: Introduction to Epidemiology.} Universidad Científica del Sur. I'm teaching fourth-year medical students basic concepts of clinical epidemiology with a focus on basic study designs and identification of bias.
 \end{longtable}
 
 \section{Memberships}
