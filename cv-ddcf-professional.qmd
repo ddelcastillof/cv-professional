@@ -47,7 +47,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 ```
 
 \begin{center}
-\Large{\textbf{Darwin Del Castillo, MD, MPH}} \\
+\huge{\underline{\textbf{Darwin Del Castillo, MD, MPH}}} \\
 \vspace{2.5pt}
 \faLinkedin \href{https://www.linkedin.com/in/darwin-del-castillo/}{\hspace{0.5em}darwin-del-castillo} | \faEnvelope \href{mailto:ddelcastillo.f@gmail.com}{\hspace{0.5em}ddelcastillo.f@gmail.com} | \faGithub \href{https://github.com/ddelcastillof}{\hspace{0.5em}ddelcastillof} 
 \vspace{-2.5pt}
@@ -371,12 +371,12 @@ pubs <- get_cv_sheet('pubs') %>%
 ```{r peer reviewed pubs}
 #| results: asis
 #| name: peer reviewed pubs
-make_ordered_list_filtered(pubs, "peer_reviewed")
+make_bullet_list_filtered(pubs, "peer_reviewed")
 ```
 
 \subsection{Conference abstracts}
 ```{r conference abstracts}
 #| results: asis
 #| name: conference abstracts
-make_ordered_list_filtered(pubs, "conference")
+make_bullet_list_filtered(pubs, "conference")
 ```
