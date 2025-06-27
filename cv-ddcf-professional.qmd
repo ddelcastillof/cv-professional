@@ -47,29 +47,17 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 ```
 
 \begin{center}
-\Large{\textbf{Darwin Del Castillo, MD, MPH}}
+\Large{\textbf{Darwin Del Castillo, MD, MPH}} \\
+\vspace{2.5pt}
+\faLinkedin \href{https://www.linkedin.com/in/darwin-del-castillo/}{\hspace{0.5em}darwin-del-castillo} | \faEnvelope \href{mailto:ddelcastillo.f@gmail.com}{\hspace{0.5em}ddelcastillo.f@gmail.com} | \faGithub \href{https://github.com/ddelcastillof}{\hspace{0.5em}ddelcastillof} 
+\vspace{-2.5pt}
 \end{center}
-\vspace{-2.5pt}
-\begin{minipage}[c]{0.65\textwidth}
-\begin{itemize}
-\item \textbf{Languages:} English (proficient), Spanish (native)
-\item \textbf{Programming languages:} R, Python, SQL (MySQL), bash
-\item \textbf{Other:} Linux/Unix, HPC (Slurm), \LaTeX, Markdown, VSCode, Jupyter Notebooks, Quarto, Docker, Git, Shiny (R), REDCap, ArcGIS
-\end{itemize}
-\end{minipage}
-\begin{minipage}[c]{0.35\textwidth}
-\centering
-\faLinkedin \href{https://www.linkedin.com/in/darwin-del-castillo/}{/darwin-del-castillo} \\ 
-\faGithub \href{https://github.com/ddelcastillof}{/ddelcastillof} \\
-\faEnvelope \href{mailto:ddelcastillo.f@gmail.com}{/ddelcastillo.f@gmail.com}
-\end{minipage}
-\vspace{-2.5pt}
 
 ```{r brief bio, eval = FALSE, include = FALSE, echo = FALSE}
 \section{\underline{Summary}}
 \justifying{Medical doctor and global health scientist with extensive experience bridging the gap between epidemiological methods and healthcare data science. I am committed to transforming early-life health outcomes through innovative research and data-driven solutions. I have collaborated with a diversity of global health institutions and managing research teams that translates data findings into actionable public health information.}
 ```
-\section{Education}
+\section{Scientific Education}
 \vspace{-1.5em}
 \textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
@@ -83,24 +71,49 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textbf{Universidad Nacional Mayor de San Marcos, Lima - Peru} &\\
 \end{longtable}
 
+\section{Skills}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+
+\begin{minipage}[c]{0.65\textwidth}
+Health data science and epidemiology: data wrangling, querying, analysis, visualization \& management
+\vspace{1pt}
+\begin{itemize}
+\item SQL (MySQL), Python, R programming
+\item HPC (Slurm), Linux environments (bash)
+\item VS Code, Jupyter Lab, Quarto, Markdown, \LaTeX, Shiny (R), GIS tools
+\item Team-based projects on Github and Bitbucket repositories
+\item Packages: tidyverse, ggplot2, meta/metafor, lme4, survival, geepack, gam, lavaan, sf, rJAGS, rstan, Pandas, Matplotlib, NumPy, MR-BRT (GBD Study estimation), amongst other tools.
+\end{itemize}
+\end{minipage}
+\begin{minipage}[c]{0.35\textwidth}
+\begin{itemize}
+\item Fluency in English \& Spanish
+\item Team work \& collaboration
+\item Problem solving
+\item Science communication
+\item Mentorship
+\end{itemize}
+\end{minipage}
+
 \section{Professional Experience}
 \vspace{-1.5em}
 \textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
-\textbf{Graduate Research Assistant} & \textbf{Jul 2024 - Current} \\
+\textbf{Graduate Research Assistant} & \textbf{Jul 2024 – Jun 2025} \\
 \multicolumn{2}{p{18cm}}{\textbf{Institute for Health Metrics and Evaluation}} \\
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
 \item Modeling epidemiological data of lower respiratory tract infections due to human metapneumovirus from 2010 to 2023 using meta-analysis information in R and Bayesian meta-regression suites (DisMod-MR).
 \item Analyzed data from public sources using Bayesian methods and Monte Carlo simulation to estimate the overlap proportion between socially excluded groups in high-income countries using the packages rJAGS and rstan.
-\item Estimated population attributable fractions among substance drug abusers, prisoners, and people experiencing homelessness from 22 high-income countries using previously-calculated SMR as inputs.
+\item Improved analytic scripts for electronic health records data extraction, cleaning, and analysis by developing Python functions that reduced processing time in high-performance computing contexts.
 \end{itemize}
 } \\
 \\
-\textbf{Graduate Research Assistant} & \textbf{Jun 2024 - Mar 2025} \\
+\textbf{Graduate Research Assistant} & \textbf{Jun 2024 – Mar 2025} \\
 \multicolumn{2}{p{18cm}}{\textbf{Department of Global Health}} \\
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
@@ -111,7 +124,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \end{itemize}
 } \\
 \\
-\textbf{Graduate Research Assistant}  & \textbf{Sep 2023 - Mar 2024} \\
+\textbf{Graduate Research Assistant}  & \textbf{Sep 2023 – Mar 2024} \\
 \multicolumn{2}{p{18cm}}{\textbf{Health Population Research Center}} \\
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
@@ -122,7 +135,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \end{itemize}
 } \\
 \\
-\textbf{RWE Consultant} & \textbf{Jan 2023 - Jan 2024} \\
+\textbf{RWE Consultant} & \textbf{Jan 2023 – Jan 2024} \\
 \multicolumn{2}{p{18cm}}{\textbf{Health Technology Assessment and Research Institute}} \\
 \multicolumn{2}{p{18cm}}{\textbf{Social Security Health System, Lima (Peru)}} \\
 \multicolumn{2}{p{18cm}}{%
@@ -132,20 +145,18 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \item Presented data-driven recommendations and evidence summaries to policymakers and partners, supporting strategic purchasing decisions for the Social Security System.
 \end{itemize}
 } \\
-\\
-\textbf{Research Assistant} & \textbf{Mar 2019 - Aug 2023}\\
+\newpage
+
+\textbf{Research Assistant} & \textbf{Mar 2019 – Aug 2023}\\
 \multicolumn{2}{p{18cm}}{\textbf{CRONICAS Center of Excellence in Chronic Diseases}} \\
 \multicolumn{2}{p{18cm}}{\textbf{Universidad Peruana Cayetano Heredia, Lima (Peru)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
 \item Led workshops and focus groups with participants and community healthworkers across four regions to co-design patient-centered interventions.
 \item Conducted real-world evidence synthesis and preliminary data analyses to support grant proposals for hypertension, diabetes, cancer, and multimorbidity studies.
-\item Co-authored peer-reviewed manuscripts, communicating complex analytical findings for academic and policy audiences.
+\item Co-authored peer-reviewed manuscripts as part of international collaborations, communicating complex analytical findings for academic and lay audiences.
 \end{itemize}
 } \\
-
-\newpage
-
 \end{longtable}
 
 \section{Additional Education}
@@ -246,29 +257,7 @@ English: Fluent & Spanish: Native & Portuguese: Working proficiency
 \end{justify}
 ```
 
-\section{Publications \hspace{1cm} ORCID: 0000-0002-8609-0312}
-\vspace{-1.5em}
-\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
-\subsection{Peer-reviewed publications}
-```{r importing pubs, include = F, echo = F}
-pubs <- get_cv_sheet('pubs') %>%
-  mutate(
-    journal  = ifelse(is.na(journal_abbv), '', paste0(journal_abbv)),
-    number   = ifelse(is.na(number), '', paste0(number, '.')),
-    doi      = ifelse(
-               is.na(doi), '',
-               paste0('Available at: [', doi, '](', 'https://doi.org/', doi, ')')),
-    year     = paste0("(", year, ")"),
-    title    = enquote(title),
-    citation = paste(author, year, title, journal, number, doi)
-  ) %>% 
-  arrange(desc(pub_date))
-```
 
-```{r printing references in pandoc format}
-#| results: asis
-make_ordered_list_filtered(pubs, "peer_reviewed")
-```
 
 ```{r}
 #| name: leadership
@@ -289,6 +278,16 @@ make_ordered_list_filtered(pubs, "peer_reviewed")
 & \textbf{\href{https://cem.edu.pe/adiecs/}{Association for the Development of Student's Research in Health Sciences (ADIECS)}, Lima - Peru} \\
 & Peruvian student association funded in 2008 by students from the Universidad Nacional Mayor de San Marcos to develop capacity of both hard (e.g., epidemiological study designs, data analysis) and soft skills (e.g., teamwork communication, problem-solving) for biomedical underserved students. \\
 \end{longtable}
+
+\section{Memberships}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\begin{itemize}
+ \item International Epidemiological Association (2020 - Current)
+ \item Peruvian College of Physicians (2021 - Current)
+ \item Consortium of Universities for Global Health (2023 - Current)
+ \item America’s Network for Chronic Disease Surveillance (2025 - Current)
+\end{itemize}
 ```
 
 ```{r}
@@ -339,23 +338,45 @@ mentees |>
 \item Performed clinical procedures and activities associated with the normal operation of clinical trials funded by NIH and pharmaceutical companies.
 \item Participated and organized activities for community outreach and participant retention crafted for the queer community.
 \end{itemize}
-} \\
-
+}
 ```
 
-\section{Other activities}
+\section{Other Professional Activities}
 \vspace{-1.5em}
 \textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{>{\raggedright\arraybackslash}p{4cm} p{14cm}}
-\textbf{Jan 2025 - current} & \textbf{Lecturer: Introduction to Epidemiology.} Universidad Científica del Sur. I'm teaching fourth-year medical students basic concepts of clinical epidemiology with a focus on basic study designs and identification of bias.
+\textbf{Jan 2025 – current} & \textbf{Lecturer: Introduction to Epidemiology.} Universidad Científica del Sur. I teach three sections of \textasciitilde 15 fourth-year medical students each, focusing on basic clinical epidemiology concepts, including study designs, bias identification, \& basic epidemiological surveillance concepts. \\
+\textbf{Mar 2024 – Jun 2024} & \textbf{Teaching Assistant: Introduction to Molecular and Cellular Biology.} University of Washington. Led two laboratory practice sessions with \textasciitilde 25 undergraduate students each, covering fundamental molecular and cellular biology experiments. \\
 \end{longtable}
 
-\section{Memberships}
+\section{Publications \hspace{1cm} ORCID: 0000-0002-8609-0312}
 \vspace{-1.5em}
 \textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
-\begin{itemize}
- \item International Epidemiological Association (2020 - Current)
- \item Peruvian College of Physicians (2021 - Current)
- \item Consortium of Universities for Global Health (2023 - Current)
- \item America’s Network for Chronic Disease Surveillance (2025 - Current)
-\end{itemize}
+\subsection{Peer-reviewed publications}
+```{r importing pubs, include = F, echo = F}
+pubs <- get_cv_sheet('pubs') %>%
+  mutate(
+    journal  = ifelse(is.na(journal_abbv), '', paste0(journal_abbv)),
+    number   = ifelse(is.na(number), '', paste0(number, '.')),
+    doi      = ifelse(
+               is.na(doi), '',
+               paste0('Available at: [', doi, '](', 'https://doi.org/', doi, ')')),
+    year     = paste0("(", year, ")"),
+    title    = enquote(title),
+    citation = paste(author, year, title, journal, number, doi)
+  ) %>% 
+  arrange(desc(pub_date))
+```
+
+```{r peer reviewed pubs}
+#| results: asis
+#| name: peer reviewed pubs
+make_ordered_list_filtered(pubs, "peer_reviewed")
+```
+
+\subsection{Conference abstracts}
+```{r conference abstracts}
+#| results: asis
+#| name: conference abstracts
+make_ordered_list_filtered(pubs, "conference")
+```
