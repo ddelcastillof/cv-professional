@@ -42,30 +42,30 @@ make_bullet_list <- function(x) {
 
 make_ordered_list_filtered <- function(df, cat) {
   return(df %>%
-    filter(category == {{cat}}) %>%
+    filter(.data$category == {{cat}}) %>%
         mutate(
             citation = str_replace_all(
-                citation,
+                .data$citation,
                 "\\\\\\*(\\w+),",
                 "\\\\*\\\\underline{\\1},"
             )
         ) %>%
-    pull(citation) %>%
+    pull(.data$citation) %>%
     make_ordered_list()
   )
 }
 
 make_bullet_list_filtered <- function(df, cat) {
   return(df %>%
-    filter(category == {{cat}}) %>%
+    filter(.data$category == {{cat}}) %>%
         mutate(
             citation = str_replace_all(
-                citation,
+                .data$citation,
                 "\\\\\\*(\\w+),",
                 "\\\\*\\\\underline{\\1},"
             )
         ) %>%
-    pull(citation) %>%
+    pull(.data$citation) %>%
     make_bullet_list()
   )
 }
