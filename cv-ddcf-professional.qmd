@@ -49,7 +49,15 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \begin{center}
 \huge{\underline{\textbf{Darwin Del Castillo, MD, MPH}}} \\
 \vspace{2.5pt}
-\faLinkedin \href{https://www.linkedin.com/in/darwin-del-castillo/}{\hspace{0.5em}darwin-del-castillo} | \faEnvelope \href{mailto:ddelcastillo.f@gmail.com}{\hspace{0.5em}ddelcastillo.f@gmail.com} | \faGithub \href{https://github.com/ddelcastillof}{\hspace{0.5em}ddelcastillof} 
+\begin{minipage}[c]{0.20\textwidth}
+\faLinkedin \centering\href{https://www.linkedin.com/in/darwin-del-castillo/}{\hspace{0.5em}darwin-del-castillo}
+\end{minipage}
+\begin{minipage}[c]{0.20\textwidth}
+\faEnvelope \centering\href{mailto:ddelcastillo.f@gmail.com}{\hspace{0.5em}ddelcastillo.f@gmail.com}
+\end{minipage}
+\begin{minipage}[c]{0.15\textwidth}
+\faGithub \centering\href{https://github.com/ddelcastillof}{\hspace{0.5em}ddelcastillof} 
+\end{minipage}
 \vspace{-2.5pt}
 \end{center}
 
@@ -107,8 +115,8 @@ Health data science and epidemiology: data wrangling, querying, analysis, visual
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Modeling epidemiological data of lower respiratory tract infections due to human metapneumovirus from 2010 to 2023 using meta-analysis information in R and Bayesian meta-regression suites (DisMod-MR).
-\item Analyzed data from public sources using Bayesian methods and Monte Carlo simulation to estimate the overlap proportion between socially excluded groups in high-income countries using the packages rJAGS and rstan.
+\item Modeled epidemiological data on lower respiratory tract infections due to human metapneumovirus from 2010 to 2023 using meta-analysis information as priors and Bayesian meta-regression suites (DisMod-MR) in R.
+\item Analyzed data from public sources using Bayesian methods and Monte Carlo simulation to estimate the proportion of overlap between socially excluded groups in high-income countries with the rJAGS and rstan packages.
 \item Improved analytic scripts for electronic health records data extraction, cleaning, and analysis by developing Python functions that reduced processing time in high-performance computing contexts.
 \end{itemize}
 } \\
@@ -141,7 +149,7 @@ Health data science and epidemiology: data wrangling, querying, analysis, visual
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
 \item Structured and consolidated multi-source health data (surveillance data, clinical studies) to generate data for health technology assessments.
-\item Conducted budget impact and cost-effectiveness assessments to prioritize funding for high-impact health interventions under national budgets.
+\item Conducted budget impact and cost-effectiveness analysis to prioritize funding for high-impact health interventions under national budgets.
 \item Presented data-driven recommendations and evidence summaries to policymakers and partners, supporting strategic purchasing decisions for the Social Security System.
 \end{itemize}
 } \\
@@ -152,7 +160,7 @@ Health data science and epidemiology: data wrangling, querying, analysis, visual
 \multicolumn{2}{p{18cm}}{\textbf{Universidad Peruana Cayetano Heredia, Lima (Peru)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Led workshops and focus groups with participants and community healthworkers across four regions to co-design patient-centered interventions.
+\item Performed data curation, wrangling, and harmonization for multiple longitudinal cohort studies, processing complex datasets with 8+ years of follow-up data using R and SQL to ensure data integrity, standardization across multiple collection waves, and timely access for interdisciplinary research teams.
 \item Conducted real-world evidence synthesis and preliminary data analyses to support grant proposals for hypertension, diabetes, cancer, and multimorbidity studies.
 \item Co-authored peer-reviewed manuscripts as part of international collaborations, communicating complex analytical findings for academic and lay audiences.
 \end{itemize}
@@ -315,16 +323,6 @@ mentees <- get_cv_sheet('advising') |>
 
 ```{r}
 #| results: asis
-#| name: mentees_table
-#| include: false
-#| eval: false
-mentees |> 
-  filter(complete == 0) |>
-  make_ordered_list_filtered("ug")
-```
-
-```{r}
-#| results: asis
 #| name: dumping_text
 #| include: false
 #| eval: false
@@ -340,16 +338,42 @@ mentees |>
 \end{itemize}
 }
 ```
-
 \section{Other Professional Activities}
 \vspace{-1.5em}
 \textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\subsection{Teaching}
+\vspace{-1em}
 \begin{longtable}{>{\raggedright\arraybackslash}p{4cm} p{14cm}}
-\textbf{Jan 2025 – current} & \textbf{Lecturer: Introduction to Epidemiology.} Universidad Científica del Sur. I teach three sections of \textasciitilde 15 fourth-year medical students each, focusing on basic clinical epidemiology concepts, including study designs, bias identification, \& basic epidemiological surveillance concepts. \\
+\textbf{Mar 2025 – current} & \textbf{Lecturer: Introduction to Epidemiology.} Universidad Científica del Sur. I teach three sections of \textasciitilde 15 fourth-year medical students each, focusing on basic clinical epidemiology concepts, including study designs, bias identification, \& basic epidemiological surveillance concepts. \\
 \textbf{Mar 2024 – Jun 2024} & \textbf{Teaching Assistant: Introduction to Molecular and Cellular Biology.} University of Washington. Led two laboratory practice sessions with \textasciitilde 25 undergraduate students each, covering fundamental molecular and cellular biology experiments. \\
 \end{longtable}
+\vspace{-0.75em}
+\subsection{Mentoring}
+\vspace{-0.75em}
+\subsubsection{Undergraduate thesis}
+\vspace{-0.75em}
+```{r}
+#| results: asis
+#| name: mentees_table
+mentees <- get_cv_sheet('advising') |>
+  arrange(date_start) |> 
+  mutate(
+    date = paste0(' (',  date_start, ' to ', date_stop, ').'),
+    citation = ifelse(
+      is.na(title), name, paste0(name, ', ', enquote(title))
+    ),
+    citation = paste0(citation, ', ', institution, ' ', date), 
+    citation = ifelse(
+        is.na(defense_date), citation, 
+        paste0(citation, ' _Defense date: ', defense_date, '_.')
+    )
+  )
+mentees |> 
+  filter(complete == 0) |>
+  make_bullet_list_filtered("ug")
+```
 
-\section{Publications \hspace{1cm} ORCID: 0000-0002-8609-0312}
+\section{Publications \hspace{0.75cm} ORCID: 0000-0002-8609-0312}
 \vspace{-1.5em}
 \textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 \subsection{Peer-reviewed publications}
