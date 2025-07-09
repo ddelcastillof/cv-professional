@@ -50,3 +50,6 @@ rsconnect/
 
 # Mac Finder
 .DS_Store
+
+# Claude Documentation
+CLAUDE.md
