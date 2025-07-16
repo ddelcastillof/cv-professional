@@ -7,7 +7,7 @@ format:
     documentclass: scrartcl
     papersize: letter
     pdf-engine: xelatex
-    fontsize: 8pt
+    fontsize: 9pt
     geometry:
       - margin=0.5in
       - heightrounded
@@ -47,56 +47,72 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 ```
 
 \begin{center}
-\Large{\textbf{Darwin Del Castillo, MD, MPH}}
+\huge{\underline{\textbf{Darwin Del Castillo, MD, MPH}}} \\
+\vspace{2.5pt}
+\begin{minipage}[c]{0.20\textwidth}
+\faLinkedin \centering\href{https://www.linkedin.com/in/darwin-del-castillo/}{\hspace{0.5em}darwin-del-castillo}
+\end{minipage}
+\begin{minipage}[c]{0.25\textwidth}
+\faEnvelope \centering\href{mailto:ddelcastillo.f@gmail.com}{\hspace{0.5em}ddelcastillo.f@gmail.com}
+\end{minipage}
+\begin{minipage}[c]{0.15\textwidth}
+\faGithub \centering\href{https://github.com/ddelcastillof}{\hspace{0.5em}ddelcastillof} 
+\end{minipage}
+\vspace{-2.5pt}
 \end{center}
-\vspace{-2.5pt}
-\begin{minipage}[c]{0.65\textwidth}
-\begin{itemize}
-\item \textbf{Languages:} English (proficient), Spanish (native)
-\item \textbf{Programming languages:} R, Python, SQL (MySQL), bash
-\item \textbf{Other:} Linux/Unix, HPC (Slurm), \LaTeX, Markdown, VSCode, Jupyter Notebooks, Quarto, Docker, Git, Shiny (R), REDCap, ArcGIS
-\end{itemize}
-\end{minipage}
-\begin{minipage}[c]{0.3\textwidth}
-\centering
-\faLinkedin \href{https://www.linkedin.com/in/darwin-del-castillo-md/}{/darwin-del-castillo} \\ 
-\faGithub \href{https://github.com/ddelcastillof}{/ddelcastillof} \\
-\faEnvelope \href{mailto:ddelcastillo.f@gmail.com}{/ddelcastillo.f@gmail.com}
-\end{minipage}
-\vspace{-2.5pt}
 
-```{r brief bio, eval = FALSE, include = FALSE, echo = FALSE}
-\section{\underline{Summary}}
-\justifying{Medical doctor and global health scientist with extensive experience bridging the gap between epidemiological methods and healthcare data science. I am committed to transforming early-life health outcomes through innovative research and data-driven solutions. I have collaborated with a diversity of global health institutions and managing research teams that translates data findings into actionable public health information.}
-```
-\section{Education}
+\section*{Scientific Education}
 \vspace{-1.5em}
-\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
-\textbf{Master in Public Health (MPH)} & \textbf{Sep 2023 – May 2025} \\
-\textbf{University of Washington, Seattle - USA} & \\
+\textbf{Master of Public Health (MPH)} & \textbf{Sep 2023 – Jun 2025} \\
+\textsc{University of Washington, Seattle - USA} & \\
 
 &\\
 
 \textbf{Medical Doctor (MD)} & \textbf{Mar 2013 – Dec 2020} \\
-\textbf{Universidad Nacional Mayor de San Marcos, Lima - Peru} &\\
+\textsc{Universidad Nacional Mayor de San Marcos, Lima - Peru} &\\
 \end{longtable}
 
-\section{Professional Experience}
+\section*{Skills}
 \vspace{-1.5em}
-\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
+Health data science and epidemiology: data wrangling, querying, analysis, visualization \& management
+\begin{minipage}[c]{0.70\textwidth}
+\vspace{1pt}
+\begin{itemize}
+\item SQL (MySQL), Python, R, Stata,
+\item HPC (Slurm), Linux environments (bash)
+\item VS Code, Jupyter Notebooks, Quarto, Markdown, \LaTeX, , Shiny, Tableau
+\item Team-based projects on Github and Bitbucket repositories
+\item Packages: tidyverse, ggplot2, meta/metafor, lme4, survival, geepack, gam, lavaan, sf, rJAGS, rstan, Pandas, Matplotlib, NumPy, MR-BRT (GBD Study estimation), amongst other tools.
+\end{itemize}
+\end{minipage}
+\begin{minipage}[c]{0.30\textwidth}
+\begin{itemize}
+\item Fluency in English \& Spanish
+\item Team work \& collaboration
+\item Problem solving
+\item Science communication
+\item Mentorship
+\end{itemize}
+\end{minipage}
+
+\section*{Professional Experience}
+\vspace{-1.5em}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
-\textbf{Graduate Research Assistant} & \textbf{Jul 2024 - Current} \\
+\textbf{Graduate Research Assistant} & \textbf{Jul 2024 - Jun 2025} \\
 \multicolumn{2}{p{18cm}}{\textbf{Institute for Health Metrics and Evaluation}} \\
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Conducted a comprehensive meta-analysis of lower respiratory tract infection rates across 80 countries using the R meta package, then applied Bayesian regressions to model epidemiological measures
+\item Conducted a comprehensive meta-analysis of lower respiratory tract infection rates across 80 countries using the R meta package to support strategic program planning; presented findings with ROI-style visual summaries to senior leadership.
 \item Developed and executed Bayesian MCMC workflows to quantify the overlap among homeless populations, substance users, and incarcerated individuals across 22 high-income countries, producing real-world evidence for targeted health burden stratification.
-\item Updated version-controlled scripts to automate data quality checks of EHR datasets from Ecuador and Colombia. 
+\item Updated version-controlled scripts to automate data quality checks of EHR datasets from Ecuador and Colombia; identified root causes of data anomalies, reducing error rates by 23% and improving data reliability across 30 million records. 
 \end{itemize}
 } \\
 \\
@@ -105,8 +121,8 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
-\item Synthesized clinical and research evidence into actionable insights and reports to support evidence-based policy and program decisions regarding mental health.
-\item Analyzed pediatric clinical and outcome data to evaluate effectiveness of burn injury interventions and guide improvements in care protocols.
+\item Synthesized clinical and programmatic evidence into actionable insights and reports to support program design and policy decisions in mental health.
+\item Analyzed pediatric clinical and outcome data to evaluate effectiveness of burn injury interventions; compiled initiative-level monthly performance reports for Ministry of Health and hospital leadership to inform protocol refinements.
 \item Engaged with Ministry of Health officials and hospital stakeholders to align pediatric burn care strategies with national healthcare priorities.
 \end{itemize}
 } \\
@@ -118,7 +134,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \begin{itemize} 
 \item Implemented standardized remote data-collection workflows to capture patient-reported outcomes.
 \item Managed full lifecycle of IRB submissions—including translation and localization of Spanish-language documents—for the Alzheimer’s Disease Research Center, ensuring compliance with regulatory requirements.
-\item Synthesized early engagement and outreach data into interactive dashboards and concise summary reports, enabling program managers to make timely adjustments to recruitment strategies.
+\item Synthesized weekly/monthly engagement and outreach data into interactive Shiny dashboards and concise summary reports for program managers and stakeholders, enabling timely strategic recruitment adjustments.
 \end{itemize}
 } \\
 \\
@@ -139,8 +155,8 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
 \item Led stakeholder workshops and focus groups across four regions to co-design patient-centered interventions, translating qualitative insights into quantifiable outcome metrics.
-\item Conducted real-world evidence synthesis and preliminary data analyses to support grant proposals for hypertension, diabetes, and multimorbidity studies, informing funding decisions.
-\item Co-authored peer-reviewed manuscripts and technical reports, communicating complex analytical findings in clear, executive-ready summaries for academic and policy audiences.
+\item Conducted real-world evidence synthesis and preliminary data analyses to support program proposals in hypertension, diabetes, and multimorbidity, informing strategic funding decisions.
+\item Co-authored evidence summaries and reports, translating analytical findings into executive-ready deliverables for program managers and health policy audiences.
 \end{itemize}
 } \\
 
@@ -148,9 +164,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 
 \end{longtable}
 
-\section{Additional Education}
+\section*{Additional Education}
 \vspace{-1.5em}
-\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 \textbf{Professional Certificate in Clinical Research} & \textbf{Sep 2021 – Apr 2022} \\
@@ -246,9 +262,9 @@ English: Fluent & Spanish: Native & Portuguese: Working proficiency
 \end{justify}
 ```
 
-\section{Publications \hspace{1cm} ORCID: 0000-0002-8609-0312}
+\section*{Publications \hspace{1cm} ORCID: 0000-0002-8609-0312}
 \vspace{-1.5em}
-\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \subsection{Peer-reviewed publications}
 ```{r importing pubs, include = F, echo = F}
 pubs <- get_cv_sheet('pubs') %>%
@@ -343,16 +359,16 @@ mentees |>
 
 ```
 
-\section{Other activities}
+\section*{Other activities}
 \vspace{-1.5em}
-\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{>{\raggedright\arraybackslash}p{4cm} p{14cm}}
 \textbf{Jan 2025 - current} & \textbf{Lecturer: Introduction to Epidemiology.} Universidad Científica del Sur. I'm teaching fourth-year medical students basic concepts of clinical epidemiology with focus in basic study designs and identification of bias.
 \end{longtable}
 
-\section{Memberships}
+\section*{Memberships}
 \vspace{-1.5em}
-\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \begin{itemize}
  \item International Epidemiological Association (2020 - Current)
  \item Peruvian College of Physicians (2021 - Current)
