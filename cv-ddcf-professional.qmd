@@ -7,7 +7,7 @@ format:
     documentclass: scrartcl
     papersize: letter
     pdf-engine: xelatex
-    fontsize: 8pt
+    fontsize: 9pt
     geometry:
       - margin=0.5in
       - heightrounded
@@ -52,7 +52,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \begin{minipage}[c]{0.20\textwidth}
 \faLinkedin \centering\href{https://www.linkedin.com/in/darwin-del-castillo/}{\hspace{0.5em}darwin-del-castillo}
 \end{minipage}
-\begin{minipage}[c]{0.20\textwidth}
+\begin{minipage}[c]{0.25\textwidth}
 \faEnvelope \centering\href{mailto:ddelcastillo.f@gmail.com}{\hspace{0.5em}ddelcastillo.f@gmail.com}
 \end{minipage}
 \begin{minipage}[c]{0.15\textwidth}
@@ -61,40 +61,35 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \vspace{-2.5pt}
 \end{center}
 
-```{r brief bio, eval = FALSE, include = FALSE, echo = FALSE}
-\section{\underline{Summary}}
-\justifying{Medical doctor and global health scientist with extensive experience bridging the gap between epidemiological methods and healthcare data science. I am committed to transforming early-life health outcomes through innovative research and data-driven solutions. I have collaborated with a diversity of global health institutions and managing research teams that translates data findings into actionable public health information.}
-```
-\section{Scientific Education}
+\section*{Scientific Education}
 \vspace{-1.5em}
-\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
 \textbf{Master of Public Health (MPH)} & \textbf{Sep 2023 – Jun 2025} \\
-\textbf{University of Washington, Seattle - USA} & \\
+\textsc{University of Washington, Seattle - USA} & \\
 
 &\\
 
 \textbf{Medical Doctor (MD)} & \textbf{Mar 2013 – Dec 2020} \\
-\textbf{Universidad Nacional Mayor de San Marcos, Lima - Peru} &\\
+\textsc{Universidad Nacional Mayor de San Marcos, Lima - Peru} &\\
 \end{longtable}
 
-\section{Skills}
+\section*{Skills}
 \vspace{-1.5em}
-\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
-
-\begin{minipage}[c]{0.65\textwidth}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
 Health data science and epidemiology: data wrangling, querying, analysis, visualization \& management
+\begin{minipage}[c]{0.70\textwidth}
 \vspace{1pt}
 \begin{itemize}
-\item SQL (MySQL), Python, R programming
+\item SQL (MySQL), Python, R, Stata
 \item HPC (Slurm), Linux environments (bash)
-\item VS Code, Jupyter Lab, Quarto, Markdown, \LaTeX, Shiny (R), GIS tools
+\item VS Code, Jupyter Notebook, Quarto, Markdown, \LaTeX, Shiny (R), GIS tools
 \item Team-based projects on Github and Bitbucket repositories
 \item Packages: tidyverse, ggplot2, meta/metafor, lme4, survival, geepack, gam, lavaan, sf, rJAGS, rstan, Pandas, Matplotlib, NumPy, MR-BRT (GBD Study estimation), amongst other tools.
 \end{itemize}
 \end{minipage}
-\begin{minipage}[c]{0.35\textwidth}
+\begin{minipage}[c]{0.30\textwidth}
 \begin{itemize}
 \item Fluency in English \& Spanish
 \item Team work \& collaboration
@@ -104,76 +99,75 @@ Health data science and epidemiology: data wrangling, querying, analysis, visual
 \end{itemize}
 \end{minipage}
 
-\section{Professional Experience}
+\section*{Professional Experience}
 \vspace{-1.5em}
-\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
 \textbf{Graduate Research Assistant} & \textbf{Jul 2024 – Jun 2025} \\
-\multicolumn{2}{p{18cm}}{\textbf{Institute for Health Metrics and Evaluation}} \\
-\multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
+\multicolumn{2}{p{18cm}}{\textsc{Institute for Health Metrics and Evaluation}} \\
+\multicolumn{2}{p{18cm}}{\textsc{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
 \item Modeled epidemiological data on lower respiratory tract infections due to human metapneumovirus from 2010 to 2023 using meta-analysis information as priors and Bayesian meta-regression suites (DisMod-MR) in R.
 \item Analyzed data from public sources using Bayesian methods and Monte Carlo simulation to estimate the proportion of overlap between socially excluded groups in high-income countries with the rJAGS and rstan packages.
-\item Improved analytic scripts for electronic health records data extraction, cleaning, and analysis by developing Python functions that reduced processing time in high-performance computing contexts.
+\item Identified performance constraints in electronic health record pipelines and redesigned modular Python functions, reducing processing time by over 40\% in high-performance computing environments.
 \end{itemize}
 } \\
 \\
 \textbf{Graduate Research Assistant} & \textbf{Jun 2024 – Mar 2025} \\
-\multicolumn{2}{p{18cm}}{\textbf{Department of Global Health}} \\
-\multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
+\multicolumn{2}{p{18cm}}{\textsc{Department of Global Health}} \\
+\multicolumn{2}{p{18cm}}{\textsc{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
 \item Synthesized clinical and research evidence into a scoping review to support the creation of indicators to guide mental health policy.
-\item Designed a mixed-method study protocol to assess the effectiveness of implementation strategies for pediatric burn care in a Peruvian healthcare setting.
-\item Crafted communication strategies with stakeholders to inform results from the mixed-methods study.
+\item Designed and iterated a pragmatic mixed-methods protocol to address implementation challenges in pediatric burn care, overcoming data collection constraints in low-resource Peruvian hospitals.
+\item Co-developed communication strategies with stakeholders to distill complex findings into actionable insights for healthcare policymakers.
 \end{itemize}
 } \\
 \\
 \textbf{Graduate Research Assistant}  & \textbf{Sep 2023 – Mar 2024} \\
-\multicolumn{2}{p{18cm}}{\textbf{Health Population Research Center}} \\
-\multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
+\multicolumn{2}{p{18cm}}{\textsc{Health Population Research Center}} \\
+\multicolumn{2}{p{18cm}}{\textsc{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
-\item Gathered sociodemographic and utlization data as part of a clinical trial post-assesment survey.
+\item Gathered sociodemographic and utilization data as part of a clinical trial post-assesment survey.
 \item Translated IRB submission materials from Spanish to English for the Alzheimer’s Disease Research Center.
 \item Synthesized early engagement and outreach data into visualisation tools and summary tables, enabling program managers to make adjustments to recruitment strategies.
 \end{itemize}
 } \\
-\\
+\newpage
 \textbf{RWE Consultant} & \textbf{Jan 2023 – Jan 2024} \\
-\multicolumn{2}{p{18cm}}{\textbf{Health Technology Assessment and Research Institute}} \\
-\multicolumn{2}{p{18cm}}{\textbf{Social Security Health System, Lima (Peru)}} \\
+\multicolumn{2}{p{18cm}}{\textsc{Health Technology Assessment and Research Institute}} \\
+\multicolumn{2}{p{18cm}}{\textsc{Social Security Health System, Lima (Peru)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Structured and consolidated multi-source health data (surveillance data, clinical studies) to generate data for health technology assessments.
+\item Integrated surveillance and clinical data into analytic frameworks to support national health technology assessment and prioritization processes.
 \item Conducted budget impact and cost-effectiveness analysis to prioritize funding for high-impact health interventions under national budgets.
 \item Presented data-driven recommendations and evidence summaries to policymakers and partners, supporting strategic purchasing decisions for the Social Security System.
 \end{itemize}
 } \\
-\newpage
-
+\\
 \textbf{Research Assistant} & \textbf{Mar 2019 – Aug 2023}\\
-\multicolumn{2}{p{18cm}}{\textbf{CRONICAS Center of Excellence in Chronic Diseases}} \\
-\multicolumn{2}{p{18cm}}{\textbf{Universidad Peruana Cayetano Heredia, Lima (Peru)}} \\
+\multicolumn{2}{p{18cm}}{\textsc{CRONICAS Center of Excellence in Chronic Diseases}} \\
+\multicolumn{2}{p{18cm}}{\textsc{Universidad Peruana Cayetano Heredia, Lima (Peru)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Performed data curation, wrangling, and harmonization for multiple longitudinal cohort studies, processing complex datasets with 8+ years of follow-up data using R and SQL to ensure data integrity, standardization across multiple collection waves, and timely access for interdisciplinary research teams.
-\item Conducted real-world evidence synthesis and preliminary data analyses to support grant proposals for hypertension, diabetes, cancer, and multimorbidity studies.
+\item Resolved harmonization challenges across 8+ years of longitudinal data using R, enabling consistent analytics and timely access for interdisciplinary research teams.
+\item Synthesized real-world evidence and conducted preliminary analyses that strengthened proposals targeting hypertension, diabetes, cancer, and multimorbidity.
 \item Co-authored peer-reviewed manuscripts as part of international collaborations, communicating complex analytical findings for academic and lay audiences.
 \end{itemize}
 } \\
 \end{longtable}
 
-\section{Additional Education}
+\section*{Additional Education}
 \vspace{-1.5em}
-\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 \textbf{Professional Certificate in Clinical Research} & \textbf{Sep 2021 – Apr 2022} \\
-\textbf{Universidad Peruana Cayetano Heredia, Lima - Peru} &\\
+\textsc{Universidad Peruana Cayetano Heredia, Lima - Peru} &\\
 \end{longtable}
 
 ```{r teaching, eval = FALSE, include = FALSE, echo = FALSE}
@@ -265,8 +259,6 @@ English: Fluent & Spanish: Native & Portuguese: Working proficiency
 \end{justify}
 ```
 
-
-
 ```{r}
 #| name: leadership
 #| include: false
@@ -289,7 +281,7 @@ English: Fluent & Spanish: Native & Portuguese: Working proficiency
 
 \section{Memberships}
 \vspace{-1.5em}
-\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \begin{itemize}
  \item International Epidemiological Association (2020 - Current)
  \item Peruvian College of Physicians (2021 - Current)
@@ -338,14 +330,14 @@ mentees <- get_cv_sheet('advising') |>
 \end{itemize}
 }
 ```
-\section{Other Professional Activities}
+\section*{Other Professional Activities}
 \vspace{-1.5em}
-\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \subsection{Teaching}
 \vspace{-1em}
 \begin{longtable}{>{\raggedright\arraybackslash}p{4cm} p{14cm}}
-\textbf{Mar 2025 – current} & \textbf{Lecturer: Introduction to Epidemiology.} Universidad Científica del Sur. I teach three sections of \textasciitilde 15 fourth-year medical students each, focusing on basic clinical epidemiology concepts, including study designs, bias identification, \& basic epidemiological surveillance concepts. \\
-\textbf{Mar 2024 – Jun 2024} & \textbf{Teaching Assistant: Introduction to Molecular and Cellular Biology.} University of Washington. Led two laboratory practice sessions with \textasciitilde 25 undergraduate students each, covering fundamental molecular and cellular biology experiments. \\
+\textbf{Mar 2025 – current} & \textbf{Lecturer: Introduction to Epidemiology.} \textsc{Universidad Científica del Sur}. I teach three sections of \textasciitilde 15 fourth-year medical students each, focusing on basic clinical epidemiology concepts, including study designs, bias identification, \& basic epidemiological surveillance concepts. \\
+\textbf{Mar 2024 – Jun 2024} & \textbf{Teaching Assistant: Introduction to Molecular and Cellular Biology.} \textsc{University of Washington}. Led two laboratory practice sessions with \textasciitilde 25 undergraduate students each, covering fundamental molecular and cellular biology experiments. \\
 \end{longtable}
 \vspace{-0.75em}
 \subsection{Mentoring}
@@ -373,12 +365,25 @@ mentees |>
   make_bullet_list_filtered("ug")
 ```
 
-\section{Publications \hspace{0.75cm} ORCID: 0000-0002-8609-0312}
+\section*{Licensure and certification}
 \vspace{-1.5em}
 \textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{1cm} p{17cm}}
+\textbf{2021} & Peruvian College of Physicians, Membership No. 94534 \\
+\textbf{2023} & CITI Program, Good Clinical Practice and ICH, Credential ID 65079238 \\
+\textbf{2023} & CITI Program, Human Subjects Learners, Credential ID 65079240 \\
+\textbf{2023} & CITI Program, Biomedical Responsible Conduct of Research, Credential ID 65079239 \\
+\textbf{2024} & National Registry of Investigators, RENACYT-CONCYTEC, Investigator Level VII (P0160977) \\
+\end{longtable}
+
+\newpage
+
+\section*{Publications \hspace{0.75cm} ORCID: 0000-0002-8609-0312}
+\vspace{-1.5em}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \subsection{Peer-reviewed publications}
 ```{r importing pubs, include = F, echo = F}
-pubs <- get_cv_sheet('pubs') %>%
+pubs <- get_cv_sheet('pubs') |>
   mutate(
     journal  = ifelse(is.na(journal_abbv), '', paste0(journal_abbv)),
     number   = ifelse(is.na(number), '', paste0(number, '.')),
@@ -387,8 +392,18 @@ pubs <- get_cv_sheet('pubs') %>%
                paste0('Available at: [', doi, '](', 'https://doi.org/', doi, ')')),
     year     = paste0("(", year, ")"),
     title    = enquote(title),
-    citation = paste(author, year, title, journal, number, doi)
-  ) %>% 
+    conference = ifelse(is.na(conference_name), '', paste0('\\textbf{','\\uline{', conference_name, '}','}')),
+    organization = ifelse(is.na(organization_name), '', paste0(organization_name, '.')),
+    # Different citation formats for different categories
+    citation = case_when(
+      category == "conference" ~ paste(author, year, title, conference, 
+                                      paste0(organization, ", ", place)),
+      category == "white_paper" ~ paste(author, year, title, organization_name, 
+                                      paste0(place)),
+      category == "peer_reviewed" ~ paste(author, year, title, journal, number, doi),
+      category == "thesis" ~ paste(author, year, title, journal, organization)
+    )
+  ) |> 
   arrange(desc(pub_date))
 ```
 
