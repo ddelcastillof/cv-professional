@@ -78,21 +78,21 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \section*{Skills}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
-Health data science and epidemiology: data wrangling, querying, analysis, visualization \& management
+Broad experience in the health data lifecycle: data collection, management, wrangling, querying, analysis, \& visualization.
 \begin{minipage}[c]{0.70\textwidth}
 \vspace{1pt}
 \begin{itemize}
-\item SQL (MySQL), Python, R, Stata,
+\item SQL (MySQL), Python, R, Stata
 \item HPC (Slurm), Linux environments (bash)
-\item VS Code, Jupyter Notebooks, Quarto, Markdown, \LaTeX, , Shiny, Tableau
-\item Team-based projects on Github and Bitbucket repositories
+\item VS Code, Jupyter Notebook, Quarto, Markdown, \LaTeX
+\item Collaborative code projects on Github and Bitbucket
 \item Packages: tidyverse, ggplot2, meta/metafor, lme4, survival, geepack, gam, lavaan, sf, rJAGS, rstan, Pandas, Matplotlib, NumPy, MR-BRT (GBD Study estimation), amongst other tools.
 \end{itemize}
 \end{minipage}
 \begin{minipage}[c]{0.30\textwidth}
 \begin{itemize}
 \item Fluency in English \& Spanish
-\item Team work \& collaboration
+\item Teamwork \& collaboration
 \item Problem solving
 \item Science communication
 \item Mentorship
@@ -160,8 +160,6 @@ Health data science and epidemiology: data wrangling, querying, analysis, visual
 \end{itemize}
 } \\
 
-\newpage
-
 \end{longtable}
 
 \section*{Additional Education}
@@ -172,119 +170,6 @@ Health data science and epidemiology: data wrangling, querying, analysis, visual
 \textbf{Professional Certificate in Clinical Research} & \textbf{Sep 2021 – Apr 2022} \\
 \textbf{Universidad Peruana Cayetano Heredia, Lima - Peru} &\\
 \end{longtable}
-
-```{r teaching, eval = FALSE, include = FALSE, echo = FALSE}
-\section{\underline{Teaching Experience}}
-\subsection{Courses taught at the college level}
-\subsubsection{Courses taught at Universidad Nacional Mayor de San Marcos}
-
-df <- get_cv_sheet('classes') |> filter(univ == "UNMSM") |>
-    mutate(
-      course = paste0(number, ": ", name),
-      role = type,
-      semester = ifelse(semester == 'Aut20', 'Aut20', semester)
-    ) |> 
-    select(
-      `Sem.` = semester,
-      Course = course,
-      Role = role,
-      Level = level
-    ) 
-
-df |> 
-  kbl(booktabs = TRUE, escape = FALSE, linesep = "") |>
-  kable_styling(position = "center")
-
-\subsubsection{Courses taught at University of Washington}
-
-df <- get_cv_sheet('classes') |> filter(univ == "UW") |>
-    mutate(
-      course = paste0(number, ": ", name),
-      role = type, 
-      semester = ifelse(semester == 'Spr24', 'Spr24', semester)
-      ) |> 
-    select(
-      `Sem.` = semester,
-      Course = course,
-      Role = role,
-      Level = level
-    ) 
-
-df |> 
-  kbl(booktabs = TRUE, escape = FALSE, linesep = "") |>
-  kable_styling(position = "center")
-
-\subsection{Other teaching experience}
-teaching <- get_cv_sheet('teaching') |>
-  arrange(desc(date)) |> 
-  mutate(
-    with = ifelse(is.na(with), '', paste0(', with ', with)),
-    title = paste0(enquote(title), with),
-    date = paste0(format(as.Date(date), format = "%b %d, %Y"), '.'),
-    url = ifelse(is.na(url), NA, markdown_url(url)),
-    date = ifelse(is.na(url), date, paste0(date, '. ', url)), 
-    citation = paste(title, host, location, date, sep = '. ')
-  )
-
-\subsubsection{Seminars}
-
-#| results: asis
-make_ordered_list_filtered(teaching, "seminar")
-
-\section{\underline{Advising}}
-```
-
-```{r}
-#| include: false
-#| eval: false
-#| echo: false
-#| name: skills_old
-
-\section{\underline{Skills}}
-
-\begin{justify}
-\textbf{Computer and programming skills:} 
-\begin{itemize}
-\item \textbf{Programming \& Scripting} R, Python, bash
-\item \textbf{Statistical \& Analytical Software:} Stata, SPSS
-\item \textbf{Data Visualization \& GIS:} Shiny, ArcGIS
-\item \textbf{Databases \& Query Languages:} SQL (MySQL)
-\item \textbf{Version Control \& DevOps:} Git, GitHub, Bitbucket, Docker
-\item \textbf{Development Environments:}: RStudio, VS Code, Jupyter Notebooks
-\item \textbf{Operating Systems \& Platforms:} Linux/Unix, Windows (SSH)
-\item \textbf{Documentation \& Collaboration:} LaTeX, Markdown, Confluence
-\end{itemize}
-
-\textbf{Languages:} 
-\begin{longtable}{>{\centering\arraybackslash}p{6cm}>{\centering\arraybackslash}p{6cm}>{\centering\arraybackslash}p{6cm}}
-English: Fluent & Spanish: Native & Portuguese: Working proficiency
-\end{longtable}
-\end{justify}
-```
-
-\section*{Publications \hspace{1cm} ORCID: 0000-0002-8609-0312}
-\vspace{-1.5em}
-\textcolor{gray}{\rule{\textwidth}{0.5pt}}
-\subsection{Peer-reviewed publications}
-```{r importing pubs, include = F, echo = F}
-pubs <- get_cv_sheet('pubs') %>%
-  mutate(
-    journal  = ifelse(is.na(journal_abbv), '', paste0(journal_abbv)),
-    number   = ifelse(is.na(number), '', paste0(number, '.')),
-    doi      = ifelse(
-               is.na(doi), '',
-               paste0('Available at: [', doi, '](', 'https://doi.org/', doi, ')')),
-    year     = paste0("(", year, ")"),
-    title    = enquote(title),
-    citation = paste(author, year, title, journal, number, doi)
-  ) %>% 
-  arrange(desc(pub_date))
-```
-
-```{r printing references in pandoc format}
-#| results: asis
-make_ordered_list_filtered(pubs, "peer_reviewed")
-```
 
 ```{r}
 #| name: leadership
@@ -302,42 +187,19 @@ make_ordered_list_filtered(pubs, "peer_reviewed")
 & Collaborating with international co-trainees to address global health challenges and provide student perspectives on global health issues such as COVID-19, racial disparities, climate change, and research involvement of global health students. \\
 & \\
 \textbf{Mar 2014 - current} & \textbf{Emeritus member and External advisor} \\
-& \textbf{\href{https://cem.edu.pe/adiecs/}{Association for the Development of Student's Research in Health Sciences (ADIECS)}, Lima - Peru} \\
+& \textbf{\href{https://cem.edu.pe/adiecs/}{Association for the Development of Student Research in Health Sciences (ADIECS)}, Lima - Peru} \\
 & Peruvian student association funded in 2008 by students from the Universidad Nacional Mayor de San Marcos to develop capacity of both hard (e.g., epidemiological study designs, data analysis) and soft skills (e.g., teamwork communication, problem-solving) for biomedical underserved students. \\
 \end{longtable}
-```
 
-```{r}
-#| name: mentees
-#| include: false
-#| eval: false
-
-\subsection{Mentoring}
-\subsubsection{Undergraduate thesis}
-
-mentees <- get_cv_sheet('advising') |>
-  arrange(date_start) |> 
-  mutate(
-    date = paste0(' (',  date_start, ' to ', date_stop, ').'),
-    citation = ifelse(
-      is.na(title), name, paste0(name, ', ', enquote(title))
-    ),
-    citation = paste0(citation, ', ', institution, ' ', date), 
-    citation = ifelse(
-        is.na(defense_date), citation, 
-        paste0(citation, ' _Defense date: ', defense_date, '_.')
-    )
-  )
-```
-
-```{r}
-#| results: asis
-#| name: mentees_table
-#| include: false
-#| eval: false
-mentees |> 
-  filter(complete == 0) |>
-  make_ordered_list_filtered("ug")
+\section{Memberships}
+\vspace{-1.5em}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
+\begin{itemize}
+ \item International Epidemiological Association (2020 - Current)
+ \item Peruvian College of Physicians (2021 - Current)
+ \item Consortium of Universities for Global Health (2023 - Current)
+ \item America’s Network for Chronic Disease Surveillance (2025 - Current)
+\end{itemize}
 ```
 
 ```{r}
@@ -359,19 +221,90 @@ mentees |>
 
 ```
 
-\section*{Other activities}
+\section*{Teaching Professional Activities}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
+\subsection{Teaching}
+\vspace{-1em}
 \begin{longtable}{>{\raggedright\arraybackslash}p{4cm} p{14cm}}
-\textbf{Jan 2025 - current} & \textbf{Lecturer: Introduction to Epidemiology.} Universidad Científica del Sur. I'm teaching fourth-year medical students basic concepts of clinical epidemiology with focus in basic study designs and identification of bias.
+\textbf{Mar 2025 – current} & \textbf{Lecturer: Introduction to Epidemiology.} \textsc{Universidad Científica del Sur}. I teach three sections of \textasciitilde{} 15 fourth-year medical students each, focusing on basic clinical epidemiology concepts, including study designs, bias identification, \& basic epidemiological surveillance concepts. \\
+\textbf{Mar 2024 – Jun 2024} & \textbf{Teaching Assistant: Introduction to Molecular and Cellular Biology.} \textsc{University of Washington}. Led two laboratory practice sessions with \textasciitilde{} 25 undergraduate students each, covering fundamental molecular and cellular biology experiments. \\
+\end{longtable}
+\vspace{-0.75em}
+\subsection{Mentoring}
+\vspace{-0.75em}
+\subsubsection{Undergraduate thesis}
+\vspace{-0.75em}
+```{r}
+#| results: asis
+#| name: mentees_table
+mentees <- get_cv_sheet('advising') |>
+  arrange(date_start) |> 
+  mutate(
+    date = paste0(' (',  date_start, ' to ', date_stop, ').'),
+    citation = ifelse(
+      is.na(title), name, paste0(name, ', ', enquote(title))
+    ),
+    citation = paste0(citation, ', ', institution, ' ', date), 
+    citation = ifelse(
+        is.na(defense_date), citation, 
+        paste0(citation, ' _Defense date: ', defense_date, '_.')
+    )
+  )
+mentees |> 
+  filter(complete == 0) |>
+  make_bullet_list_filtered("ug")
+```
+
+\section*{Licensure and certification}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{1.5cm} p{16.5cm}}
+\textbf{2021} & Peruvian College of Physicians, Membership No. 94534 \\
+\textbf{2023} & CITI Program, Good Clinical Practice and ICH, Credential ID 65079238 \\
+\textbf{2023} & CITI Program, Human Subjects Learners, Credential ID 65079240 \\
+\textbf{2023} & CITI Program, Biomedical Responsible Conduct of Research, Credential ID 65079239 \\
+\textbf{2024} & National Registry of Investigators, RENACYT-CONCYTEC, Investigator Level VII (P0160977) \\
 \end{longtable}
 
-\section*{Memberships}
+\section*{Publications \hspace{0.75cm} ORCID: 0000-0002-8609-0312}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
-\begin{itemize}
- \item International Epidemiological Association (2020 - Current)
- \item Peruvian College of Physicians (2021 - Current)
- \item Consortium of Universities for Global Health (2023 - Current)
- \item America’s Network for Chronic Disease Surveillance (2025 - Current)
-\end{itemize}
+\subsection{Peer-reviewed publications}
+```{r importing pubs, include = F, echo = F}
+pubs <- get_cv_sheet('pubs') |>
+  mutate(
+    journal  = ifelse(is.na(journal_abbv), '', paste0('\\textbf{','\\uline{', journal_abbv, '}','}')),
+    number   = ifelse(is.na(number), '', paste0(number, '.')),
+    doi      = ifelse(
+               is.na(doi), '',
+               paste0('Available at: [', doi, '](', 'https://doi.org/', doi, ')')),
+    year     = paste0("(", year, ")"),
+    title    = enquote(title),
+    conference = ifelse(is.na(conference_name), '', paste0('\\textbf{','\\uline{', conference_name, '}','}')),
+    organization = ifelse(is.na(organization_name), '', paste0(organization_name, '.')),
+    # Different citation formats for different categories
+    citation = case_when(
+      category == "conference" ~ paste(author, year, title, conference, 
+                                      paste0(organization, ", ", place)),
+      category == "white_paper" ~ paste(author, year, title, organization_name, 
+                                      paste0(place)),
+      category == "peer_reviewed" ~ paste(author, year, title, journal, number, doi),
+      category == "thesis" ~ paste(author, year, title, journal, organization)
+    )
+  ) |> 
+  arrange(desc(pub_date))
+```
+
+```{r peer reviewed pubs}
+#| results: asis
+#| name: peer reviewed pubs
+make_bullet_list_filtered(pubs, "peer_reviewed")
+```
+
+\subsection{Conference abstracts}
+```{r conference abstracts}
+#| results: asis
+#| name: conference abstracts
+make_bullet_list_filtered(pubs, "conference")
+```
