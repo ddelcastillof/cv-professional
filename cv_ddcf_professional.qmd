@@ -79,26 +79,14 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \section*{Skills}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
-Broad experience in the health data lifecycle: data collection, management, wrangling, querying, analysis, \& visualization.
-\begin{minipage}[c]{0.70\textwidth}
-\vspace{1pt}
-\begin{itemize}
-\item SQL (MySQL), Python, R, Stata
-\item HPC (Slurm), Linux environments (bash)
-\item VS Code, Jupyter Notebook, Quarto, Markdown, \LaTeX
-\item Collaborative code projects on Github and Bitbucket
-\item Packages: tidyverse, ggplot2, meta/metafor, lme4, survival, geepack, gam, lavaan, sf, rJAGS, rstan, Pandas, Matplotlib, NumPy, MR-BRT (GBD Study estimation), amongst other tools.
-\end{itemize}
-\end{minipage}
-\begin{minipage}[c]{0.30\textwidth}
-\begin{itemize}
-\item Fluency in English \& Spanish
-\item Teamwork \& collaboration
-\item Problem solving
-\item Science communication
-\item Mentorship
-\end{itemize}
-\end{minipage}
+
+\textbf{Programming:} SQL (MySQL), Python, R, Stata \
+\textbf{Cloud Computing:}  HPC (Slurm), Linux environments (bash)
+\textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Git version control \
+\textbf{Languages:} English (fluent), Spanish (native) \
+\textbf{Core Competencies:} Data analysis, teamwork, problem solving, science communication, mentorship \
+\textbf{Packages:} tidyverse, ggplot2, meta/metafor, lme4, survival, geepack, gam, lavaan, sf, rJAGS, rstan, Pandas, Matplotlib, NumPy, MR-BRT (GBD Study estimation), amongst other tools. \
+\textbf{Core Competencies:} Data analysis, teamwork, problem solving, science communication, mentorship
 
 \section*{Professional Experience}
 \vspace{-1.5em}
