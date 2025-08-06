@@ -1,6 +1,7 @@
 ---
 format:
   pdf:
+    output-file: resume.pdf
     toc: false
     number-sections: false
     colorlinks: true
@@ -170,91 +171,6 @@ Broad experience in the health data lifecycle: data collection, management, wran
 \textbf{Professional Certificate in Clinical Research} & \textbf{Sep 2021 – Apr 2022} \\
 \textbf{Universidad Peruana Cayetano Heredia, Lima - Peru} &\\
 \end{longtable}
-
-```{r}
-#| name: leadership
-#| include: false
-#| eval: false
-\section{\underline{Leadership and Service}}
-\subsection{Professional Service}
-\begin{longtable}{>{\raggedright\arraybackslash}p{4cm} p{14cm}}
-\textbf{Feb 2025 - current} & \textbf{Member} \\
-& \textbf{America’s Network for Chronic Disease Surveillance (AMNET)} \\
-& Regional organization that promotes chronic disease monitoring, knowledge implementation, and public health capacity building throughout the Americas. AMNET fosters collaboration between governmental and non-governmental entities to improve health professional training in disease surveillance, prevention, and control. \\
-& \\
-\textbf{Jan 2025 - current} & \textbf{Trainee Advisory Committee Member} \\
-& \textbf{Consortium of Universities for Global Health, USA} \\
-& Collaborating with international co-trainees to address global health challenges and provide student perspectives on global health issues such as COVID-19, racial disparities, climate change, and research involvement of global health students. \\
-& \\
-\textbf{Mar 2014 - current} & \textbf{Emeritus member and External advisor} \\
-& \textbf{\href{https://cem.edu.pe/adiecs/}{Association for the Development of Student Research in Health Sciences (ADIECS)}, Lima - Peru} \\
-& Peruvian student association funded in 2008 by students from the Universidad Nacional Mayor de San Marcos to develop capacity of both hard (e.g., epidemiological study designs, data analysis) and soft skills (e.g., teamwork communication, problem-solving) for biomedical underserved students. \\
-\end{longtable}
-
-\section{Memberships}
-\vspace{-1.5em}
-\textcolor{gray}{\rule{\textwidth}{0.5pt}}
-\begin{itemize}
- \item International Epidemiological Association (2020 - Current)
- \item Peruvian College of Physicians (2021 - Current)
- \item Consortium of Universities for Global Health (2023 - Current)
- \item America’s Network for Chronic Disease Surveillance (2025 - Current)
-\end{itemize}
-```
-
-```{r}
-#| results: asis
-#| name: dumping_text
-#| include: false
-#| eval: false
-
-\textbf{Clinical Sub-investigator} & \textbf{Mar 2022 - Mar 2023}\\
-\multicolumn{2}{p{18cm}}{\textbf{Via Libre Association}} \\
-\multicolumn{2}{p{18cm}}{\textbf{Lima (Peru)}} \\
-\multicolumn{2}{p{18cm}}{%
-\begin{itemize}
-\item Recruited patients identified as queer for clinical studies in STI and HIV prevention and treatment.
-\item Performed clinical procedures and activities associated with the normal operation of clinical trials funded by NIH and pharmaceutical companies.
-\item Participated and organized activities for community outreach and participant retention crafted for the queer community.
-\end{itemize}
-} \\
-
-```
-
-\section*{Teaching Professional Activities}
-\vspace{-1.5em}
-\textcolor{gray}{\rule{\textwidth}{0.5pt}}
-\subsection{Teaching}
-\vspace{-1em}
-\begin{longtable}{>{\raggedright\arraybackslash}p{4cm} p{14cm}}
-\textbf{Mar 2025 – current} & \textbf{Lecturer: Introduction to Epidemiology.} \textsc{Universidad Científica del Sur}. I teach three sections of \textasciitilde{} 15 fourth-year medical students each, focusing on basic clinical epidemiology concepts, including study designs, bias identification, \& basic epidemiological surveillance concepts. \\
-\textbf{Mar 2024 – Jun 2024} & \textbf{Teaching Assistant: Introduction to Molecular and Cellular Biology.} \textsc{University of Washington}. Led two laboratory practice sessions with \textasciitilde{} 25 undergraduate students each, covering fundamental molecular and cellular biology experiments. \\
-\end{longtable}
-\vspace{-0.75em}
-\subsection{Mentoring}
-\vspace{-0.75em}
-\subsubsection{Undergraduate thesis}
-\vspace{-0.75em}
-```{r}
-#| results: asis
-#| name: mentees_table
-mentees <- get_cv_sheet('advising') |>
-  arrange(date_start) |> 
-  mutate(
-    date = paste0(' (',  date_start, ' to ', date_stop, ').'),
-    citation = ifelse(
-      is.na(title), name, paste0(name, ', ', enquote(title))
-    ),
-    citation = paste0(citation, ', ', institution, ' ', date), 
-    citation = ifelse(
-        is.na(defense_date), citation, 
-        paste0(citation, ' _Defense date: ', defense_date, '_.')
-    )
-  )
-mentees |> 
-  filter(complete == 0) |>
-  make_bullet_list_filtered("ug")
-```
 
 \section*{Licensure and certification}
 \vspace{-1.5em}
