@@ -111,9 +111,9 @@ Broad experience in the health data lifecycle: data collection, management, wran
 \multicolumn{2}{p{18cm}}{\textsc{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Modeled epidemiological data on lower respiratory tract infections due to human metapneumovirus from 2010 to 2023 using meta-analysis information as priors and Bayesian meta-regression suites (DisMod-MR) in R.
-\item Analyzed data from public sources using Bayesian methods and Monte Carlo simulation to estimate the proportion of overlap between socially excluded groups in high-income countries with the rJAGS and rstan packages.
-\item Estimated population-attributable fractions and standardized mortality ratios for socially excluded groups in high-income countries.
+  \item Modeled epidemiological data of lower respiratory tract infections due to human metapneumovirus from 2010 to 2023 using meta-analysis information in R and Bayesian meta-regression suites (DisMod-MR).
+  \item Analyzed data from public sources using Bayesian methods and Monte Carlo simulation to estimate the overlap proportion between socially excluded groups in high-income countries using the packages rJAGS and rstan.
+  \item Estimated population-attributable fractions and standardized mortality ratios for socially excluded groups in high-income countries.
 \end{itemize}
 } \\
 \\
@@ -122,9 +122,9 @@ Broad experience in the health data lifecycle: data collection, management, wran
 \multicolumn{2}{p{18cm}}{\textsc{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
-\item Synthesized clinical and research evidence into a scoping review to support the creation of indicators to guide mental health policy.
-\item Designed and iterated a pragmatic mixed-methods protocol to address implementation challenges in pediatric burn care, overcoming data collection constraints in low-resource Peruvian hospitals.
-\item Co-developed communication strategies with stakeholders to distill complex findings into actionable insights for healthcare policymakers.
+  \item Conducted a scoping review protocol and performed evidence synthesis for mapping potential indicators for implementing mental health policy in data-limited settings.
+  \item Designed of a mixed-method study protocol to assess the effectiveness of implementation strategies for pediatric burn care in a Peruvian healthcare setting.
+  \item Crafted communication strategies with stakeholders to inform results from the mixed-methods study.
 \end{itemize}
 } \\
 \\
@@ -133,9 +133,9 @@ Broad experience in the health data lifecycle: data collection, management, wran
 \multicolumn{2}{p{18cm}}{\textsc{University of Washington, Seattle (USA)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
-\item Gathered sociodemographic and utilization data as part of a clinical trial post-assessment survey.
-\item Translated IRB submission materials from Spanish to English for the Alzheimer’s Disease Research Center.
-\item Synthesized early engagement and outreach data into visualisation tools and summary tables, enabling program managers to make adjustments to recruitment strategies.
+  \item Gathered sociodemographic and utilization data as part of a clinical trial post-assesment survey through on-phone interviews.
+  \item Translated IRB submissions materials from Spanish to English for the Alzheimer’s Disease Research Center.
+  \item Synthesized early engagement and outreach data into visualisation tools and summary tables, enabling program managers to make adjustments to recruitment strategies.
 \end{itemize}
 } \\
 \newpage
@@ -144,9 +144,9 @@ Broad experience in the health data lifecycle: data collection, management, wran
 \multicolumn{2}{p{18cm}}{\textsc{Social Security Health System, Lima (Peru)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Integrated surveillance and clinical data into analytic frameworks to support national health technology assessment and prioritization processes.
-\item Conducted budget impact and cost-effectiveness analysis to prioritize funding for high-impact health interventions under national budgets.
-\item Presented data-driven recommendations and evidence summaries to policymakers and partners, supporting strategic purchasing decisions for the Social Security System.
+ \item Structured and consolidated multi-source health data (surveillance data, clinical studies) to generate data for health technology assessments.
+  \item Conducted budget impact and cost-effectiveness assessments to prioritize funding for high-impact health interventions under national budgets.
+  \item Presented data-driven recommendations and evidence summaries to policymakers and partners, supporting strategic purchasing decisions for the Social Security System.
 \end{itemize}
 } \\
 \\
@@ -155,9 +155,9 @@ Broad experience in the health data lifecycle: data collection, management, wran
 \multicolumn{2}{p{18cm}}{\textsc{Universidad Peruana Cayetano Heredia, Lima (Peru)}} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Resolved harmonization challenges across 8+ years of longitudinal data using R, enabling consistent analytics and timely access for interdisciplinary research teams.
-\item Synthesized real-world evidence and conducted preliminary analyses that strengthened proposals targeting hypertension, diabetes, cancer, and multimorbidity.
-\item Co-authored peer-reviewed manuscripts as part of international collaborations, communicating complex analytical findings for academic and lay audiences.
+  \item Coordinated focus groups and on-field work across four Peruvian regions to co-design an intervention for patients with cognitive impairment and their caregivers.
+  \item Contributed to research grant proposals in hypertension, diabetes, cancer, and multimorbidity projects by conducting systematic reviews and preliminary data analysis.
+  \item Co-authored scientific manuscripts in the topics mentioned above which included longitudinal data analyses, meta-analyses, and unsupervised machine learning methods.
 \end{itemize}
 } \\
 \end{longtable}
@@ -171,138 +171,6 @@ Broad experience in the health data lifecycle: data collection, management, wran
 \textsc{Universidad Peruana Cayetano Heredia, Lima - Peru} &\\
 \end{longtable}
 
-```{r teaching, eval = FALSE, include = FALSE, echo = FALSE}
-\section{\underline{Teaching Experience}}
-\subsection{Courses taught at the college level}
-\subsubsection{Courses taught at Universidad Nacional Mayor de San Marcos}
-
-df <- get_cv_sheet('classes') |> filter(univ == "UNMSM") |>
-    mutate(
-      course = paste0(number, ": ", name),
-      role = type,
-      semester = ifelse(semester == 'Aut20', 'Aut20', semester)
-    ) |> 
-    select(
-      `Sem.` = semester,
-      Course = course,
-      Role = role,
-      Level = level
-    ) 
-
-df |> 
-  kbl(booktabs = TRUE, escape = FALSE, linesep = "") |>
-  kable_styling(position = "center")
-
-\subsubsection{Courses taught at University of Washington}
-
-df <- get_cv_sheet('classes') |> filter(univ == "UW") |>
-    mutate(
-      course = paste0(number, ": ", name),
-      role = type, 
-      semester = ifelse(semester == 'Spr24', 'Spr24', semester)
-      ) |> 
-    select(
-      `Sem.` = semester,
-      Course = course,
-      Role = role,
-      Level = level
-    ) 
-
-df |> 
-  kbl(booktabs = TRUE, escape = FALSE, linesep = "") |>
-  kable_styling(position = "center")
-
-\subsection{Other teaching experience}
-teaching <- get_cv_sheet('teaching') |>
-  arrange(desc(date)) |> 
-  mutate(
-    with = ifelse(is.na(with), '', paste0(', with ', with)),
-    title = paste0(enquote(title), with),
-    date = paste0(format(as.Date(date), format = "%b %d, %Y"), '.'),
-    url = ifelse(is.na(url), NA, markdown_url(url)),
-    date = ifelse(is.na(url), date, paste0(date, '. ', url)), 
-    citation = paste(title, host, location, date, sep = '. ')
-  )
-
-\subsubsection{Seminars}
-
-#| results: asis
-make_ordered_list_filtered(teaching, "seminar")
-
-\section{\underline{Advising}}
-```
-
-```{r}
-#| name: leadership
-#| include: false
-#| eval: false
-\section{\underline{Leadership and Service}}
-\subsection{Professional Service}
-\begin{longtable}{>{\raggedright\arraybackslash}p{4cm} p{14cm}}
-\textbf{Feb 2025 - current} & \textbf{Member} \\
-& \textbf{America’s Network for Chronic Disease Surveillance (AMNET)} \\
-& Regional organization that promotes chronic disease monitoring, knowledge implementation, and public health capacity building throughout the Americas. AMNET fosters collaboration between governmental and non-governmental entities to improve health professional training in disease surveillance, prevention, and control. \\
-& \\
-\textbf{Jan 2025 - current} & \textbf{Trainee Advisory Committee Member} \\
-& \textbf{Consortium of Universities for Global Health, USA} \\
-& Collaborating with international co-trainees to address global health challenges and provide student perspectives on global health issues such as COVID-19, racial disparities, climate change, and research involvement of global health students. \\
-& \\
-\textbf{Mar 2014 - current} & \textbf{Emeritus member and External advisor} \\
-& \textbf{\href{https://cem.edu.pe/adiecs/}{Association for the Development of Student's Research in Health Sciences (ADIECS)}, Lima - Peru} \\
-& Peruvian student association funded in 2008 by students from the Universidad Nacional Mayor de San Marcos to develop capacity of both hard (e.g., epidemiological study designs, data analysis) and soft skills (e.g., teamwork communication, problem-solving) for biomedical underserved students. \\
-\end{longtable}
-
-\section{Memberships}
-\vspace{-1.5em}
-\textcolor{gray}{\rule{\textwidth}{0.5pt}}
-\begin{itemize}
- \item International Epidemiological Association (2020 - Current)
- \item Peruvian College of Physicians (2021 - Current)
- \item Consortium of Universities for Global Health (2023 - Current)
- \item America’s Network for Chronic Disease Surveillance (2025 - Current)
-\end{itemize}
-```
-
-```{r}
-#| name: mentees
-#| include: false
-#| eval: false
-
-\subsection{Mentoring}
-\subsubsection{Undergraduate thesis}
-
-mentees <- get_cv_sheet('advising') |>
-  arrange(date_start) |> 
-  mutate(
-    date = paste0(' (',  date_start, ' to ', date_stop, ').'),
-    citation = ifelse(
-      is.na(title), name, paste0(name, ', ', enquote(title))
-    ),
-    citation = paste0(citation, ', ', institution, ' ', date), 
-    citation = ifelse(
-        is.na(defense_date), citation, 
-        paste0(citation, ' _Defense date: ', defense_date, '_.')
-    )
-  )
-```
-
-```{r}
-#| results: asis
-#| name: dumping_text
-#| include: false
-#| eval: false
-
-\textbf{Clinical Sub-investigator} & \textbf{Mar 2022 - Mar 2023}\\
-\multicolumn{2}{p{18cm}}{\textbf{Via Libre Association}} \\
-\multicolumn{2}{p{18cm}}{\textbf{Lima (Peru)}} \\
-\multicolumn{2}{p{18cm}}{%
-\begin{itemize}
-\item Recruited patients identified as queer for clinical studies in STI and HIV prevention and treatment.
-\item Performed clinical procedures and activities associated with the normal operation of clinical trials funded by NIH and pharmaceutical companies.
-\item Participated and organized activities for community outreach and participant retention crafted for the queer community.
-\end{itemize}
-}
-```
 \section*{Teaching Professional Activities}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
