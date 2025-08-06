@@ -53,3 +53,6 @@ rsconnect/
 
 # Claude files
 CLAUDE.md
+
+# Dump text files
+dump_text.txt
