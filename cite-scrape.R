@@ -14,16 +14,12 @@ url <- paste0(
     id
 )
 
-
-
 html <- xml2::read_html(url)
 rvest::html_elements(html, ".gs_scl") %>%
-    html_elements('a') %>%
-    html_text2()
-
+    rvest::html_elements('a') %>%
+    rvest::html_text2()
 
 library(httr)
 page <- GET(url)
 page_content <- str_to_lower(content(page, as = "text"))
 str_split(page_content, 'cited by')[[1]]
-
