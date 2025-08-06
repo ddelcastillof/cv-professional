@@ -58,4 +58,4 @@ CLAUDE.md
 dump_text.txt
 
 # Cite Scrape R script (seems to be legacy code for scraping citations)
-cite-scrape.R
+cite_scrape.R
