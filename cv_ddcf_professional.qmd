@@ -1,6 +1,7 @@
 ---
 format:
   pdf:
+    output-file: resume.pdf
     toc: false
     number-sections: false
     colorlinks: true
