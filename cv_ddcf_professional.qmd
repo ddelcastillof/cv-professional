@@ -1,0 +1,209 @@
+---
+format:
+  pdf:
+    output-file: resume.pdf
+    toc: false
+    number-sections: false
+    colorlinks: true
+    documentclass: scrartcl
+    papersize: letter
+    pdf-engine: xelatex
+    fontsize: 9pt
+    geometry:
+      - margin=0.5in
+      - heightrounded
+      - includefoot
+      - footskip=0.5in
+    include-in-header:
+      - preamble.tex
+execute:
+  warning: false
+  echo: false
+  message: false
+  eval: true
+---
+
+```{r}
+#| name: setup
+#| include: false
+#| message: false
+#| eval: true
+
+knitr::opts_chunk$set(
+fig.path = "figs/",
+fig.width = 7.252,
+fig.height = 4,
+comment = "#>",
+fig.retina = 3
+)
+
+source("functions.R")
+
+# Store IDs
+gscholar_id <- "iNdNU5QAAAAJ"
+gscholar_page <- paste0("https://scholar.google.com/citations?user=", gscholar_id)
+
+# Google Scholar text
+text_gs <- invisible(gscholar_stats(url = gscholar_page))
+```
+
+\begin{center}
+\huge{\uline{\textbf{Darwin Del Castillo, MD, MPH}}} \\
+\vspace{2.5pt}
+\begin{minipage}[c]{0.28\textwidth}
+\centering \textbf{LinkedIn:} \href{https://www.linkedin.com/in/darwin-del-castillo/}{darwin-del-castillo}
+\end{minipage}
+\begin{minipage}[c]{0.28\textwidth}
+\centering \textbf{Email:} \href{mailto:ddelcastillo.f@gmail.com}{ddelcastillo.f@gmail.com}
+\end{minipage}
+\begin{minipage}[c]{0.28\textwidth}
+\centering \textbf{GitHub:} \href{https://github.com/ddelcastillof}{github.com/ddelcastillof}
+\end{minipage}
+\vspace{-2.5pt}
+\end{center}
+
+\section*{Education}
+\vspace{-1.5em}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
+\begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
+
+\textbf{Master of Public Health (MPH)} & \textbf{Sep 2023 – Jun 2025} \\
+\textsc{University of Washington, Seattle - USA} & \\
+
+&\\
+
+\textbf{Medical Doctor (MD)} & \textbf{Mar 2013 – Dec 2020} \\
+\textsc{Universidad Nacional Mayor de San Marcos, Lima - Peru} &\\
+\end{longtable}
+
+\section*{Skills}
+\vspace{-1.5em}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
+
+\textbf{Programming:} SQL (MySQL), Python, R, Stata \
+\textbf{Machine Learning:} PyTorch, TensorFlow/Keras, scikit-learn, self-supervised learning, probabilistic methods \
+\textbf{Data Engineering:} Apache Spark/PySpark, Airflow, dbt, Pandas \
+\textbf{Cloud Computing:} AWS SageMaker, Docker, Slurm HPC, CUDA \
+\textbf{Experiment Tracking:} MLflow, Weights and Biases \
+\textbf{Signal Processing:} HeartPy, NeuroKit2, SciPy, \texttt{RHRV}, \texttt{cgmanalysis} (R), \texttt{cgmquantify} (Python) \
+\textbf{Data Standards:} HIPAA, HL7 FHIR, GDPR, UK GDPR, DPA 2018 \
+\textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Git version control \
+\textbf{Languages:} English (fluent), Spanish (native) \
+\textbf{Core Competencies:} Data analysis, teamwork, problem solving, science communication, mentorship
+
+\section*{Professional Experience}
+\vspace{-1.5em}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
+
+\begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
+\textbf{Institute for Health Metrics and Evaluation} & \textbf{Seattle, USA} \\
+\textbf{Graduate Research Assistant} &  \textbf{Jul 2024 – Jun 2025} \\
+\multicolumn{2}{p{18cm}}{%
+\begin{itemize}
+\item Developed informative Bayesian priors and covariate structures for a Bayesian hierarchical meta‑regression model to estimate prevalence, incidence, and clinical‐outcome occurrence of lower‑respiratory‑tract infections across 80 countries, informing GBD 2025 inputs.
+\item Executed LLM algorithms over EHR data to screen ICD-9 and ICD-10 codes for estimating mortality rates among homeless populations, substance users, and incarcerated individuals across 22 high-income countries, reducing processing time by 25\%.
+\item Led ML workflows on EHR data extraction from 2 countries with 60+ million records to build population-level summaries per age and sex groups. 
+\end{itemize}
+} \\
+\\
+\textbf{University of Washington} & \textbf{Seattle, USA} \\
+\textbf{Graduate Research Assistant} & \textbf{Sep 2023 – Jun 2024} \\
+\multicolumn{2}{p{18cm}}{%
+\begin{itemize}
+\item Partnered with clinicians, and project managers in Peru to translate burn-care evidence into prototype decision-support dashboards.
+\item Analyzed Peruvian pediatric EHR data under HIPAA standards to evaluate burn-injury intervention outcomes with survival and causal inference models.
+\item Presented findings to 15+ MoH officials and hospital stakeholders to align pediatric burn care strategies with national healthcare priorities, improving pediatric care for over 50\,000+ patients annually.
+\end{itemize}
+} \\
+\\
+\textbf{Health Technology Assessment and Research Institute} & \textbf{Lima, Peru} \\
+\textbf{Real-World-Evidence Consultant} & \textbf{Jan 2023 – Jan 2024} \\
+\multicolumn{2}{p{18cm}}{%
+\begin{itemize}
+\item Harmonized claims and inpatient EHR-data from \textgreater50 hospitals to provide comprehensive insights into healthcare outcomes.
+\item Executed budget impact and cost-effectiveness models that prioritized oncological interventions worth \$1 M+.
+\item Synthesised peer-reviewed literature and real-world evidence into executive reports, guiding reimbursement policy for Peru’s Social Security System.
+\end{itemize}
+} \\
+\\
+\textbf{Anglo-American Hospital} & \textbf{Lima, Peru}\\
+\textbf{Resident Physician – Department of Pediatrics} & \textbf{Sep 2021 – Aug 2023}\\
+\multicolumn{2}{p{18cm}}{%
+\begin{itemize}
+\item Delivered clinical care for 500+ patients monthly in pediatric internal medicine and emergency rotations.
+\item Carried out chart reviews and clinical assessments during sub-speciality rotations, evaluating diagnostic accuracy of auxiliary test interpretations and correlating findings with patient outcomes to improve clinical decision-making protocols.
+\end{itemize}
+} \\
+\\
+\textbf{CRONICAS Center of Excellence in Chronic Diseases} & \textbf{Lima, Peru}\\
+\textbf{Research Assistant} & \textbf{Mar 2019 – Aug 2023}\\
+\multicolumn{2}{p{18cm}}{%
+\begin{itemize}
+\item Coordinated a human-centered design study for cognitive impairment screening, co‑creating a mobile app with regional stakeholders and community health workers.
+\item Processed continuous-glucose-monitoring and activity‑tracker data using RHRV and cgmanalysis, generating features for subsequent statistical models in diabetes trials.
+\item Translated findings into executive briefs and grant proposals that secured \$300\,k in competitive funding.
+\end{itemize}
+}
+\end{longtable}
+
+\section*{Additional Education}
+\vspace{-1.5em}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
+
+\begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
+\textbf{Professional Certificate in Clinical Research} & \textbf{Sep 2021 – Apr 2022} \\
+\textbf{Universidad Peruana Cayetano Heredia, Lima - Peru} &\\
+\end{longtable}
+
+\section*{Licensure and certification}
+\vspace{-1.5em}
+\textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{1.5cm} p{16.5cm}}
+\textbf{2021} & Peruvian College of Physicians, Membership No. 94534 \\
+\textbf{2023} & CITI Program, Good Clinical Practice and ICH, Credential ID 65079238 \\
+\textbf{2023} & CITI Program, Human Subjects Learners, Credential ID 65079240 \\
+\textbf{2023} & CITI Program, Biomedical Responsible Conduct of Research, Credential ID 65079239 \\
+\textbf{2024} & National Registry of Investigators, RENACYT-CONCYTEC, Investigator Level VII (P0160977) \\
+\end{longtable}
+
+\section*{Publications \hspace{0.75cm} ORCID: 0000-0002-8609-0312}
+\vspace{-1.5em}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
+\subsection{Peer-reviewed publications}
+```{r importing pubs, include = F, echo = F}
+pubs <- get_cv_sheet('pubs') |>
+  mutate(
+    journal  = ifelse(is.na(journal_abbv), '', paste0('\\textbf{','\\uline{', journal_abbv, '}','}')),
+    number   = ifelse(is.na(number), '', paste0(number, '.')),
+    doi      = ifelse(
+               is.na(doi), '',
+               paste0('Available at: [', doi, '](', 'https://doi.org/', doi, ')')),
+    year     = paste0("(", year, ")"),
+    title    = enquote(title),
+    conference = ifelse(is.na(conference_name), '', paste0('\\textbf{','\\uline{', conference_name, '}','}')),
+    organization = ifelse(is.na(organization_name), '', paste0(organization_name, '.')),
+    # Different citation formats for different categories
+    citation = case_when(
+      category == "conference" ~ paste(author, year, title, conference, 
+                                      paste0(organization, ", ", place)),
+      category == "white_paper" ~ paste(author, year, title, organization_name, 
+                                      paste0(place)),
+      category == "peer_reviewed" ~ paste(author, year, title, journal, number, doi),
+      category == "thesis" ~ paste(author, year, title, journal, organization)
+    )
+  ) |> 
+  arrange(desc(pub_date))
+```
+
+```{r peer reviewed pubs}
+#| results: asis
+#| name: peer reviewed pubs
+make_bullet_list_filtered(pubs, "peer_reviewed")
+```
+
+\subsection{Conference abstracts}
+```{r conference abstracts}
+#| results: asis
+#| name: conference abstracts
+make_bullet_list_filtered(pubs, "conference")
+```
