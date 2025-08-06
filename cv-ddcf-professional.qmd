@@ -83,10 +83,13 @@ Broad experience in the health data lifecycle: data collection, management, wran
 \vspace{1pt}
 \begin{itemize}
 \item SQL (MySQL), Python, R, Stata
-\item HPC (Slurm), Linux environments (bash)
-\item VS Code, Jupyter Notebook, Quarto, Markdown, \LaTeX
-\item Collaborative code projects on Github and Bitbucket
-\item Packages: tidyverse, ggplot2, meta/metafor, lme4, survival, geepack, gam, lavaan, sf, rJAGS, rstan, Pandas, Matplotlib, NumPy, MR-BRT (GBD Study estimation), amongst other tools.
+\item Machine learning: PyTorch, TensorFlow/Keras, scikit‑learn; basic self‑supervised and probabilistic methods
+\item Data engineering and pipelines: Apache Spark/PySpark, Airflow, dbt, Pandas
+\item Cloud \& compute: AWS SageMaker, Docker, Slurm HPC, CUDA
+\item Experiment tracking: MLflow, Weights \& Biases
+\item Wearable \& CGM signal processing: HeartPy, NeuroKit2, SciPy; \texttt{cgmanalysis} (R), \texttt{cgmquantify} (Python)
+\item Data standards: HIPAA, HL7 FHIR, GDPR / UK GDPR + DPA 2018
+\item Tools: VS Code, Jupyter, Quarto, \LaTeX; Git version control
 \end{itemize}
 \end{minipage}
 \begin{minipage}[c]{0.30\textwidth}
