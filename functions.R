@@ -41,31 +41,31 @@ make_bullet_list <- function(x) {
 }
 
 make_ordered_list_filtered <- function(df, cat) {
-  return(df %>%
-    filter(.data$category == {{cat}}) %>%
+  return(df |>
+    filter(.data$category == {{cat}}) |>
         mutate(
             citation = str_replace_all(
                 .data$citation,
                 "\\\\\\*(\\w+),",
                 "\\\\*\\\\underline{\\1},"
             )
-        ) %>%
-    pull(.data$citation) %>%
+        ) |>
+    pull(.data$citation) |>
     make_ordered_list()
   )
 }
 
 make_bullet_list_filtered <- function(df, cat) {
-  return(df %>%
-    filter(.data$category == {{cat}}) %>%
+  return(df |>
+    filter(.data$category == {{cat}}) |>
         mutate(
             citation = str_replace_all(
                 .data$citation,
                 "\\\\\\*(\\w+),",
                 "\\\\*\\\\underline{\\1},"
             )
-        ) %>%
-    pull(.data$citation) %>%
+        ) |>
+    pull(.data$citation) |>
     make_bullet_list()
   )
 }
