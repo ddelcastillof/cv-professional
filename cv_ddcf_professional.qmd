@@ -23,8 +23,7 @@ execute:
   eval: true
 ---
 
-```{r}
-#| name: setup
+```{r setup}
 #| include: false
 #| message: false
 #| eval: true
@@ -79,15 +78,15 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \section*{Skills}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
-Broad experience in the health data lifecycle: data collection, management, wrangling, querying, analysis, \& visualization.
+Broad experience in the health data lifecycle: data collection, management, wrangling, querying, analysis, \& visualisation.
 \begin{minipage}[c]{0.70\textwidth}
 \vspace{1pt}
 \begin{itemize}
-\item SQL (MySQL), Python, R, Stata
-\item HPC (Slurm), Linux environments (bash)
-\item VS Code, Jupyter Notebook, Quarto, Markdown, \LaTeX, Shiny (R), GIS tools, REDCap
-\item Team-based projects on Github and Bitbucket repositories
-\item Packages: tidyverse, ggplot2, meta/metafor, lme4, survival, geepack, gam, lavaan, sf, rJAGS, rstan, Pandas, Matplotlib, NumPy, MR-BRT (GBD Study estimation), amongst other tools.
+\item \textbf{Programming:} SQL (MySQL), Python, R, Stata
+\item \textbf{Cloud Computing:} HPC (Slurm), Linux environments (bash)
+\item \textbf{Tools:} VS Code, Jupyter, Quarto, Markdown, \LaTeX, Shiny (R), REDCap
+\item \textbf{Version control:} Git (GitHub, Bitbucket)
+\item \textbf{Libraries and packages:} tidyverse, ggplot2, lme4, survival, geepack, gam, lavaan, sf, rJAGS, rstan, meta/metafor, Pandas, NumPy, Matplotlib, MR-BRT (GBD Study estimation)
 \end{itemize}
 \end{minipage}
 \begin{minipage}[c]{0.30\textwidth}
@@ -107,57 +106,52 @@ Broad experience in the health data lifecycle: data collection, management, wran
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
 \textbf{Graduate Research Assistant} & \textbf{Jul 2024 – Jun 2025} \\
-\multicolumn{2}{p{18cm}}{\textsc{Institute for Health Metrics and Evaluation}} \\
-\multicolumn{2}{p{18cm}}{\textsc{University of Washington, Seattle (USA)}} \\
+\textsc{Institute for Health Metrics and Evaluation} & \textsc{Seattle - USA} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Modeled epidemiological data of lower respiratory tract infections due to human metapneumovirus from 2010 to 2023 using meta-analysis information in R and Bayesian meta-regression suites (DisMod-MR).
-  \item Analyzed data from public sources using Bayesian methods and Monte Carlo simulation to estimate the overlap proportion between socially excluded groups in high-income countries using the packages rJAGS and rstan.
-  \item Estimated population-attributable fractions and standardized mortality ratios for socially excluded groups in high-income countries.
+  \item Developed Bayesian priors for a Bayesian hierarchical meta‑regression model to estimate prevalence, incidence, and clinical‐outcome occurrence of lower‑respiratory‑tract infections across 80 countries, informing GBD 2025 inputs.
+  \item Executed a Gibbs sampler using data from a meta-analysis to estimate the proportion of overlap between socially excluded groups in 22 high-income countries.
+  \item Estimated population-attributable fractions and standardized mortality ratios using the overlap between socially-excluded groups.
 \end{itemize}
 } \\
 \\
 \textbf{Graduate Research Assistant} & \textbf{Jun 2024 – Mar 2025} \\
-\multicolumn{2}{p{18cm}}{\textsc{Department of Global Health}} \\
-\multicolumn{2}{p{18cm}}{\textsc{University of Washington, Seattle (USA)}} \\
+\textsc{Department of Global Health – University of Washington} & \textsc{Seattle - USA} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
-  \item Conducted a scoping review protocol and performed evidence synthesis for mapping potential indicators for implementing mental health policy in data-limited settings.
-  \item Designed of a mixed-method study protocol to assess the effectiveness of implementation strategies for pediatric burn care in a Peruvian healthcare setting.
-  \item Crafted communication strategies with stakeholders to inform results from the mixed-methods study.
+  \item Designed a study protocol to assess the effectiveness of implementation strategies for pediatric burn care in a Peruvian healthcare setting.
+  \item Coordinated a mixed-methods study to explore barriers and facilitators in >10 low-resource Peruvian hospitals.
+  \item Co-developed communication strategies with 2 stakeholder organizations to disseminate complex findings among healthcare policymakers.
 \end{itemize}
 } \\
 \\
 \textbf{Graduate Research Assistant}  & \textbf{Sep 2023 – Mar 2024} \\
-\multicolumn{2}{p{18cm}}{\textsc{Health Population Research Center}} \\
-\multicolumn{2}{p{18cm}}{\textsc{University of Washington, Seattle (USA)}} \\
+\textsc{Health Population Research Center – University of Washington} & \textsc{Seattle - USA} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
-  \item Gathered sociodemographic and utilization data as part of a clinical trial post-assesment survey through on-phone interviews.
-  \item Translated IRB submissions materials from Spanish to English for the Alzheimer’s Disease Research Center.
-  \item Synthesized early engagement and outreach data into visualisation tools and summary tables, enabling program managers to make adjustments to recruitment strategies.
-\end{itemize}
-} \\
-\newpage
-\textbf{RWE Consultant} & \textbf{Jan 2023 – Jan 2024} \\
-\multicolumn{2}{p{18cm}}{\textsc{Health Technology Assessment and Research Institute}} \\
-\multicolumn{2}{p{18cm}}{\textsc{Social Security Health System, Lima (Peru)}} \\
-\multicolumn{2}{p{18cm}}{%
-\begin{itemize}
- \item Structured and consolidated multi-source health data (surveillance data, clinical studies) to generate data for health technology assessments.
-  \item Conducted budget impact and cost-effectiveness assessments to prioritize funding for high-impact health interventions under national budgets.
-  \item Presented data-driven recommendations and evidence summaries to policymakers and partners, supporting strategic purchasing decisions for the Social Security System.
+  \item Maintained and stored sociodemographic and utilization data as part of a clinical trial post-assessment survey using electronic data capture platforms.
+  \item Translated IRB submission materials from Spanish to English for the Alzheimer’s Disease Research Center.
+  \item Analyzed engagement and outreach data into visualization tools and summary tables, enabling program managers to make adjustments to recruitment strategies.
 \end{itemize}
 } \\
 \\
-\textbf{Research Assistant} & \textbf{Mar 2019 – Aug 2023}\\
-\multicolumn{2}{p{18cm}}{\textsc{CRONICAS Center of Excellence in Chronic Diseases}} \\
-\multicolumn{2}{p{18cm}}{\textsc{Universidad Peruana Cayetano Heredia, Lima (Peru)}} \\
+\textbf{RWE Consultant} & \textbf{Jan 2023 – Jan 2024} \\
+\textsc{Health Technology Assessment and Research Institute} & \textsc{Lima – Peru}\\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Coordinated focus groups and on-field work across four Peruvian regions to co-design an intervention for patients with cognitive impairment and their caregivers.
-  \item Contributed to research grant proposals in hypertension, diabetes, cancer, and multimorbidity projects by conducting systematic reviews and preliminary data analysis.
-  \item Co-authored scientific manuscripts in the topics mentioned above which included longitudinal data analyses, meta-analyses, and unsupervised machine learning methods.
+ \item Integrated surveillance and clinical data from 80 Peruvian hospitals into statistical burden models to support national health technology assessment and prioritization processes.
+  \item Conducted budget impact and cost-effectiveness models that prioritized oncological interventions worth \$1 M+.
+  \item Synthesized findings into executive reports aimed at policymakers and partners, guiding reimbursement policy for Peru's Social Security System.
+\end{itemize}
+} \\
+\newpage
+\textbf{Research Assistant} & \textbf{Mar 2019 – Aug 2023}\\
+\textsc{CRONICAS Center of Excellence in Chronic Diseases} & \textsc{Lima – Peru}\\
+\multicolumn{2}{p{18cm}}{%
+\begin{itemize}
+  \item Coordinated 2 workshops per site with community health workers in 3 Peruvian regions to co-design a mobile application for early detection of cognitive impairment.
+  \item Contributed to research grant proposals in noncommunicable disease epidemiology by conducting preliminary data analysis on clinical, demographic, and biological biomarkers, supporting proposals worth \$300\,k in competitive funding.
+  \item Co-authored 5 scientific manuscripts which included longitudinal data analyses, systematic reviews, and machine learning models.
 \end{itemize}
 } \\
 \end{longtable}
@@ -176,18 +170,26 @@ Broad experience in the health data lifecycle: data collection, management, wran
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \subsection{Teaching}
 \vspace{-1em}
-\begin{longtable}{>{\raggedright\arraybackslash}p{4cm} p{14cm}}
-\textbf{Mar 2025 – current} & \textbf{Lecturer: Introduction to Epidemiology.} \textsc{Universidad Científica del Sur}. I teach three sections of \textasciitilde{} 15 fourth-year medical students each, focusing on basic clinical epidemiology concepts, including study designs, bias identification, \& basic epidemiological surveillance concepts. \\
-\textbf{Mar 2024 – Jun 2024} & \textbf{Teaching Assistant: Introduction to Molecular and Cellular Biology.} \textsc{University of Washington}. Led two laboratory practice sessions with \textasciitilde{} 25 undergraduate students each, covering fundamental molecular and cellular biology experiments. \\
+\begin{longtable}{>{\raggedright\arraybackslash}p{14cm} p{4cm}}
+\textbf{Lecturer} & \textbf{Mar 2025 – Current} \\
+\textsc{School of Medicine – Universidad Científica del Sur} & \textsc{Lima – Peru} \\
+\multicolumn{2}{p{18cm}}{%
+\textsc{Introduction to Epidemiology:} I teach three sections of \textasciitilde 15 fourth-year medical students each, focusing on basic clinical epidemiology concepts, including study designs, bias identification, \& basic epidemiological surveillance concepts.
+} \\
+\\
+\textbf{Teaching Assistant} & \textbf{Mar 2024 – Jun 2024} \\
+\textsc{College of Arts \& Sciences – University of Washington} & \textsc{Seattle – USA} \\
+\multicolumn{2}{p{18cm}}{%
+\textsc{Introduction to Molecular and Cellular Biology:} Led two laboratory practice sessions with \textasciitilde 25 undergraduate students each, covering fundamental molecular and cellular biology experiments.
+} \\
 \end{longtable}
 \vspace{-0.75em}
 \subsection{Mentoring}
 \vspace{-0.75em}
 \subsubsection{Undergraduate thesis}
 \vspace{-0.75em}
-```{r}
+```{r mentees_table}
 #| results: asis
-#| name: mentees_table
 mentees <- get_cv_sheet('advising') |>
   arrange(date_start) |> 
   mutate(
@@ -210,14 +212,12 @@ mentees |>
 \vspace{-1.5em}
 \textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{>{\raggedright\arraybackslash}p{1.5cm} p{16.5cm}}
-\textbf{2021} & Peruvian College of Physicians, Membership No. 94534 \\
+\textbf{2024} & National Registry of Investigators, RENACYT-CONCYTEC, Investigator Level VII (P0160977) \\
 \textbf{2023} & CITI Program, Good Clinical Practice and ICH, Credential ID 65079238 \\
 \textbf{2023} & CITI Program, Human Subjects Learners, Credential ID 65079240 \\
 \textbf{2023} & CITI Program, Biomedical Responsible Conduct of Research, Credential ID 65079239 \\
-\textbf{2024} & National Registry of Investigators, RENACYT-CONCYTEC, Investigator Level VII (P0160977) \\
+\textbf{2021} & Peruvian College of Physicians, Membership No. 94534 \\
 \end{longtable}
-
-\newpage
 
 \section*{Publications \hspace{0.75cm} ORCID: 0000-0002-8609-0312}
 \vspace{-1.5em}
@@ -228,9 +228,10 @@ pubs <- get_cv_sheet('pubs') |>
   mutate(
     journal  = ifelse(is.na(journal_abbv), '', paste0('\\textbf{','\\uline{', journal_abbv, '}','}')),
     number   = ifelse(is.na(number), '', paste0(number, '.')),
-    doi      = ifelse(
-               is.na(doi), '',
-               paste0('Available at: [', doi, '](', 'https://doi.org/', doi, ')')),
+    doi      = case_when(is.na(doi) ~ '',
+                         doi == 'Submitted under consideration' ~ doi,
+                         TRUE ~ paste0('Available at: [', doi, '](', 'https://doi.org/', doi, ')')
+       ),
     year     = paste0("(", year, ")"),
     title    = enquote(title),
     conference = ifelse(is.na(conference_name), '', paste0('\\textbf{','\\uline{', conference_name, '}','}')),
@@ -245,7 +246,7 @@ pubs <- get_cv_sheet('pubs') |>
       category == "thesis" ~ paste(author, year, title, journal, organization)
     )
   ) |> 
-  arrange(desc(pub_date))
+  arrange(desc(year))
 ```
 
 ```{r peer reviewed pubs}
