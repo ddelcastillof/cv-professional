@@ -56,3 +56,6 @@ CLAUDE.md
 
 # Dump text files
 dump_text.txt
+
+# Cite Scrape legacy files
+cite_scrape.R
