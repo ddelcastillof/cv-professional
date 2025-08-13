@@ -66,7 +66,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
-\textbf{Master of Public Health (MPH)} & \textbf{Sep 2023 – Jun 2025} \\
+\textbf{Master of Public Health (MPH) – Epidemiology} & \textbf{Sep 2023 – Jun 2025} \\
 \textsc{University of Washington, Seattle - USA} & \\
 
 &\\
@@ -78,7 +78,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \section*{Skills}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
-Broad experience in the health data lifecycle: data collection, management, wrangling, querying, analysis, \& visualisation.
+Health economist specializing in economic evaluation, real-world evidence generation, cost-effectiveness modeling, \& health technology assessment for healthcare decision-making.
 \begin{minipage}[c]{0.70\textwidth}
 \vspace{1pt}
 \begin{itemize}
@@ -170,7 +170,7 @@ Broad experience in the health data lifecycle: data collection, management, wran
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \subsection{Teaching}
 \vspace{-1em}
-\begin{longtable}{>{\raggedright\arraybackslash}p{14cm} p{4cm}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 \textbf{Lecturer} & \textbf{Mar 2025 – Current} \\
 \textsc{School of Medicine – Universidad Científica del Sur} & \textsc{Lima – Peru} \\
 \multicolumn{2}{p{18cm}}{%
