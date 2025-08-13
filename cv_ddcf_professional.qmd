@@ -1,7 +1,7 @@
 ---
 format:
   pdf:
-    output-file: resume.pdf
+    output-file: delcastillo_darwin_cv.pdf
     toc: false
     number-sections: false
     colorlinks: true
@@ -48,16 +48,16 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 ```
 
 \begin{center}
-\huge{\underline{\textbf{Darwin Del Castillo, MD, MPH}}} \\
+\Large{\uline{\textbf{Darwin Del Castillo, MD, MPH}}} \\
 \vspace{2.5pt}
-\begin{minipage}[c]{0.20\textwidth}
-\faLinkedin \centering\href{https://www.linkedin.com/in/darwin-del-castillo/}{\hspace{0.5em}darwin-del-castillo}
+\begin{minipage}[c]{0.28\textwidth}
+\centering \textbf{LinkedIn:} \href{https://www.linkedin.com/in/darwin-del-castillo/}{darwin-del-castillo}
 \end{minipage}
-\begin{minipage}[c]{0.25\textwidth}
-\faEnvelope \centering\href{mailto:ddelcastillo.f@gmail.com}{\hspace{0.5em}ddelcastillo.f@gmail.com}
+\begin{minipage}[c]{0.28\textwidth}
+\centering \textbf{Email:} \href{mailto:ddelcastillo.f@gmail.com}{ddelcastillo.f@gmail.com}
 \end{minipage}
-\begin{minipage}[c]{0.15\textwidth}
-\faGithub \centering\href{https://github.com/ddelcastillof}{\hspace{0.5em}ddelcastillof} 
+\begin{minipage}[c]{0.28\textwidth}
+\centering \textbf{GitHub:} \href{https://github.com/ddelcastillof}{github.com/ddelcastillof}
 \end{minipage}
 \vspace{-2.5pt}
 \end{center}
@@ -67,25 +67,25 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
-\textbf{Master of Public Health (MPH)} & \textbf{Sep 2023 – Jun 2025} \\
+\textbf{Master of Public Health (MPH) – Epidemiology} & \textbf{Sep 2023 – Jun 2025} \\
 \textsc{University of Washington, Seattle - USA} & \\
 
 &\\
 
 \textbf{Medical Doctor (MD)} & \textbf{Mar 2013 – Dec 2020} \\
-\textsc{Universidad Nacional Mayor de San Marcos, Lima - Peru} &\\
+\textsc{Universidad Nacional Mayor de San Marcos, Lima - Peru} & \\
 \end{longtable}
 
 \section*{Skills}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
 
-\textbf{Programming:} SQL (MySQL), Python, R, Stata \
-\textbf{Cloud Computing:}  HPC (Slurm), Linux environments (bash)
+\textbf{Programming:} SQL (MySQL), Python, R, Stata, C++ \
+\textbf{Cloud Computing:}  HPC (Slurm), Linux environments (bash) \
 \textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Git version control \
 \textbf{Languages:} English (fluent), Spanish (native) \
 \textbf{Core Competencies:} Data analysis, teamwork, problem solving, science communication, mentorship \
-\textbf{Packages:} tidyverse, ggplot2, meta/metafor, lme4, survival, geepack, gam, lavaan, sf, rJAGS, rstan, Pandas, Matplotlib, NumPy, MR-BRT (GBD Study estimation), amongst other tools. \
+\textbf{Packages:} \emph{R} (tidyverse, ggplot2, rJAGS, rstan, SummarizedExperiment, MultiAssayExperiment, GenomicRanges, biomaRt, VariantAnnotation, SNPRelate, mixOmics, xcms, MSnbase, CAMERA, sva/ComBat EnhancedVolcano); \emph{Python} (Pandas, Matplotlib, NumPy, scikit-allel, pysam, pybedtools). \
 \textbf{Core Competencies:} Data analysis, teamwork, problem solving, science communication, mentorship
 
 \section*{Professional Experience}
@@ -94,63 +94,49 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
-\textbf{Graduate Research Assistant} & \textbf{Jul 2024 - Jun 2025} \\
-\multicolumn{2}{p{18cm}}{\textbf{Institute for Health Metrics and Evaluation}} \\
-\multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
+\textbf{UW Medicine Diabetes Institute} & \textbf{Seattle - USA} \\
+\textbf{Research Scientist} & \textbf{Sep 2024 – Current} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Conducted a comprehensive meta-analysis of lower respiratory tract infection rates across 80 countries using the R meta package to support strategic program planning; presented findings with ROI-style visual summaries to senior leadership.
-\item Developed and executed Bayesian MCMC workflows to quantify the overlap among homeless populations, substance users, and incarcerated individuals across 22 high-income countries, producing real-world evidence for targeted health burden stratification.
-\item Updated version-controlled scripts to automate data quality checks of EHR datasets from Ecuador and Colombia; identified root causes of data anomalies, reducing error rates by 23% and improving data reliability across 30 million records. 
+  \item Conduct longitudinal metabolomics analyses for the TODAY and TODAY2 cohorts, leveraging \textasciitilde 10 years of follow-up in youth-onset type 2 diabetes to model metabolite trajectories and cardiometabolic disease progression.
+  \item Define and operationalise cardio-kidney-metabolic (CKM) syndrome progression categories as clinical outcomes into the TODAY samples, quantifying associations with metabolite using mixed-effects and multinomial/ordinal models.
+  \item Lead a cross-cohort multi-omics analysis across ARIC, UK Biobank, PURE Latin America, and HELIUS to estimate associations between CKM syndrome and omic features.
+  \item Specify clinically relevant phenotypes for obesity- and liver-related metabolic disease and design association analyses in large cohorts (e.g., UK Biobank).
+  \item Build reproducible R/Python workflows on HPC (Slurm/Linux) for data cleaning, batch correction, feature engineering, multiple-testing control, and sensitivity analyses, producing publication-ready figures and tables.
 \end{itemize}
 } \\
 \\
-\textbf{Graduate Research Assistant} & \textbf{Jun 2024 - Mar 2025} \\
-\multicolumn{2}{p{18cm}}{\textbf{Department of Global Health}} \\
-\multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
-\multicolumn{2}{p{18cm}}{%
-\begin{itemize} 
-\item Synthesized clinical and programmatic evidence into actionable insights and reports to support program design and policy decisions in mental health.
-\item Analyzed pediatric clinical and outcome data to evaluate effectiveness of burn injury interventions; compiled initiative-level monthly performance reports for Ministry of Health and hospital leadership to inform protocol refinements.
-\item Engaged with Ministry of Health officials and hospital stakeholders to align pediatric burn care strategies with national healthcare priorities.
-\end{itemize}
-} \\
-\\
-\textbf{Graduate Research Assistant}  & \textbf{Sep 2023 - Mar 2024} \\
-\multicolumn{2}{p{18cm}}{\textbf{Health Population Research Center}} \\
-\multicolumn{2}{p{18cm}}{\textbf{University of Washington, Seattle (USA)}} \\
-\multicolumn{2}{p{18cm}}{%
-\begin{itemize} 
-\item Implemented standardized remote data-collection workflows to capture patient-reported outcomes.
-\item Managed full lifecycle of IRB submissions—including translation and localization of Spanish-language documents—for the Alzheimer’s Disease Research Center, ensuring compliance with regulatory requirements.
-\item Synthesized weekly/monthly engagement and outreach data into interactive Shiny dashboards and concise summary reports for program managers and stakeholders, enabling timely strategic recruitment adjustments.
-\end{itemize}
-} \\
-\\
-\textbf{RWE Consultant} & \textbf{Jan 2023 - Jan 2024} \\
-\multicolumn{2}{p{18cm}}{\textbf{Health Technology Assessment and Research Institute}} \\
-\multicolumn{2}{p{18cm}}{\textbf{Social Security Health System, Lima (Peru)}} \\
+\textbf{Institute for Health Metrics and Evaluation} & \textbf{Seattle - USA} \\
+\textbf{Graduate Research Assistant} &  \textbf{Jul 2024 – Jun 2025} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Structured and consolidated multi-source health data (surveillance, clinical studies) to provide comprehensive insights into healthcare outcomes.
-\item Conducted budget impact and cost-effectiveness assessments to prioritize funding for high-impact health interventions under national budgets.
-\item Presented data-driven recommendations and evidence summaries to policymakers and partners, supporting strategic purchasing decisions.
+  \item Designed and led epidemiological studies using large-scale datasets; delivered medically relevant findings through country-comparative meta-analyses and decision-focused reports for leadership.
+  \item Built Bayesian MCMC workflows to estimate overlap among inclusion-health populations across 22 high-income countries, informing phenotype definition and downstream burden estimation.
+  \item Productionised version-controlled R pipelines for EHR data quality assessment (Git/HPC), diagnosing anomalies and improving reliability across \textasciitilde 30 million records.
 \end{itemize}
 } \\
 \\
-\textbf{Research Assistant} & \textbf{Mar 2019 - Aug 2023}\\
-\multicolumn{2}{p{18cm}}{\textbf{CRONICAS Center of Excellence in Chronic Diseases}} \\
-\multicolumn{2}{p{18cm}}{\textbf{Universidad Peruana Cayetano Heredia, Lima (Peru)}} \\
+\textbf{Health Technology Assessment and Research Institute} & \textbf{Lima - Peru} \\
+\textbf{Real-World-Evidence Consultant} & \textbf{Jan 2023 – Jan 2024} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Led stakeholder workshops and focus groups across four regions to co-design patient-centered interventions, translating qualitative insights into quantifiable outcome metrics.
-\item Conducted real-world evidence synthesis and preliminary data analyses to support program proposals in hypertension, diabetes, and multimorbidity, informing strategic funding decisions.
-\item Co-authored evidence summaries and reports, translating analytical findings into executive-ready deliverables for program managers and health policy audiences.
+  \item Structured and consolidated multi-source health data (surveillance, clinical studies) to generate real-world evidence for priority setting in chronic and cardiometabolic disease.
+  \item Conducted budget impact and cost-effectiveness assessments to inform reimbursement and strategic purchasing decisions under national budgets.
+  \item Synthesised evidence into executive-ready briefs for policymakers and clinical partners, emphasising quantitative strength of evidence and uncertainty.
+\end{itemize}
+} \\
+\newpage
+\textbf{CRONICAS Center of Excellence in Chronic Diseases} & \textbf{Lima - Peru}\\
+\textbf{Research Assistant} & \textbf{Mar 2019 – Aug 2023}\\
+\multicolumn{2}{p{18cm}}{%
+\begin{itemize}
+  \item Led stakeholder workshops and focus groups to co-design patient-centred interventions; translated qualitative insights into measurable cardiometabolic outcomes.
+  \item Conducted real-world evidence synthesis and cohort analyses in hypertension, diabetes, and multimorbidity, supporting grant proposals and programme design.
+  \item Co-authored evidence summaries and reports for policy audiences, communicating complex analyses clearly to non-technical stakeholders.
 \end{itemize}
 } \\
 
 \end{longtable}
-
 \section*{Additional Education}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
@@ -164,11 +150,11 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \vspace{-1.5em}
 \textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{>{\raggedright\arraybackslash}p{1.5cm} p{16.5cm}}
-\textbf{2021} & Peruvian College of Physicians, Membership No. 94534 \\
+\textbf{2024} & National Registry of Investigators, RENACYT-CONCYTEC, Investigator Level VII (P0160977) \\
 \textbf{2023} & CITI Program, Good Clinical Practice and ICH, Credential ID 65079238 \\
 \textbf{2023} & CITI Program, Human Subjects Learners, Credential ID 65079240 \\
 \textbf{2023} & CITI Program, Biomedical Responsible Conduct of Research, Credential ID 65079239 \\
-\textbf{2024} & National Registry of Investigators, RENACYT-CONCYTEC, Investigator Level VII (P0160977) \\
+\textbf{2021} & Peruvian College of Physicians, Membership No. 94534 \\
 \end{longtable}
 
 \section*{Publications \hspace{0.75cm} ORCID: 0000-0002-8609-0312}
@@ -180,9 +166,10 @@ pubs <- get_cv_sheet('pubs') |>
   mutate(
     journal  = ifelse(is.na(journal_abbv), '', paste0('\\textbf{','\\uline{', journal_abbv, '}','}')),
     number   = ifelse(is.na(number), '', paste0(number, '.')),
-    doi      = ifelse(
-               is.na(doi), '',
-               paste0('Available at: [', doi, '](', 'https://doi.org/', doi, ')')),
+    doi      = case_when(is.na(doi) ~ '',
+                         doi == 'Submitted under consideration' ~ doi,
+                         TRUE ~ paste0('Available at: [', doi, '](', 'https://doi.org/', doi, ')')
+                ),
     year     = paste0("(", year, ")"),
     title    = enquote(title),
     conference = ifelse(is.na(conference_name), '', paste0('\\textbf{','\\uline{', conference_name, '}','}')),
@@ -197,7 +184,7 @@ pubs <- get_cv_sheet('pubs') |>
       category == "thesis" ~ paste(author, year, title, journal, organization)
     )
   ) |> 
-  arrange(desc(pub_date))
+  arrange(desc(year))
 ```
 
 ```{r peer reviewed pubs}
