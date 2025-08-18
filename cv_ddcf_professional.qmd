@@ -47,38 +47,38 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 ```
 
 \begin{center}
-\huge{\underline{\textbf{Darwin Del Castillo, MD, MPH}}} \\
+\huge{\uline{\textbf{Darwin Del Castillo, MD, MPH}}} \\
 \vspace{2.5pt}
-\begin{minipage}[c]{0.20\textwidth}
-\faLinkedin \centering\href{https://www.linkedin.com/in/darwin-del-castillo/}{\hspace{0.5em}darwin-del-castillo}
+\begin{minipage}[c]{0.28\textwidth}
+\centering \textbf{LinkedIn:} \href{https://www.linkedin.com/in/darwin-del-castillo/}{darwin-del-castillo}
 \end{minipage}
-\begin{minipage}[c]{0.25\textwidth}
-\faEnvelope \centering\href{mailto:ddelcastillo.f@gmail.com}{\hspace{0.5em}ddelcastillo.f@gmail.com}
+\begin{minipage}[c]{0.28\textwidth}
+\centering \textbf{Email:} \href{mailto:ddelcastillo.f@gmail.com}{ddelcastillo.f@gmail.com}
 \end{minipage}
-\begin{minipage}[c]{0.15\textwidth}
-\faGithub \centering\href{https://github.com/ddelcastillof}{\hspace{0.5em}ddelcastillof} 
+\begin{minipage}[c]{0.28\textwidth}
+\centering \textbf{GitHub:} \href{https://github.com/ddelcastillof}{github.com/ddelcastillof}
 \end{minipage}
 \vspace{-2.5pt}
 \end{center}
 
-\section*{Scientific Education}
+\section*{Education}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
 \textbf{Master of Public Health (MPH) – Epidemiology} & \textbf{Sep 2023 – Jun 2025} \\
-\textsc{University of Washington, Seattle - USA} & \\
+\textsc{University of Washington} & \textsc{Seattle - USA} \\
 
 &\\
 
-\textbf{Medical Doctor (MD)} & \textbf{Mar 2013 – Dec 2020} \\
-\textsc{Universidad Nacional Mayor de San Marcos, Lima - Peru} &\\
+\textbf{Medical Doctor (MD)} & \textbf{Mar 2014 – Dec 2020} \\
+\textsc{Universidad Nacional Mayor de San Marcos} & \textsc{Lima - Peru} \\
 \end{longtable}
 
 \section*{Skills}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
-Health economist specializing in economic evaluation, real-world evidence generation, cost-effectiveness modeling, \& health technology assessment for healthcare decision-making.
+Health data scientist and epidemiologist specializing in the health data lifecycle. Experienced in data management, querying, wrangling, analysis, and visualization.
 \begin{minipage}[c]{0.70\textwidth}
 \vspace{1pt}
 \begin{itemize}
@@ -109,9 +109,9 @@ Health economist specializing in economic evaluation, real-world evidence genera
 \textsc{Institute for Health Metrics and Evaluation} & \textsc{Seattle - USA} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Developed Bayesian priors for a Bayesian hierarchical meta‑regression model to estimate prevalence, incidence, and clinical‐outcome occurrence of lower‑respiratory‑tract infections across 80 countries, informing GBD 2025 inputs.
-  \item Executed a Gibbs sampler using data from a meta-analysis to estimate the proportion of overlap between socially excluded groups in 22 high-income countries.
-  \item Estimated population-attributable fractions and standardized mortality ratios using the overlap between socially-excluded groups.
+  \item Developed hyperparameters for a Bayesian hierarchical meta‑regression model to estimate prevalence, incidence, and clinical outcomes of lower‑respiratory‑tract infections across 80 countries.
+  \item Produced a global map of study locations using GBD 2023 georeference data to visualize geographic coverage and data gaps, informing meta-analysis data sources.
+  \item Executed a Gibbs sampler with data-driven priors to estimate the overlap among inclusion health populations in 22 high-income countries to compute population-attributable fractions and standardized mortality ratios.
 \end{itemize}
 } \\
 \\
@@ -119,9 +119,9 @@ Health economist specializing in economic evaluation, real-world evidence genera
 \textsc{Department of Global Health – University of Washington} & \textsc{Seattle - USA} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
-  \item Designed a study protocol to assess the effectiveness of implementation strategies for pediatric burn care in a Peruvian healthcare setting.
-  \item Coordinated a mixed-methods study to explore barriers and facilitators in >10 low-resource Peruvian hospitals.
-  \item Co-developed communication strategies with 2 stakeholder organizations to disseminate complex findings among healthcare policymakers.
+  \item Designed the study protocol and coordinated a mixed-methods evaluation of implementation strategies for pediatric burn care across >10 low-resource Peruvian hospitals.
+  \item Co-developed communication strategies with 2 stakeholder organizations to translate complex findings for healthcare policymakers.
+  \item Conducted a systematic review to assess mental health policy implementation indicators in low-and middle-income countries as part of a consultancy for an international NGO.
 \end{itemize}
 } \\
 \\
@@ -131,11 +131,11 @@ Health economist specializing in economic evaluation, real-world evidence genera
 \begin{itemize} 
   \item Maintained and stored sociodemographic and utilization data as part of a clinical trial post-assessment survey using electronic data capture platforms.
   \item Translated IRB submission materials from Spanish to English for the Alzheimer’s Disease Research Center.
-  \item Analyzed engagement and outreach data into visualization tools and summary tables, enabling program managers to make adjustments to recruitment strategies.
+  \item Summarized engagement and outreach data into visualization tools and descriptive tables, enabling program managers to make adjustments to recruitment strategies.
 \end{itemize}
 } \\
 \\
-\textbf{RWE Consultant} & \textbf{Jan 2023 – Jan 2024} \\
+\textbf{Real-World Evidence Consultant} & \textbf{Jan 2023 – Jan 2024} \\
 \textsc{Health Technology Assessment and Research Institute} & \textsc{Lima – Peru}\\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
@@ -149,9 +149,9 @@ Health economist specializing in economic evaluation, real-world evidence genera
 \textsc{CRONICAS Center of Excellence in Chronic Diseases} & \textsc{Lima – Peru}\\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Coordinated 2 workshops per site with community health workers in 3 Peruvian regions to co-design a mobile application for early detection of cognitive impairment.
-  \item Contributed to research grant proposals in noncommunicable disease epidemiology by conducting preliminary data analysis on clinical, demographic, and biological biomarkers, supporting proposals worth \$300\,k in competitive funding.
-  \item Co-authored 5 scientific manuscripts which included longitudinal data analyses, systematic reviews, and machine learning models.
+  \item Coordinated 2 workshops per site with community health workers in 3 Peruvian regions to co-design a mobile application for early detection of cognitive impairment and dementia.
+  \item Analyzed longitudinal data to support research grant proposals in noncommunicable disease epidemiology by conducting preliminary data analysis on clinical, demographic, and biological biomarkers.
+  \item Co-authored 5 scientific manuscripts, which included longitudinal data analyses and machine learning models.
 \end{itemize}
 } \\
 \end{longtable}
@@ -162,7 +162,7 @@ Health economist specializing in economic evaluation, real-world evidence genera
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 \textbf{Professional Certificate in Clinical Research} & \textbf{Sep 2021 – Apr 2022} \\
-\textsc{Universidad Peruana Cayetano Heredia, Lima - Peru} &\\
+\textsc{Universidad Peruana Cayetano Heredia} & \textsc{Lima - Peru} \\
 \end{longtable}
 
 \section*{Teaching Professional Activities}
