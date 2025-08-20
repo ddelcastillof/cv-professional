@@ -79,25 +79,14 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
 Health data scientist and epidemiologist specializing in the health data lifecycle. Experienced in data management, querying, wrangling, analysis, and visualization.
-\begin{minipage}[c]{0.70\textwidth}
-\vspace{1pt}
-\begin{itemize}
-\item \textbf{Programming:} SQL (MySQL), Python, R, Stata
-\item \textbf{Cloud Computing:} HPC (Slurm), Linux environments (bash)
-\item \textbf{Tools:} VS Code, Jupyter, Quarto, Markdown, \LaTeX, Shiny (R), REDCap
-\item \textbf{Version control:} Git (GitHub, Bitbucket)
-\item \textbf{Libraries and packages:} tidyverse, ggplot2, lme4, survival, geepack, gam, lavaan, sf, rJAGS, rstan, meta/metafor, Pandas, NumPy, Matplotlib, MR-BRT (GBD Study estimation)
-\end{itemize}
-\end{minipage}
-\begin{minipage}[c]{0.30\textwidth}
-\begin{itemize}
-\item Fluency in English \& Spanish
-\item Teamwork \& collaboration
-\item Problem solving
-\item Science communication
-\item Mentorship
-\end{itemize}
-\end{minipage}
+\textbf{Programming:} SQL (MySQL), Python, R, Stata \
+\textbf{Cloud Computing:} Slurm HPC, Docker, Linux environments (bash) \
+\textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Shiny (R), Git version control (GitHub, Bitbucket) \
+\textbf{Data Standards:} HIPAA, HL7 FHIR, GDPR, UK GDPR, DPA 2018 \
+\textbf{Data Engineering:} \texttt{tidyverse}, Pandas \ 
+\textbf{Epidemiology:} \texttt{ggplot2}, \texttt{lme4}, \texttt{survival}, \texttt{geepack}, \texttt{gam}, \texttt{rJAGS}, \texttt{rstan}, \texttt{meta/metafor}, , NumPy, Matplotlib, MR-BRT (GBD Study estimation) \
+\textbf{Languages:} English (fluent), Spanish (native) \
+\textbf{Core Competencies:} Data analysis, teamwork, problem solving, science communication, mentorship
 
 \section*{Professional Experience}
 \vspace{-1.5em}
@@ -110,12 +99,12 @@ Health data scientist and epidemiologist specializing in the health data lifecyc
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
   \item Developed hyperparameters for a Bayesian hierarchical meta‑regression model to estimate prevalence, incidence, and clinical outcomes of lower‑respiratory‑tract infections across 80 countries.
-  \item Produced a global map of study locations using GBD 2023 georeference data to visualize geographic coverage and data gaps, informing meta-analysis data sources.
-  \item Executed a Gibbs sampler with data-driven priors to estimate the overlap among inclusion health populations in 22 high-income countries to compute population-attributable fractions and standardized mortality ratios.
+  \item Improved code to screen ICD-9 and ICD-10 codes over EHR data for estimating mortality rates among homeless populations, substance users, and incarcerated individuals across 22 high-income countries, reducing processing time by 25\%.
+  \item Executed ML algorithms on EHR data extraction from 2 countries with 60+ million records to build population-level summaries per age and sex groups, including simulation-based scenario testing.
 \end{itemize}
 } \\
 \\
-\textbf{Graduate Research Assistant} & \textbf{Jun 2024 – Mar 2025} \\
+\textbf{Graduate Research Assistant} & \textbf{Sep 2023 – Jun 2024} \\
 \textsc{Department of Global Health – University of Washington} & \textsc{Seattle - USA} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
@@ -125,32 +114,22 @@ Health data scientist and epidemiologist specializing in the health data lifecyc
 \end{itemize}
 } \\
 \\
-\textbf{Graduate Research Assistant}  & \textbf{Sep 2023 – Mar 2024} \\
-\textsc{Health Population Research Center – University of Washington} & \textsc{Seattle - USA} \\
-\multicolumn{2}{p{18cm}}{%
-\begin{itemize} 
-  \item Maintained and stored sociodemographic and utilization data as part of a clinical trial post-assessment survey using electronic data capture platforms.
-  \item Translated IRB submission materials from Spanish to English for the Alzheimer’s Disease Research Center.
-  \item Summarized engagement and outreach data into visualization tools and descriptive tables, enabling program managers to make adjustments to recruitment strategies.
-\end{itemize}
-} \\
-\\
 \textbf{Real-World Evidence Consultant} & \textbf{Jan 2023 – Jan 2024} \\
 \textsc{Health Technology Assessment and Research Institute} & \textsc{Lima – Peru}\\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
- \item Integrated surveillance and clinical data from 80 Peruvian hospitals into statistical burden models to support national health technology assessment and prioritization processes.
-  \item Conducted budget impact and cost-effectiveness models that prioritized oncological interventions worth \$1 M+.
-  \item Synthesized findings into executive reports aimed at policymakers and partners, guiding reimbursement policy for Peru's Social Security System.
+  \item Harmonised claims and inpatient EHR-data from +50 hospitals within a trusted research environment to provide comprehensive insights into healthcare outcomes.
+  \item Executed budget impact and cost-effectiveness models that prioritized oncological interventions worth \$1 M+.
+  \item Synthesised systematic review/evidence synthesis and statistical estimates from EHR data into executive reports, guiding reimbursement policy for Peru’s Social Security System.
 \end{itemize}
 } \\
-\newpage
+\\
 \textbf{Research Assistant} & \textbf{Mar 2019 – Aug 2023}\\
 \textsc{CRONICAS Center of Excellence in Chronic Diseases} & \textsc{Lima – Peru}\\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
   \item Coordinated 2 workshops per site with community health workers in 3 Peruvian regions to co-design a mobile application for early detection of cognitive impairment and dementia.
-  \item Analyzed longitudinal data to support research grant proposals in noncommunicable disease epidemiology by conducting preliminary data analysis on clinical, demographic, and biological biomarkers.
+  \item Analyzed longitudinal data using generalised linear methods and survival curves to support research grant proposals in noncommunicable disease epidemiology by conducting preliminary data analysis on clinical, demographic, and biological biomarkers.
   \item Co-authored 5 scientific manuscripts, which included longitudinal data analyses and machine learning models.
 \end{itemize}
 } \\
