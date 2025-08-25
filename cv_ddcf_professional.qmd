@@ -78,13 +78,11 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \section*{Skills}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
-Health data scientist and epidemiologist specializing in the health data lifecycle. Experienced in data management, querying, wrangling, analysis, and visualization.
 \textbf{Programming:} SQL (MySQL), Python, R, Stata \
 \textbf{Cloud Computing:} Slurm HPC, Docker, Linux environments (bash) \
 \textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Shiny (R), Git version control (GitHub, Bitbucket) \
 \textbf{Data Standards:} HIPAA, HL7 FHIR, GDPR, UK GDPR, DPA 2018 \
-\textbf{Data Engineering:} \texttt{tidyverse}, Pandas \ 
-\textbf{Epidemiology:} \texttt{ggplot2}, \texttt{lme4}, \texttt{survival}, \texttt{geepack}, \texttt{gam}, \texttt{rJAGS}, \texttt{rstan}, \texttt{meta/metafor}, , NumPy, Matplotlib, MR-BRT (GBD Study estimation) \
+\textbf{Statistical Modeling:} \texttt{tidyverse}, Pandas, \texttt{ggplot2}, \texttt{lme4}, \texttt{survival}, \texttt{geepack}, \texttt{gam}, \texttt{rJAGS}, \texttt{rstan}, \texttt{metafor}, , NumPy, Matplotlib, MR-BRT (GBD Study estimation) \
 \textbf{Languages:} English (fluent), Spanish (native) \
 \textbf{Core Competencies:} Data analysis, teamwork, problem solving, science communication, mentorship
 
@@ -99,7 +97,7 @@ Health data scientist and epidemiologist specializing in the health data lifecyc
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
   \item Developed hyperparameters for a Bayesian hierarchical meta‑regression model to estimate prevalence, incidence, and clinical outcomes of lower‑respiratory‑tract infections across 80 countries.
-  \item Improved code to screen ICD-9 and ICD-10 codes over EHR data for estimating mortality rates among homeless populations, substance users, and incarcerated individuals across 22 high-income countries, reducing processing time by 25\%.
+  \item Executed a MCMC algorithm with data-driven priors to estimate the overlap among inclusion health populations in 22 high-income countries to compute population-attributable fractions and standardized mortality ratios.
   \item Executed ML algorithms on EHR data extraction from 2 countries with 60+ million records to build population-level summaries per age and sex groups, including simulation-based scenario testing.
 \end{itemize}
 } \\
@@ -114,7 +112,7 @@ Health data scientist and epidemiologist specializing in the health data lifecyc
 \end{itemize}
 } \\
 \\
-\textbf{Real-World Evidence Consultant} & \textbf{Jan 2023 – Jan 2024} \\
+\textbf{Health Economics Consultant} & \textbf{Jan 2023 – Jan 2024} \\
 \textsc{Health Technology Assessment and Research Institute} & \textsc{Lima – Peru}\\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
