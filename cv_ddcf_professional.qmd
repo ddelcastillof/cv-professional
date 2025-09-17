@@ -1,7 +1,7 @@
 ---
 format:
   pdf:
-    output-file: resume.pdf
+    output-file: delcastillo_091725.pdf
     toc: false
     number-sections: false
     colorlinks: true
@@ -78,12 +78,13 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \section*{Skills}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
-\textbf{Programming:} SQL (MySQL), Python, R, Stata \
+\textbf{Programming:} SQL (MySQL/PostgreSQL), Python, R, Stata \
 \textbf{Cloud Computing:} Slurm HPC, Docker, Linux environments (bash) \
 \textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Shiny (R), Git version control (GitHub, Bitbucket) \
 \textbf{Data Standards:} HIPAA, HL7 FHIR, GDPR, UK GDPR, DPA 2018 \
-\textbf{Statistical Modeling:} \texttt{tidyverse}, Pandas, \texttt{ggplot2}, \texttt{lme4}, \texttt{survival}, \texttt{geepack}, \texttt{gam}, \texttt{rJAGS}, \texttt{rstan}, \texttt{metafor}, , NumPy, Matplotlib, MR-BRT (GBD Study estimation) \
+\textbf{Packages:} \texttt{tidyverse}, Pandas, \texttt{ggplot2}, \texttt{lme4}, \texttt{mice}, \texttt{survival}, \texttt{geepack}, \texttt{gam}, \texttt{rJAGS}, \texttt{rstan}, \texttt{metafor}, \texttt{did}, NumPy, Matplotlib, Seaborn, MR-BRT (GBD Study estimation) \
 \textbf{Languages:} English (fluent), Spanish (native) \
+\textbf{Statistical methods:} Survival models, mixed models/GEE, multiple imputation, bootstrapping, interrupted time-series analysis, crosswalking, difference-in-differences analysis, joinpoint regression\
 \textbf{Core Competencies:} Data analysis, teamwork, problem solving, science communication, mentorship
 
 \section*{Professional Experience}
@@ -91,14 +92,13 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
-
 \textbf{Graduate Research Assistant} & \textbf{Jul 2024 – Jun 2025} \\
 \textsc{Institute for Health Metrics and Evaluation} & \textsc{Seattle - USA} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Developed hyperparameters for a Bayesian hierarchical meta‑regression model to estimate prevalence, incidence, and clinical outcomes of lower‑respiratory‑tract infections across 80 countries.
-  \item Executed a MCMC algorithm with data-driven priors to estimate the overlap among inclusion health populations in 22 high-income countries to compute population-attributable fractions and standardized mortality ratios.
-  \item Executed ML algorithms on EHR data extraction from 2 countries with 60+ million records to build population-level summaries per age and sex groups, including simulation-based scenario testing.
+  \item Led the development of hyperparameters for a Bayesian hierarchical meta‑regression model to estimate prevalence, incidence, and clinical outcomes of lower‑respiratory‑tract infections across 80 countries.
+  \item Executed an MCMC algorithm with data-driven priors and uncertainty propagation to estimate the overlap among inclusion health populations in 22 high-income countries to compute population-attributable fractions and standardized mortality ratios.
+  \item Performed ML algorithms on EHR data extraction from 2 countries with 60+ million records to build population-level summaries per age and sex groups, including simulation-based scenario testing.
 \end{itemize}
 } \\
 \\
@@ -112,13 +112,13 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \end{itemize}
 } \\
 \\
-\textbf{Health Economics Consultant} & \textbf{Jan 2023 – Jan 2024} \\
-\textsc{Health Technology Assessment and Research Institute} & \textsc{Lima – Peru}\\
+\textbf{Real-World Evidence Consultant} & \textbf{Jan 2023 – Jan 2024} \\
+\textsc{Social Security System (ESSALUD)} & \textsc{Lima – Peru}\\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Harmonised claims and inpatient EHR-data from +50 hospitals within a trusted research environment to provide comprehensive insights into healthcare outcomes.
+  \item Harmonized claims and inpatient EHR data from +50 hospitals to provide comprehensive insights into healthcare outcomes.
   \item Executed budget impact and cost-effectiveness models that prioritized oncological interventions worth \$1 M+.
-  \item Synthesised systematic review/evidence synthesis and statistical estimates from EHR data into executive reports, guiding reimbursement policy for Peru’s Social Security System.
+  \item Synthesised systematic review/evidence synthesis and statistical estimates from clinical data into executive reports, guiding reimbursement policy for Peru’s Social Security System.
 \end{itemize}
 } \\
 \\
@@ -126,8 +126,8 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textsc{CRONICAS Center of Excellence in Chronic Diseases} & \textsc{Lima – Peru}\\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Coordinated 2 workshops per site with community health workers in 3 Peruvian regions to co-design a mobile application for early detection of cognitive impairment and dementia.
-  \item Analyzed longitudinal data using generalised linear methods and survival curves to support research grant proposals in noncommunicable disease epidemiology by conducting preliminary data analysis on clinical, demographic, and biological biomarkers.
+  \item Analyzed longitudinal data from observational studies and RCTs using generalised linear methods and survival curves in cardiometabolic disease epidemiology. 
+  \item Conducted preliminary data analysis on clinical, demographic, and biological biomarkers to support research grant proposals.
   \item Co-authored 5 scientific manuscripts, which included longitudinal data analyses and machine learning models.
 \end{itemize}
 } \\
@@ -142,9 +142,35 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textsc{Universidad Peruana Cayetano Heredia} & \textsc{Lima - Peru} \\
 \end{longtable}
 
-\section*{Teaching Professional Activities}
+\section*{Research Support and Teaching Activities}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
+\subsection{Research Support}
+```{r importing grants, include = F, echo = F}
+grants <- get_cv_sheet('grants') |>
+  mutate(
+    status  = na_to_space(status),
+    role = na_to_space(role),
+    project_code = na_to_space(id),
+    budget   = na_to_space(budget_total),
+    awarded   = na_to_space(awarded),
+    funder_1 = na_to_space(sponsor_1),
+    funder_2 = na_to_space(sponsor_2),
+    year_start = na_to_space(begin),
+    year_end = na_to_space(end),
+    title = na_to_space(title),
+    pi = ifelse(is.na(pi), '', paste0(pi, '.')),
+    coi_1 = ifelse(is.na(coi_1), '', paste0(coi_1, '.')),
+    coi_2 = ifelse(is.na(coi_2), '', paste0(coi_2, '.'))
+    ) |> 
+  arrange(desc(status))
+```
+\subsubsection{Concluded Research Support}
+```{r grants_text}
+#| results: asis
+make_grants_table(grants, "concluded")
+```
+
 \subsection{Teaching}
 \vspace{-1em}
 \begin{longtable}{>{\raggedright\arraybackslash}p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
