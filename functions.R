@@ -17,12 +17,19 @@ gscholar_stats <- function(url) {
 }
 
 get_cites <- function(url) {
-  html <- xml2::read_html(url)
-  node <- rvest::html_nodes(html, xpath='//*[@id="gsc_rsb_st"]')
-  cites_df <- rvest::html_table(node)[[1]]
-  cites <- data.frame(t(as.data.frame(cites_df)[,2]))
-  names(cites) <- c('citations', 'hindex', 'i10index')
-  return(cites)
+  tryCatch({
+    html <- xml2::read_html(url)
+    node <- rvest::html_nodes(html, xpath='//*[@id="gsc_rsb_st"]')
+    if (length(node) == 0) {
+      return(data.frame(citations = "N/A", hindex = "N/A", i10index = "N/A"))
+    }
+    cites_df <- rvest::html_table(node)[[1]]
+    cites <- data.frame(t(as.data.frame(cites_df)[,2]))
+    names(cites) <- c('citations', 'hindex', 'i10index')
+    return(cites)
+  }, error = function(e) {
+    return(data.frame(citations = "N/A", hindex = "N/A", i10index = "N/A"))
+  })
 }
 
 get_cv_sheet <- function(sheet) {
@@ -80,4 +87,52 @@ enquote <- function(x) {
 
 markdown_url <- function(url) {
   return(paste0('[', url, '](', url,')'))
+}
+
+make_grants_table <- function(df, cat) {
+  grants_filtered <- df |>
+    filter(.data$status == cat) |>
+    mutate(
+      funder = paste0(.data$funder_2, 
+                      ifelse(.data$funder_1 == "", "", 
+                             paste0(", ", .data$funder_1))),
+      period = paste0(.data$year_start, " – ", .data$year_end),
+      investigators = paste0(.data$pi, 
+                            ifelse(.data$coi_1 == "", "", 
+                                   paste0(", ", .data$coi_1)),
+                            ifelse(.data$coi_2 == "", "", 
+                                   paste0(", ", .data$coi_2))),
+      budget = paste0(ifelse(.data$budget_currency == "USD",
+                             "$", ""),
+                      .data$budget_total)
+    )
+    
+  for (i in seq_len(nrow(grants_filtered))) {
+    grant <- grants_filtered[i, ]
+    
+    grant_table <- data.frame(
+      Category = c("Funder:", "Project Code:", "Title:", "Investigators:",
+                   "Period:", "Budget:", "Role:"),
+      Details = c(grant$funder, grant$project_code, grant$title, 
+                  grant$investigators, grant$period, grant$budget, 
+                  grant$role),
+      stringsAsFactors = FALSE
+    )
+    
+    print(kableExtra::kable(grant_table, 
+      format = "latex",
+      col.names = NULL,
+      align = c("l", "l"),
+      booktabs = TRUE,
+      vline = "",
+      bottomrule = "",
+      toprule = "",
+      midrule = "",
+      linesep = ""
+    ))
+    
+    if (i < nrow(grants_filtered)) {
+      cat("\n")
+    }
+  }
 }
