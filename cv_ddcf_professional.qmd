@@ -1,7 +1,7 @@
 ---
 format:
   pdf:
-    output-file: delcastillo_091725.pdf
+    output-file: delcastillo_resume.pdf
     toc: false
     number-sections: false
     colorlinks: true
