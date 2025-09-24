@@ -1,7 +1,7 @@
 ---
 format:
   pdf:
-    output-file: delcastillo_resume.pdf
+    output-file: Darwin_DelCastillo_Resume.pdf
     toc: false
     number-sections: false
     colorlinks: true
@@ -71,20 +71,20 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 
 &\\
 
-\textbf{Medical Doctor (MD)} & \textbf{Mar 2014 – Dec 2020} \\
+\textbf{Doctor in Medicine (MD)} & \textbf{Mar 2014 – Dec 2020} \\
 \textsc{Universidad Nacional Mayor de San Marcos} & \textsc{Lima - Peru} \\
 \end{longtable}
 
 \section*{Skills}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
-\textbf{Programming:} SQL (MySQL/PostgreSQL), Python, R, Stata \
+\textbf{Programming:} R, Stata, SQL (MySQL), Python \
 \textbf{Cloud Computing:} Slurm HPC, Docker, Linux environments (bash) \
-\textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Shiny (R), Git version control (GitHub, Bitbucket) \
-\textbf{Data Standards:} HIPAA, HL7 FHIR, GDPR, UK GDPR, DPA 2018 \
-\textbf{Packages:} \texttt{tidyverse}, Pandas, \texttt{ggplot2}, \texttt{lme4}, \texttt{mice}, \texttt{survival}, \texttt{geepack}, \texttt{gam}, \texttt{rJAGS}, \texttt{rstan}, \texttt{metafor}, \texttt{did}, NumPy, Matplotlib, Seaborn, MR-BRT (GBD Study estimation) \
+\textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Shiny (R), ArcGIS, Power BI, Git version control (GitHub, Bitbucket, GitLab) \
+\textbf{Data Standards:} HIPAA, ICH E6, HL7 FHIR, GDPR, UK GDPR, DPA 2018, ICD-10/ICD-9/SNOMED \
+\textbf{Packages:} \texttt{tidyverse}, \texttt{ggplot2}, \texttt{lme4}, \texttt{survival}, \texttt{sf}, \texttt{spdep}, \texttt{cmprsk}, \texttt{mice}, \texttt{geepack}, \texttt{metafor}, \texttt{rstan}, \texttt{caret}, \texttt{Pandas}, \texttt{NumPy}, \texttt{Matplotlib}, MR-BRT \
+\textbf{Statistical methods:} Bayesian hierarchical modelling (MCMC), GLM/GLMM, time-to-event models, competing risks, basic time-series (trend \& seasonality), basic spatial analysis for areal data (Moran’s I), multiple imputation, meta-analysis, crosswalking, uncertainty quantification (confidence \& posterior intervals) \
 \textbf{Languages:} English (fluent), Spanish (native) \
-\textbf{Statistical methods:} Survival models, mixed models/GEE, multiple imputation, bootstrapping, interrupted time-series analysis, crosswalking, difference-in-differences analysis, joinpoint regression\
 \textbf{Core Competencies:} Data analysis, teamwork, problem solving, science communication, mentorship
 
 \section*{Professional Experience}
@@ -92,13 +92,13 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
-\textbf{Graduate Research Assistant} & \textbf{Jul 2024 – Jun 2025} \\
+\textbf{Graduate Research Assistant (Clinical Informatics)} & \textbf{Jul 2024 – Jun 2025} \\
 \textsc{Institute for Health Metrics and Evaluation} & \textsc{Seattle - USA} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
   \item Led the development of hyperparameters for a Bayesian hierarchical meta‑regression model to estimate prevalence, incidence, and clinical outcomes of lower‑respiratory‑tract infections across 80 countries.
-  \item Executed an MCMC algorithm with data-driven priors and uncertainty propagation to estimate the overlap among inclusion health populations in 22 high-income countries to compute population-attributable fractions and standardized mortality ratios.
-  \item Performed ML algorithms on EHR data extraction from 2 countries with 60+ million records to build population-level summaries per age and sex groups, including simulation-based scenario testing.
+  \item Executed an MCMC algorithm with data-driven priors and uncertainty propagation to estimate overlap among inclusion health populations in 22 high-income countries and compute population-attributable fractions and standardized mortality ratios.
+  \item Produced a global map of study locations using GBD 2023 georreference data to visualize geographic coverage and data gaps, informing meta-analysis data sources.
 \end{itemize}
 } \\
 \\
@@ -106,7 +106,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textsc{Department of Global Health – University of Washington} & \textsc{Seattle - USA} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize} 
-  \item Designed the study protocol and coordinated a mixed-methods evaluation of implementation strategies for pediatric burn care across >10 low-resource Peruvian hospitals.
+  \item Designed the study protocol and rolled out questionnaires for a mixed-methods evaluation of implementation strategies for pediatric burn care across 10 low-resource Peruvian hospitals.
   \item Co-developed communication strategies with 2 stakeholder organizations to translate complex findings for healthcare policymakers.
   \item Conducted a systematic review to assess mental health policy implementation indicators in low-and middle-income countries as part of a consultancy for an international NGO.
 \end{itemize}
@@ -116,17 +116,17 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textsc{Social Security System (ESSALUD)} & \textsc{Lima – Peru}\\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Harmonized claims and inpatient EHR data from +50 hospitals to provide comprehensive insights into healthcare outcomes.
-  \item Executed budget impact and cost-effectiveness models that prioritized oncological interventions worth \$1 M+.
-  \item Synthesised systematic review/evidence synthesis and statistical estimates from clinical data into executive reports, guiding reimbursement policy for Peru’s Social Security System.
+  \item Harmonized claims from over 20 hospitals with over 5 million encounters to support national health technology assessment and prioritization processes.
+  \item Executed budget impact and cost-effectiveness models that prioritized oncological interventions worth over \$1 M.
+  \item Synthesized systematic review/evidence synthesis and statistical estimates from clinical data into executive reports and client presentations, guiding reimbursement policy for Peru's Social Security System.
 \end{itemize}
 } \\
-\\
+\newpage
 \textbf{Research Assistant} & \textbf{Mar 2019 – Aug 2023}\\
 \textsc{CRONICAS Center of Excellence in Chronic Diseases} & \textsc{Lima – Peru}\\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Analyzed longitudinal data from observational studies and RCTs using generalised linear methods and survival curves in cardiometabolic disease epidemiology. 
+  \item Analyzed longitudinal data from population cohorts and RCTs using generalised linear methods and survival curves in cardiometabolic disease epidemiology. 
   \item Conducted preliminary data analysis on clinical, demographic, and biological biomarkers to support research grant proposals.
   \item Co-authored 5 scientific manuscripts, which included longitudinal data analyses and machine learning models.
 \end{itemize}
@@ -140,6 +140,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 \textbf{Professional Certificate in Clinical Research} & \textbf{Sep 2021 – Apr 2022} \\
 \textsc{Universidad Peruana Cayetano Heredia} & \textsc{Lima - Peru} \\
+& \\
+\textbf{Non-Certificate Trainee in Demographic Methods} & \textbf{Sep 2024 – Current} \\
+\textsc{Center for Studies in Demography and Ecology – University of Washington} & \textsc{Seattle – USA} \\
 \end{longtable}
 
 \section*{Research Support and Teaching Activities}
@@ -219,8 +222,10 @@ mentees |>
 \textbf{2023} & CITI Program, Good Clinical Practice and ICH, Credential ID 65079238 \\
 \textbf{2023} & CITI Program, Human Subjects Learners, Credential ID 65079240 \\
 \textbf{2023} & CITI Program, Biomedical Responsible Conduct of Research, Credential ID 65079239 \\
-\textbf{2021} & Peruvian College of Physicians, Membership No. 94534 \\
+\textbf{2021} & Peruvian Medical Board, License No. 94534 \\
 \end{longtable}
+
+\newpage
 
 \section*{Publications \hspace{0.75cm} ORCID: 0000-0002-8609-0312}
 \vspace{-1.5em}
