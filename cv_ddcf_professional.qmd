@@ -1,7 +1,7 @@
 ---
 format:
   pdf:
-    output-file: resume.pdf
+    output-file: delcastillo_resume.pdf
     toc: false
     number-sections: false
     colorlinks: true
@@ -47,16 +47,16 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 ```
 
 \begin{center}
-\huge{\underline{\textbf{Darwin Del Castillo, MD, MPH}}} \\
+\huge{\uline{\textbf{Darwin Del Castillo, MD, MPH}}} \\
 \vspace{2.5pt}
-\begin{minipage}[c]{0.20\textwidth}
-\faLinkedin \centering\href{https://www.linkedin.com/in/darwin-del-castillo/}{\hspace{0.5em}darwin-del-castillo}
+\begin{minipage}[c]{0.28\textwidth}
+\centering \textbf{LinkedIn:} \href{https://www.linkedin.com/in/darwin-del-castillo/}{darwin-del-castillo}
 \end{minipage}
-\begin{minipage}[c]{0.25\textwidth}
-\faEnvelope \centering\href{mailto:ddelcastillo.f@gmail.com}{\hspace{0.5em}ddelcastillo.f@gmail.com}
+\begin{minipage}[c]{0.28\textwidth}
+\centering \textbf{Email:} \href{mailto:ddelcastillo.f@gmail.com}{ddelcastillo.f@gmail.com}
 \end{minipage}
-\begin{minipage}[c]{0.15\textwidth}
-\faGithub \centering\href{https://github.com/ddelcastillof}{\hspace{0.5em}ddelcastillof} 
+\begin{minipage}[c]{0.28\textwidth}
+\centering \textbf{GitHub:} \href{https://github.com/ddelcastillof}{github.com/ddelcastillof}
 \end{minipage}
 \vspace{-2.5pt}
 \end{center}
@@ -71,34 +71,20 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 
 &\\
 
-\textbf{Medical Doctor (MD)} & \textbf{Mar 2013 – Dec 2020} \\
+\textbf{Doctor of Medicine (MD)} & \textbf{Mar 2013 – Dec 2020} \\
 \textsc{Universidad Nacional Mayor de San Marcos, Lima - Peru} &\\
 \end{longtable}
 
 \section*{Skills}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
-Broad experience in the health data lifecycle: data collection, management, wrangling, querying, analysis, \& visualisation.
-\begin{minipage}[c]{0.70\textwidth}
-\vspace{1pt}
-\begin{itemize}
-\item SQL (MySQL), Python, R, Stata
-\item HPC (Slurm), Linux environments (bash)
-\item VS Code, Jupyter Notebook, Quarto, Markdown, \LaTeX, Shiny (R), GIS tools, REDCap, Office 365 Suite
-\item Data Standards: HIPAA, UK GDPR, DPA 2018
-\item Team-based projects on Github and Bitbucket
-\item Packages: tidyverse, ggplot2, meta/metafor, lme4, survival, geepack, gam, lavaan, sf, rJAGS, rstan, Pandas, Matplotlib, NumPy, MR-BRT (GBD Study estimation), amongst other tools.
-\end{itemize}
-\end{minipage}
-\begin{minipage}[c]{0.30\textwidth}
-\begin{itemize}
-\item Fluency in English \& Spanish
-\item Teamwork \& collaboration
-\item Problem solving
-\item Science communication
-\item Mentorship
-\end{itemize}
-\end{minipage}
+\textbf{Programming:} SQL (MySQL), R, Stata, Python \
+\textbf{Cloud Computing:} Slurm HPC, Docker, Linux environments (bash) \
+\textbf{Tools:} VS Code, Quarto, \LaTeX, Shiny (R), ArcGIS, Power BI, REDCap, Office 365 Suite, Git version control (GitHub, Bitbucket, GitLab) \
+\textbf{Data Standards:} HIPAA, ICH E6, HL7 FHIR, GDPR, UK GDPR, DPA 2018, ICD-10/ICD-9/SNOMED \
+\textbf{Packages:} \texttt{tidyverse}, \texttt{ggplot2}, \texttt{lme4}, \texttt{survival}, \texttt{sf}, \texttt{spdep}, \texttt{cmprsk}, \texttt{mice}, \texttt{geepack}, \texttt{metafor}, \texttt{rstan}, \texttt{caret}, \texttt{Pandas}, \texttt{NumPy}, \texttt{Matplotlib}, MR-BRT \
+\textbf{Languages:} English (fluent), Spanish (native) \
+\textbf{Core Competencies:} Data analysis, teamwork, problem solving, science communication, mentorship
 
 \section*{Professional Experience}
 \vspace{-1.5em}
@@ -110,9 +96,9 @@ Broad experience in the health data lifecycle: data collection, management, wran
 \textsc{Institute for Health Metrics and Evaluation} & \textsc{Seattle - USA} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-\item Developed informative Bayesian priors for a Bayesian hierarchical meta‑regression model to estimate prevalence, incidence, and clinical‐outcome occurrence of lower‑respiratory‑tract infections across 80 countries, informing GBD 2025 inputs.
-\item Executed a Gibbs sampler using data from a meta-analysis to estimate the proportion of overlap between socially excluded groups in 22 high-income countries.
-\item Estimated population-attributable fractions and standardised mortality ratios for socially excluded groups in 22 high-income countries.
+\item Developed hyperparameters for a Bayesian hierarchical meta‑regression model to estimate prevalence, incidence, and clinical‐outcome occurrence of lower‑respiratory‑tract infections across 80 countries.
+\item Executed an MCMC using data-driven priors and uncertainty propagation to estimate the probabilistic overlap between inclusion health groups in 22 high-income countries.
+\item Produced a global map of study locations using GBD 2023 georeference data to visualize geographic coverage and data gaps, informing meta-analysis data sources.
 \end{itemize}
 } \\
 \\
@@ -146,6 +132,17 @@ Broad experience in the health data lifecycle: data collection, management, wran
 \end{itemize}
 } \\
 \newpage
+\textbf{Data Manager} & \textbf{Mar 2022 - Mar 2023}\\
+\multicolumn{2}{p{18cm}}{\textbf{Via Libre Association}} \\
+\multicolumn{2}{p{18cm}}{\textbf{Lima (Peru)}} \\
+\multicolumn{2}{p{18cm}}{%
+\begin{itemize}
+\item Managed patient databases and tracked data collection across multiple clinical sites using REDCap and iMedidata systems.
+\item Resolved data queries and quality issues while monitoring protocol compliance and adverse event reporting.
+\item Created data cleaning reports and recruitment dashboards to support study monitoring and database finalization.
+\end{itemize}
+} \\
+\\
 \textbf{Research Assistant} & \textbf{Mar 2019 – Aug 2023}\\
 \textsc{CRONICAS Center of Excellence in Chronic Diseases} & \textsc{Lima – Peru}\\
 \multicolumn{2}{p{18cm}}{%
@@ -163,7 +160,11 @@ Broad experience in the health data lifecycle: data collection, management, wran
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 \textbf{Professional Certificate in Clinical Research} & \textbf{Sep 2021 – Apr 2022} \\
-\textsc{Universidad Peruana Cayetano Heredia, Lima - Peru} &\\
+\textsc{Universidad Peruana Cayetano Heredia} & \textsc{Lima - Peru}\\
+& \\
+\textbf{Non-Certificate Trainee in Demographic Methods} & \textbf{Sep 2024 – Current} \\
+\textsc{Center for Studies in Demography and Ecology – University of Washington} & \textsc{Seattle – USA} \\
+\end{longtable}
 \end{longtable}
 
 \section*{Teaching Professional Activities}
