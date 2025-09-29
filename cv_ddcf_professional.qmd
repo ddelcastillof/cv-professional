@@ -72,7 +72,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 
 &\\
 
-\textbf{Medical Doctor (MD)} & \textbf{Mar 2013 – Dec 2020} \\
+\textbf{Doctor of Medicine (MD)} & \textbf{Mar 2013 – Dec 2020} \\
 \textsc{Universidad Nacional Mayor de San Marcos, Lima - Peru} & \\
 \end{longtable}
 
@@ -80,12 +80,13 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
 
-\textbf{Programming:} SQL (MySQL), Python, R, Stata, C++ \
-\textbf{Cloud Computing:}  HPC (Slurm), Linux environments (bash) \
-\textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Git version control \
+\textbf{Programming:} R, Stata, SQL (MySQL), Python \
+\textbf{Cloud Computing:} Slurm HPC, Docker, Linux environments (bash) \
+\textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Shiny (R), ArcGIS, Power BI, Git version control (GitHub, Bitbucket, GitLab), REDCap \
+\textbf{Data Standards:} HIPAA, ICH E6, HL7 FHIR, GDPR, UK GDPR, DPA 2018, OMOP CDM, ICD-10/ICD-9/SNOMED \
+\textbf{Packages:} \texttt{tidyverse}, \texttt{data.table}, \texttt{ggplot2}, \texttt{lme4}, \texttt{survival}, \texttt{sf}, \texttt{cmprsk}, \texttt{mice}, \texttt{geepack}, \texttt{metafor}, \texttt{rstan}, \texttt{caret}, \texttt{ivreg}, \texttt{Pandas}, \texttt{NumPy}, \texttt{Matplotlib}, MR-BRT \
+\textbf{Statistical methods:} Bayesian hierarchical modelling (MCMC), GLM/GLMM, time-to-event models, propensity score matching, marginal structural models, competing risks, multiple imputation, meta-analysis, crosswalking, uncertainty quantification (confidence \& posterior intervals) \
 \textbf{Languages:} English (fluent), Spanish (native) \
-\textbf{Core Competencies:} Data analysis, teamwork, problem solving, science communication, mentorship \
-\textbf{Packages:} \emph{R} (tidyverse, ggplot2, rJAGS, rstan, SummarizedExperiment, MultiAssayExperiment, GenomicRanges, biomaRt, VariantAnnotation, SNPRelate, mixOmics, xcms, MSnbase, CAMERA, sva/ComBat EnhancedVolcano); \emph{Python} (Pandas, Matplotlib, NumPy, scikit-allel, pysam, pybedtools). \
 \textbf{Core Competencies:} Data analysis, teamwork, problem solving, science communication, mentorship
 
 \section*{Professional Experience}
@@ -95,14 +96,12 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
 \textbf{UW Medicine Diabetes Institute} & \textbf{Seattle - USA} \\
-\textbf{Research Scientist} & \textbf{Sep 2024 – Current} \\
+\textbf{Research Scientist} & \textbf{Mar 2025 – Current} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Conduct longitudinal metabolomics analyses for the TODAY and TODAY2 cohorts, leveraging \textasciitilde 10 years of follow-up in youth-onset type 2 diabetes to model metabolite trajectories and cardiometabolic disease progression.
-  \item Define and operationalise cardio-kidney-metabolic (CKM) syndrome progression categories as clinical outcomes into the TODAY samples, quantifying associations with metabolite using mixed-effects and multinomial/ordinal models.
-  \item Lead a cross-cohort multi-omics analysis across ARIC, UK Biobank, PURE Latin America, and HELIUS to estimate associations between CKM syndrome and omic features.
-  \item Specify clinically relevant phenotypes for obesity- and liver-related metabolic disease and design association analyses in large cohorts (e.g., UK Biobank).
-  \item Build reproducible R/Python workflows on HPC (Slurm/Linux) for data cleaning, batch correction, feature engineering, multiple-testing control, and sensitivity analyses, producing publication-ready figures and tables.
+  \item Developed advanced survival analyses and omics integration pipelines to identify early biomarkers of diabetic complications, accelerating precision medicine approaches for youth-onset type 2 diabetes patient stratification.
+  \item Engineered scalable data integration platform harmonizing multimodal datasets from 10 clinical studies, enabling cross-study meta-analyses and improving statistical power for biomarker discovery.
+  \item Built data visualization dashboards supporting real-time clinical decision support, enhancing research team productivity and enabling rapid hypothesis testing across metabolomic profiles.
 \end{itemize}
 } \\
 \\
@@ -110,9 +109,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textbf{Graduate Research Assistant} &  \textbf{Jul 2024 – Jun 2025} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Designed and led epidemiological studies using large-scale datasets; delivered medically relevant findings through country-comparative meta-analyses and decision-focused reports for leadership.
-  \item Built Bayesian MCMC workflows to estimate overlap among inclusion-health populations across 22 high-income countries, informing phenotype definition and downstream burden estimation.
-  \item Productionised version-controlled R pipelines for EHR data quality assessment (Git/HPC), diagnosing anomalies and improving reliability across \textasciitilde 30 million records.
+  \item Led population health analyses across 22 countries using real-world datasets, generating evidence-based insights for strategic decision-making and market access optimization.
+  \item Developed Bayesian statistical models to define patient phenotypes and estimate disease burden, directly supporting epidemiological research critical for pharmaceutical target identification and indication expansion.
+  \item Built production-grade data quality pipelines processing 30+ million EHR records, ensuring data integrity standards essential for regulatory submissions and post-market surveillance.
 \end{itemize}
 } \\
 \\
@@ -120,9 +119,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textbf{Real-World-Evidence Consultant} & \textbf{Jan 2023 – Jan 2024} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Structured and consolidated multi-source health data (surveillance, clinical studies) to generate real-world evidence for priority setting in chronic and cardiometabolic disease.
-  \item Conducted budget impact and cost-effectiveness assessments to inform reimbursement and strategic purchasing decisions under national budgets.
-  \item Synthesised evidence into executive-ready briefs for policymakers and clinical partners, emphasising quantitative strength of evidence and uncertainty.
+  \item Generated real-world evidence from claims and inpatient data to support market access strategies and value demonstration for chronic disease therapeutics.
+  \item Performed health economic evaluations including budget impact and cost-effectiveness analyses, directly informing pricing strategies and reimbursement negotiations with payers.
+  \item Delivered evidence synthesis and strategic recommendations to stakeholders, translating complex clinical data into actionable insights for commercial and regulatory teams.
 \end{itemize}
 } \\
 \newpage
@@ -130,9 +129,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textbf{Research Assistant} & \textbf{Mar 2019 – Aug 2023}\\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Led stakeholder workshops and focus groups to co-design patient-centred interventions; translated qualitative insights into measurable cardiometabolic outcomes.
-  \item Conducted real-world evidence synthesis and cohort analyses in hypertension, diabetes, and multimorbidity, supporting grant proposals and programme design.
-  \item Co-authored evidence summaries and reports for policy audiences, communicating complex analyses clearly to non-technical stakeholders.
+  \item Designed patient-centered intervention studies through stakeholder engagement, developing clinically meaningful endpoints for cardiometabolic disease research aligned with regulatory requirements.
+  \item Conducted longitudinal cohort studies in diabetes, hypertension, and multimorbidity, generating real-world evidence to support indication expansion and clinical development programs.
+  \item Authored scientific communications and regulatory documents, demonstrating ability to translate complex clinical data into clear narratives for diverse audiences including regulatory agencies.
 \end{itemize}
 } \\
 
