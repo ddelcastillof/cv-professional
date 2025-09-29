@@ -71,7 +71,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 
 &\\
 
-\textbf{Doctor in Medicine (MD)} & \textbf{Mar 2014 – Dec 2020} \\
+\textbf{Doctor of Medicine (MD)} & \textbf{Mar 2014 – Dec 2020} \\
 \textsc{Universidad Nacional Mayor de San Marcos} & \textsc{Lima - Peru} \\
 \end{longtable}
 
@@ -80,10 +80,10 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \textbf{Programming:} R, Stata, SQL (MySQL), Python \
 \textbf{Cloud Computing:} Slurm HPC, Docker, Linux environments (bash) \
-\textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Shiny (R), ArcGIS, Power BI, Git version control (GitHub, Bitbucket, GitLab) \
+\textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Shiny (R), ArcGIS, Power BI, Git version control (GitHub, Bitbucket, GitLab), REDCap \
 \textbf{Data Standards:} HIPAA, ICH E6, HL7 FHIR, GDPR, UK GDPR, DPA 2018, ICD-10/ICD-9/SNOMED \
-\textbf{Packages:} \texttt{tidyverse}, \texttt{ggplot2}, \texttt{lme4}, \texttt{survival}, \texttt{sf}, \texttt{spdep}, \texttt{cmprsk}, \texttt{mice}, \texttt{geepack}, \texttt{metafor}, \texttt{rstan}, \texttt{caret}, \texttt{Pandas}, \texttt{NumPy}, \texttt{Matplotlib}, MR-BRT \
-\textbf{Statistical methods:} Bayesian hierarchical modelling (MCMC), GLM/GLMM, time-to-event models, competing risks, basic time-series (trend \& seasonality), basic spatial analysis for areal data (Moran’s I), multiple imputation, meta-analysis, crosswalking, uncertainty quantification (confidence \& posterior intervals) \
+\textbf{Packages:} \texttt{tidyverse}, \texttt{data.table}, \texttt{ggplot2}, \texttt{lme4}, \texttt{survival}, \texttt{sf}, \texttt{cmprsk}, \texttt{mice}, \texttt{geepack}, \texttt{metafor}, \texttt{rstan}, \texttt{caret}, \texttt{ivreg}, \texttt{Pandas}, \texttt{NumPy}, \texttt{Matplotlib}, MR-BRT \
+\textbf{Statistical methods:} Bayesian hierarchical modelling (MCMC), GLM/GLMM, time-to-event models, propensity score matching, marginal structural models, competing risks, multiple imputation, meta-analysis, crosswalking, uncertainty quantification (confidence \& posterior intervals) \
 \textbf{Languages:} English (fluent), Spanish (native) \
 \textbf{Core Competencies:} Data analysis, teamwork, problem solving, science communication, mentorship
 
@@ -96,9 +96,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textsc{Institute for Health Metrics and Evaluation} & \textsc{Seattle - USA} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Led the development of hyperparameters for a Bayesian hierarchical meta‑regression model to estimate prevalence, incidence, and clinical outcomes of lower‑respiratory‑tract infections across 80 countries.
+  \item Developed hyperparameters for a Bayesian hierarchical meta-regression model to estimate prevalence, incidence, and clinical-outcome occurrence of lower respiratory tract infections across 225 countries.
   \item Executed an MCMC algorithm with data-driven priors and uncertainty propagation to estimate overlap among inclusion health populations in 22 high-income countries and compute population-attributable fractions and standardized mortality ratios.
-  \item Produced a global map of study locations using GBD 2023 georreference data to visualize geographic coverage and data gaps, informing meta-analysis data sources.
+  \item Produced a global map of study locations using GBD 2023 georeference data to visualize geographic coverage and data gaps, informing meta-analysis data sources.
 \end{itemize}
 } \\
 \\
@@ -116,9 +116,9 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textsc{Social Security System (ESSALUD)} & \textsc{Lima – Peru}\\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Harmonized claims from over 20 hospitals with over 5 million encounters to support national health technology assessment and prioritization processes.
-  \item Executed budget impact and cost-effectiveness models that prioritized oncological interventions worth over \$1 M.
-  \item Synthesized systematic review/evidence synthesis and statistical estimates from clinical data into executive reports and client presentations, guiding reimbursement policy for Peru's Social Security System.
+  \item Harmonized claims and inpatient data from 20+ hospitals (>5 million encounters) using ICD-10 phenotyping and probabilistic linkage.
+  \item Built regression and survival analysis pipelines in R with quality control for reimbursement policy analysis.
+  \item Conducted budget impact and cost-effectiveness analyses with uncertainty quantification for decision-makers.
 \end{itemize}
 } \\
 \newpage
@@ -141,7 +141,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textbf{Professional Certificate in Clinical Research} & \textbf{Sep 2021 – Apr 2022} \\
 \textsc{Universidad Peruana Cayetano Heredia} & \textsc{Lima - Peru} \\
 & \\
-\textbf{Non-Certificate Trainee in Demographic Methods} & \textbf{Sep 2024 – Current} \\
+\textbf{Non-Certificate Trainee in Demographic Methods} & \textbf{Sep 2024 – Jun 2025} \\
 \textsc{Center for Studies in Demography and Ecology – University of Washington} & \textsc{Seattle – USA} \\
 \end{longtable}
 
