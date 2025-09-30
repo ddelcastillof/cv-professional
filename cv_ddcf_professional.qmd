@@ -1,7 +1,7 @@
 ---
 format:
   pdf:
-    output-file: delcastillo_darwin_cv.pdf
+    output-file: resume.pdf
     toc: false
     number-sections: false
     colorlinks: true
@@ -80,10 +80,10 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
 
-\textbf{Programming:} R, Stata, SQL (MySQL), Python \
+\textbf{Programming:} R, SAS, SQL (MySQL), Python \
 \textbf{Cloud Computing:} Slurm HPC, Docker, Linux environments (bash) \
-\textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Shiny (R), ArcGIS, Power BI, Git version control (GitHub, Bitbucket, GitLab), REDCap \
-\textbf{Data Standards:} HIPAA, ICH E6, HL7 FHIR, GDPR, UK GDPR, DPA 2018, OMOP CDM, ICD-10/ICD-9/SNOMED \
+\textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Shiny (R), ArcGIS, Power BI, Git version control (GitHub, Bitbucket, GitLab) \
+\textbf{Data Standards:} HIPAA, ICH E6, HL7 FHIR, GDPR, UK GDPR, DPA 2018, OMOP CDM, ICD-10/ICD-9/SNOMED, CDISC \
 \textbf{Packages:} \texttt{tidyverse}, \texttt{data.table}, \texttt{ggplot2}, \texttt{lme4}, \texttt{survival}, \texttt{sf}, \texttt{cmprsk}, \texttt{mice}, \texttt{geepack}, \texttt{metafor}, \texttt{rstan}, \texttt{caret}, \texttt{ivreg}, \texttt{Pandas}, \texttt{NumPy}, \texttt{Matplotlib}, MR-BRT \
 \textbf{Statistical methods:} Bayesian hierarchical modelling (MCMC), GLM/GLMM, time-to-event models, propensity score matching, marginal structural models, competing risks, multiple imputation, meta-analysis, crosswalking, uncertainty quantification (confidence \& posterior intervals) \
 \textbf{Languages:} English (fluent), Spanish (native) \
@@ -95,7 +95,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
-\textbf{UW Medicine Diabetes Institute} & \textbf{Seattle - USA} \\
+\textbf{UW Medicine Diabetes Institute} & \textbf{Seattle, USA} \\
 \textbf{Research Scientist} & \textbf{Mar 2025 – Current} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
@@ -105,7 +105,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \end{itemize}
 } \\
 \\
-\textbf{Institute for Health Metrics and Evaluation} & \textbf{Seattle - USA} \\
+\textbf{Institute for Health Metrics and Evaluation} & \textbf{Seattle, USA} \\
 \textbf{Graduate Research Assistant} &  \textbf{Jul 2024 – Jun 2025} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
@@ -115,7 +115,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \end{itemize}
 } \\
 \\
-\textbf{Health Technology Assessment and Research Institute} & \textbf{Lima - Peru} \\
+\textbf{Health Technology Assessment and Research Institute} & \textbf{Lima, Peru} \\
 \textbf{Real-World-Evidence Consultant} & \textbf{Jan 2023 – Jan 2024} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
@@ -125,7 +125,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \end{itemize}
 } \\
 \newpage
-\textbf{CRONICAS Center of Excellence in Chronic Diseases} & \textbf{Lima - Peru}\\
+\textbf{CRONICAS Center of Excellence in Chronic Diseases} & \textbf{Lima, Peru}\\
 \textbf{Research Assistant} & \textbf{Mar 2019 – Aug 2023}\\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
