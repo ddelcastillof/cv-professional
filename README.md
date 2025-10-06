@@ -16,4 +16,4 @@ This repository contains my CV/Resume designed for non-academic positions. It us
 - Quarto
 - pandoc
 - LaTeX
-- A Google Sheet with your publications (private access)
+- A Google Sheet document
