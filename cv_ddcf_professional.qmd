@@ -1,7 +1,7 @@
 ---
 format:
   pdf:
-    output-file: Darwin_DelCastillo_Resume.pdf
+    output-file: DelCastillo_Resume.pdf
     toc: false
     number-sections: false
     colorlinks: true
