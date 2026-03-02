@@ -1,7 +1,7 @@
 ---
 format:
   pdf:
-    output-file: resume.pdf
+    output-file: DelCastillo_Resume.pdf
     toc: false
     number-sections: false
     colorlinks: true
@@ -23,8 +23,7 @@ execute:
   eval: true
 ---
 
-```{r}
-#| name: setup
+```{r setup}
 #| include: false
 #| message: false
 #| eval: true
@@ -38,17 +37,10 @@ fig.retina = 3
 )
 
 source("functions.R")
-
-# Store IDs
-gscholar_id <- "iNdNU5QAAAAJ"
-gscholar_page <- paste0("https://scholar.google.com/citations?user=", gscholar_id)
-
-# Google Scholar text
-text_gs <- invisible(gscholar_stats(url = gscholar_page))
 ```
 
 \begin{center}
-\Large{\uline{\textbf{Darwin Del Castillo, MD, MPH}}} \\
+\huge{\uline{\textbf{Darwin Del Castillo, MD, MPH}}} \\
 \vspace{2.5pt}
 \begin{minipage}[c]{0.28\textwidth}
 \centering \textbf{LinkedIn:} \href{https://www.linkedin.com/in/darwin-del-castillo/}{darwin-del-castillo}
@@ -61,88 +53,92 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \end{minipage}
 \vspace{-2.5pt}
 \end{center}
+\section*{Professional Summary}
+\vspace{-1.5em}
+\textcolor{gray}{\rule{\textwidth}{0.5pt}}
 
-\section*{Scientific Education}
+Epidemiologist and physician with an MPH in Epidemiology and extensive experience translating real-world evidence from claims, electronic health records, linked administrative data, cohorts, and observational studies across the UK, US, and Peru into meaningful insights. Strong background in causal inference, survival analysis, evidence synthesis, and communicating findings to both specialist and lay audiences. Adept at integrating state-of-the-art tools, such as large language models, into analytical workflows to support coding and research. Particularly interested in applying this skill set to advance non-communicable disease drug development in global, industry environments.
+
+\section*{Education}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 
 \textbf{Master of Public Health (MPH) – Epidemiology} & \textbf{Sep 2023 – Jun 2025} \\
-\textsc{University of Washington, Seattle - USA} & \\
+\textsc{University of Washington} & \textsc{Seattle - USA} \\
 
 &\\
 
-\textbf{Doctor of Medicine (MD)} & \textbf{Mar 2013 – Dec 2020} \\
-\textsc{Universidad Nacional Mayor de San Marcos, Lima - Peru} & \\
+\textbf{Doctor of Medicine (MD)} & \textbf{Mar 2014 – Dec 2020} \\
+\textsc{Universidad Nacional Mayor de San Marcos} & \textsc{Lima - Peru} \\
 \end{longtable}
-
 \section*{Skills}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
 
-\textbf{Programming:} R, SAS, SQL (MySQL), Python \
-\textbf{Cloud Computing:} Slurm HPC, Docker, Linux environments (bash) \
-\textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Shiny (R), ArcGIS, Power BI, Git version control (GitHub, Bitbucket, GitLab) \
-\textbf{Data Standards:} HIPAA, ICH E6, HL7 FHIR, GDPR, UK GDPR, DPA 2018, OMOP CDM, ICD-10/ICD-9/SNOMED, CDISC \
-\textbf{Packages:} \texttt{tidyverse}, \texttt{data.table}, \texttt{ggplot2}, \texttt{lme4}, \texttt{survival}, \texttt{sf}, \texttt{cmprsk}, \texttt{mice}, \texttt{geepack}, \texttt{metafor}, \texttt{rstan}, \texttt{caret}, \texttt{ivreg}, \texttt{Pandas}, \texttt{NumPy}, \texttt{Matplotlib}, MR-BRT \
-\textbf{Statistical methods:} Bayesian hierarchical modelling (MCMC), GLM/GLMM, time-to-event models, propensity score matching, marginal structural models, competing risks, multiple imputation, meta-analysis, crosswalking, uncertainty quantification (confidence \& posterior intervals) \
-\textbf{Languages:} English (fluent), Spanish (native) \
-\textbf{Core Competencies:} Data analysis, teamwork, problem solving, science communication, mentorship
+\textbf{Programming:} R, Stata, SQL (MySQL), Python\
+\textbf{Cloud Computing:} Slurm HPC, Docker, Linux environments (bash)\
+\textbf{Tools:} VS Code, Jupyter, Quarto, \LaTeX, Shiny (R), ArcGIS, Power BI, Git version control (GitHub, Bitbucket, GitLab), REDCap, Office 365 Suite (Word, Excel, PowerPoint), Generative AI tools for coding (Claude Code)\
+\textbf{Data Standards:} HIPAA, ICH E6, HL7 FHIR, GDPR, UK GDPR, DPA 2018, ICD-10/ICD-9/SNOMED\
+\textbf{Packages:} \texttt{tidyverse}, \texttt{data.table}, \texttt{ggplot2}, \texttt{lme4}, \texttt{survival}, \texttt{sf}, \texttt{cmprsk}, \texttt{mice}, \texttt{geepack}, \texttt{metafor}, \texttt{rstan}, \texttt{caret}, \texttt{ivreg}, \texttt{Pandas}, \texttt{NumPy}, \texttt{Matplotlib}, MR-BRT\
+\textbf{Statistical methods:} Bayesian hierarchical modelling (MCMC), GLM/GLMM, sample-size & power, time-to-event models, propensity score matching, marginal structural models, competing risks, multiple imputation, meta-analysis, crosswalking, uncertainty quantification (confidence & posterior intervals)\
+\textbf{Languages:} English (fluent), Spanish (native)\
+\textbf{Core Competencies:} Real-world evidence generation, literature reviews, project coordination, stakeholder communication, scientific writing, problem solving, mentorship
 
 \section*{Professional Experience}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
-
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
-
-\textbf{UW Medicine Diabetes Institute} & \textbf{Seattle, USA} \\
-\textbf{Research Scientist} & \textbf{Mar 2025 – Current} \\
+\textbf{Research Assistant – Epidemiology} & \textbf{Dec 2025 – Current} \\
+\textsc{School of Health and Wellbeing – University of Glasgow} & \textsc{Glasgow - UK} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Developed advanced survival analyses and omics integration pipelines to identify early biomarkers of diabetic complications, accelerating precision medicine approaches for youth-onset type 2 diabetes patient stratification.
-  \item Engineered scalable data integration platform harmonizing multimodal datasets from 10 clinical studies, enabling cross-study meta-analyses and improving statistical power for biomarker discovery.
-  \item Built data visualization dashboards supporting real-time clinical decision support, enhancing research team productivity and enabling rapid hypothesis testing across metabolomic profiles.
+ \item Generated real-world evidence on the health effects of unemployment using nationally representative longitudinal survey data and a parametric g-formula.
+ \item Estimated the causal effects of relative income on all-cause mortality using linked administrative data and inverse-probability-weighted marginal structural models.
+ \item Supported evidence synthesis and meta-analysis of employability schemes on health outcomes for a systematic review and meta-analysis of the health effects of active labor market policies.
 \end{itemize}
 } \\
 \\
-\textbf{Institute for Health Metrics and Evaluation} & \textbf{Seattle, USA} \\
-\textbf{Graduate Research Assistant} &  \textbf{Jul 2024 – Jun 2025} \\
+\textbf{Research Assistant – Clinical Informatics} & \textbf{Jul 2024 – Jun 2025} \\
+\textsc{Institute for Health Metrics and Evaluation} & \textsc{Seattle - USA} \\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Led population health analyses across 22 countries using real-world datasets, generating evidence-based insights for strategic decision-making and market access optimization.
-  \item Developed Bayesian statistical models to define patient phenotypes and estimate disease burden, directly supporting epidemiological research critical for pharmaceutical target identification and indication expansion.
-  \item Built production-grade data quality pipelines processing 30+ million EHR records, ensuring data integrity standards essential for regulatory submissions and post-market surveillance.
-\end{itemize}
-} \\
-\\
-\textbf{Health Technology Assessment and Research Institute} & \textbf{Lima, Peru} \\
-\textbf{Real-World-Evidence Consultant} & \textbf{Jan 2023 – Jan 2024} \\
-\multicolumn{2}{p{18cm}}{%
-\begin{itemize}
-  \item Generated real-world evidence from claims and inpatient data to support market access strategies and value demonstration for chronic disease therapeutics.
-  \item Performed health economic evaluations including budget impact and cost-effectiveness analyses, directly informing pricing strategies and reimbursement negotiations with payers.
-  \item Delivered evidence synthesis and strategic recommendations to stakeholders, translating complex clinical data into actionable insights for commercial and regulatory teams.
+  \item Developed data-driven inputs for Bayesian hierarchical meta-regression models through a systematic review and a meta-analysis to estimate the burden and clinical outcomes of lower respiratory tract infections worldwide.
+  \item Analysed large-scale real-world data, including structured and unstructured electronic health records from 2 countries with 60+ million records, to generate epidemiological summaries of GBD risk factors stratified by age and sex.
+  \item Executed MCMC-based analyses with data-driven priors and uncertainty propagation to estimate overlap among inclusion health populations in 22 high-income countries and compute population-attributable fractions and standardized mortality ratios.
 \end{itemize}
 } \\
 \newpage
-\textbf{CRONICAS Center of Excellence in Chronic Diseases} & \textbf{Lima, Peru}\\
-\textbf{Research Assistant} & \textbf{Mar 2019 – Aug 2023}\\
+\textbf{Real-World Evidence Consultant – Health Technology Assessment} & \textbf{Jan 2023 – Jan 2024} \\
+\textsc{Social Security System (ESSALUD)} & \textsc{Lima – Peru}\\
 \multicolumn{2}{p{18cm}}{%
 \begin{itemize}
-  \item Designed patient-centered intervention studies through stakeholder engagement, developing clinically meaningful endpoints for cardiometabolic disease research aligned with regulatory requirements.
-  \item Conducted longitudinal cohort studies in diabetes, hypertension, and multimorbidity, generating real-world evidence to support indication expansion and clinical development programs.
-  \item Authored scientific communications and regulatory documents, demonstrating ability to translate complex clinical data into clear narratives for diverse audiences including regulatory agencies.
+  \item Generated real-world evidence from harmonised claims and inpatient data from 20+ hospitals (>5 million encounters) using ICD-10 phenotyping and probabilistic linkage.
+  \item Built regression and survival analysis pipelines in R with quality control for reimbursement policy analyses and healthcare decision-making.
+  \item Developed state-transition models to evaluate reimbursement policy options with deterministic and probabilistic sensitivity analyses.
 \end{itemize}
 } \\
-
+\\
+\textbf{Epidemiology Trainee} & \textbf{Mar 2019 – Aug 2023}\\
+\textsc{CRONICAS Center of Excellence in Chronic Diseases} & \textsc{Lima – Peru}\\
+\multicolumn{2}{p{18cm}}{%
+\begin{itemize}
+  \item Analysed longitudinal data from population cohorts and randomised trials using generalised linear methods and survival analysis in cardiometabolic epidemiology.
+  \item Conducted exploratory analyses of clinical, demographic, and biological biomarkers to support research grant proposals and scientific outputs.
+  \item Co-authored 5 scientific manuscripts involving longitudinal analyses and machine learning models.
+\end{itemize}
+} \\
 \end{longtable}
+
 \section*{Additional Education}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
-
 \begin{longtable}{p{14cm}>{\raggedleft\arraybackslash}p{4cm}}
 \textbf{Professional Certificate in Clinical Research} & \textbf{Sep 2021 – Apr 2022} \\
-\textbf{Universidad Peruana Cayetano Heredia, Lima - Peru} &\\
+\textsc{Universidad Peruana Cayetano Heredia} & \textsc{Lima - Peru} \\
+& \\
+\textbf{Non-Certificate Trainee in Demographic Methods} & \textbf{Sep 2024 – Jun 2025} \\
+\textsc{Center for Studies in Demography and Ecology – University of Washington} & \textsc{Seattle – USA} \\
 \end{longtable}
 
 \section*{Licensure and certification}
@@ -150,16 +146,17 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \textcolor{darkgray}{\rule{\textwidth}{0.5pt}}
 \begin{longtable}{>{\raggedright\arraybackslash}p{1.5cm} p{16.5cm}}
 \textbf{2024} & National Registry of Investigators, RENACYT-CONCYTEC, Investigator Level VII (P0160977) \\
-\textbf{2023} & CITI Program, Good Clinical Practice and ICH, Credential ID 65079238 \\
+\textbf{2023} & CITI Program, Good Clinical Practice (ICH E6), Credential ID 65079238 \\
 \textbf{2023} & CITI Program, Human Subjects Learners, Credential ID 65079240 \\
 \textbf{2023} & CITI Program, Biomedical Responsible Conduct of Research, Credential ID 65079239 \\
-\textbf{2021} & Peruvian College of Physicians, Membership No. 94534 \\
+\textbf{2021} & Peruvian Medical Board, License No. 94534 \\
 \end{longtable}
 
 \section*{Publications \hspace{0.75cm} ORCID: 0000-0002-8609-0312}
 \vspace{-1.5em}
 \textcolor{gray}{\rule{\textwidth}{0.5pt}}
 \subsection{Peer-reviewed publications}
+
 ```{r importing pubs, include = F, echo = F}
 pubs <- get_cv_sheet('pubs') |>
   mutate(
@@ -168,7 +165,7 @@ pubs <- get_cv_sheet('pubs') |>
     doi      = case_when(is.na(doi) ~ '',
                          doi == 'Submitted under consideration' ~ doi,
                          TRUE ~ paste0('Available at: [', doi, '](', 'https://doi.org/', doi, ')')
-                ),
+       ),
     year     = paste0("(", year, ")"),
     title    = enquote(title),
     conference = ifelse(is.na(conference_name), '', paste0('\\textbf{','\\uline{', conference_name, '}','}')),
