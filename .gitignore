@@ -25,6 +25,9 @@
 vignettes/*.html
 vignettes/*.pdf
 
+# Build artifacts
+build/
+
 # OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
 .httr-oauth
 
@@ -39,8 +42,9 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# pkgdown site
+# pkgdown site — exclude generated output but keep docs/superpowers/
 docs/
+!docs/superpowers/
 
 # translation temp files
 po/*~
