@@ -250,5 +250,68 @@ render_certifications <- function(certs) {
   ))
 }
 
+format_pub_entry <- function(row) {
+  authors      <- format_authors_vancouver(unlist(row$AUTHOR))
+  year         <- na_to_empty(row$YEAR)
+  title        <- na_to_empty(row$TITLE)
+  journal      <- na_to_empty(row$JOURNAL)
+  volume       <- na_to_empty(row$VOLUME)
+  number       <- na_to_empty(row$NUMBER)
+  pages        <- na_to_empty(row$PAGES)
+  doi          <- na_to_empty(row$DOI)
+
+  vol_str <- if (nchar(volume) > 0) {
+    v <- if (nchar(number) > 0) paste0(volume, "(", number, ")") else volume
+    if (nchar(pages) > 0) paste0(v, ":", pages) else v
+  } else ""
+
+  journal_part <- if (nchar(journal) > 0) paste0("*", journal, "*") else ""
+  year_vol     <- if (nchar(year) > 0 && nchar(vol_str) > 0) {
+    paste0(". ", year, ";", vol_str)
+  } else if (nchar(year) > 0) {
+    paste0(". ", year)
+  } else ""
+
+  doi_part <- if (nchar(doi) > 0) paste0(" doi:", doi, ".") else "."
+
+  paste0(authors, ". ", title, ". ", journal_part, year_vol, doi_part)
+}
+
+render_publications <- function(bib_df, pub_categories) {
+  orcid_line <- raw_latex(c(
+    "\\section{Publications \\hspace{1cm} ORCID: 0000-0002-8609-0312}",
+    "\\vspace{-1.5em}",
+    "\\textcolor{darkgray}{\\rule{\\textwidth}{0.5pt}}"
+  ))
+
+  section_labels <- list(
+    peer_reviewed = "Peer-Reviewed Publications",
+    conference    = "Conference Abstracts"
+  )
+
+  pub_blocks <- list()
+  for (cat in names(section_labels)) {
+    keys <- pub_categories[[cat]]
+    if (is.null(keys) || length(keys) == 0) next
+
+    entries <- lapply(keys, function(key) {
+      row <- bib_df[bib_df$BIBTEXKEY == key, ]
+      if (nrow(row) == 0) {
+        warning("Cite key not found in references.bib: ", key)
+        return(NULL)
+      }
+      format_pub_entry(as.list(row[1, ]))
+    })
+    entries <- Filter(Negate(is.null), entries)
+    if (length(entries) == 0) next
+
+    subsection_header <- raw_latex(paste0("\\subsection{", section_labels[[cat]], "}"))
+    items             <- paste0(seq_along(entries), ". ", unlist(entries))
+    pub_blocks[[cat]] <- c(subsection_header, "", items, "")
+  }
+
+  c(orcid_line, unlist(pub_blocks))
+}
+
 # ── Entry point ───────────────────────────────────────────────────────────────
 if (sys.nframe() == 0) main()

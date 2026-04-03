@@ -174,3 +174,56 @@ test_that("render_certifications produces two-column longtable", {
   expect_true(grepl("CITI Program", result))
   expect_true(grepl("2023", result))
 })
+
+# ── format_pub_entry ──────────────────────────────────────────────────────────
+test_that("format_pub_entry formats a bib row in Vancouver style", {
+  mock_row <- list(
+    AUTHOR  = list(c("Del Castillo, Darwin", "Smith, Jane")),
+    YEAR    = "2021",
+    TITLE   = "Test title",
+    JOURNAL = "Test Journal",
+    VOLUME  = "81",
+    NUMBER  = "4",
+    PAGES   = NA,
+    DOI     = "10.1234/test"
+  )
+  result <- format_pub_entry(mock_row)
+  expect_true(grepl("Del Castillo D", result))
+  expect_true(grepl("Smith J", result))
+  expect_true(grepl("2021;81\\(4\\)", result))
+  expect_true(grepl("doi:10\\.1234/test", result))
+  expect_true(grepl("\\*Test Journal\\*", result))
+})
+
+# ── render_publications ───────────────────────────────────────────────────────
+test_that("render_publications with empty categories renders ORCID header only", {
+  result <- paste(
+    render_publications(data.frame(), list(peer_reviewed = NULL, conference = NULL)),
+    collapse = "\n"
+  )
+  expect_true(grepl("\\\\section\\{Publications", result))
+  expect_true(grepl("ORCID", result))
+  expect_false(grepl("Peer-Reviewed", result))
+})
+
+test_that("render_publications groups entries by category using bib data", {
+  bib_content <- c(
+    '@ARTICLE{TestKey2021,',
+    '  author = "Del Castillo, Darwin and Smith, Jane",',
+    '  title = "Test Publication",',
+    '  journal = "Test Journal",',
+    '  year = "2021",',
+    '  volume = "1",',
+    '  number = "1",',
+    '  doi = "10.1234/test"',
+    '}'
+  )
+  tmp    <- tempfile(fileext = ".bib")
+  writeLines(bib_content, tmp)
+  bib_df <- read_bib(tmp)
+  cats   <- list(peer_reviewed = list("TestKey2021"), conference = NULL)
+  result <- paste(render_publications(bib_df, cats), collapse = "\n")
+  expect_true(grepl("Peer-Reviewed Publications", result))
+  expect_true(grepl("Test Publication", result))
+  unlink(tmp)
+})
