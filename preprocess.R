@@ -113,5 +113,36 @@ read_bib <- function(bib_path) {
   do.call(rbind, Filter(Negate(is.null), rows))
 }
 
+# ── Section renderers ─────────────────────────────────────────────────────────
+
+render_contact_header <- function(contact) {
+  raw_latex(c(
+    "\\noindent",
+    "\\begin{minipage}[c]{0.45\\textwidth}",
+    paste0("{\\huge\\underline{\\textbf{", contact$name, "}}}"),
+    "\\end{minipage}%",
+    "\\hfill",
+    "\\begin{minipage}[c]{0.50\\textwidth}",
+    "\\raggedleft\\large",
+    paste0("\\faLinkedin\\hspace{0.4em}\\href{", contact$linkedin_url,
+           "}{", contact$linkedin, "} \\\\[2pt]"),
+    paste0("\\faEnvelope\\hspace{0.4em}\\href{mailto:", contact$email,
+           "}{", contact$email, "} \\\\[2pt]"),
+    paste0("\\faGithub\\hspace{0.4em}\\href{", contact$github_url,
+           "}{", contact$github, "}"),
+    "\\end{minipage}",
+    "\\vspace{4pt}"
+  ))
+}
+
+render_summary <- function(summary) {
+  raw_latex(c(
+    "\\section{Professional Summary}",
+    "\\vspace{-1.5em}",
+    "\\textcolor{darkgray}{\\rule{\\textwidth}{0.5pt}}",
+    summary$text
+  ))
+}
+
 # ── Entry point ───────────────────────────────────────────────────────────────
 if (sys.nframe() == 0) main()

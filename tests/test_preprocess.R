@@ -74,3 +74,30 @@ test_that("read_bib parses a minimal BibTeX entry", {
   expect_equal(length(result$AUTHOR[[1]]), 2)
   unlink(tmp)
 })
+
+# ── render_contact_header ─────────────────────────────────────────────────────
+test_that("render_contact_header produces raw LaTeX block with FontAwesome icons", {
+  contact <- list(
+    name         = "Test Name, MD",
+    linkedin     = "test-linkedin",
+    linkedin_url = "https://www.linkedin.com/in/test/",
+    email        = "test@example.com",
+    github       = "testuser",
+    github_url   = "https://github.com/testuser"
+  )
+  result <- paste(render_contact_header(contact), collapse = "\n")
+  expect_true(grepl("```\\{=latex\\}", result))
+  expect_true(grepl("\\\\faLinkedin", result))
+  expect_true(grepl("\\\\faEnvelope", result))
+  expect_true(grepl("\\\\faGithub", result))
+  expect_true(grepl("Test Name, MD", result))
+})
+
+# ── render_summary ────────────────────────────────────────────────────────────
+test_that("render_summary produces a LaTeX Professional Summary section", {
+  data   <- list(text = "Test summary paragraph.")
+  result <- paste(render_summary(data), collapse = "\n")
+  expect_true(grepl("\\\\section\\{Professional Summary\\}", result))
+  expect_true(grepl("Test summary paragraph\\.", result))
+  expect_true(grepl("```\\{=latex\\}", result))
+})
