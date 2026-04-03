@@ -145,3 +145,32 @@ test_that("render_experience inserts newpage when new_page_before is true", {
   result <- paste(render_experience(exp), collapse = "\n")
   expect_true(grepl("\\\\newpage", result))
 })
+
+# ── render_skills ─────────────────────────────────────────────────────────────
+test_that("render_skills includes all professional CV category labels", {
+  skills <- list(
+    programming    = "R, Python",
+    cloud          = "Linux",
+    tools          = "VS Code",
+    data_standards = "HIPAA",
+    packages       = "tidyverse",
+    methods        = "Bayesian modelling",
+    languages      = "English",
+    competencies   = "Communication"
+  )
+  result <- paste(render_skills(skills), collapse = "\n")
+  expect_true(grepl("\\\\section\\{Skills\\}", result))
+  expect_true(grepl("\\\\textbf\\{Programming:\\}", result))
+  expect_true(grepl("\\\\textbf\\{Data Standards:\\}", result))
+  expect_true(grepl("\\\\textbf\\{Statistical methods:\\}", result))
+  expect_true(grepl("HIPAA", result))
+})
+
+# ── render_certifications ─────────────────────────────────────────────────────
+test_that("render_certifications produces two-column longtable", {
+  data   <- list(list(name = "CITI Program", year = "2023"))
+  result <- paste(render_certifications(data), collapse = "\n")
+  expect_true(grepl("\\\\section\\{Licensure and Certification\\}", result))
+  expect_true(grepl("CITI Program", result))
+  expect_true(grepl("2023", result))
+})

@@ -210,5 +210,45 @@ render_experience <- function(experience) {
   ))
 }
 
+render_skills <- function(skills) {
+  label_map <- list(
+    programming    = "Programming",
+    cloud          = "Cloud Computing",
+    tools          = "Tools",
+    data_standards = "Data Standards",
+    packages       = "Packages",
+    methods        = "Statistical methods",
+    languages      = "Languages",
+    competencies   = "Core Competencies"
+  )
+  lines <- c()
+  for (key in names(label_map)) {
+    val <- skills[[key]]
+    if (!is.null(val) && nchar(val) > 0) {
+      lines <- c(lines, paste0("\\textbf{", label_map[[key]], ":} ", val, " \\\\"))
+    }
+  }
+  raw_latex(c(
+    "\\section{Skills}",
+    "\\vspace{-1.5em}",
+    "\\textcolor{darkgray}{\\rule{\\textwidth}{0.5pt}}",
+    lines
+  ))
+}
+
+render_certifications <- function(certs) {
+  entries <- lapply(certs, function(cert) {
+    paste0(cert$name, " & \\textbf{", cert$year, "} \\\\")
+  })
+  raw_latex(c(
+    "\\section{Licensure and Certification}",
+    "\\vspace{-1.5em}",
+    "\\textcolor{darkgray}{\\rule{\\textwidth}{0.5pt}}",
+    "\\begin{longtable}{>{\\raggedright\\arraybackslash}p{17cm} p{1cm}}",
+    unlist(entries),
+    "\\end{longtable}"
+  ))
+}
+
 # ── Entry point ───────────────────────────────────────────────────────────────
 if (sys.nframe() == 0) main()
