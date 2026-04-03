@@ -41,3 +41,36 @@ test_that("write_front_matter produces valid YAML front matter block", {
   expect_true(grepl("margin=0.5in", result))
   expect_true(grepl("Test Name, MD", result))
 })
+
+# ── read_bib ──────────────────────────────────────────────────────────────────
+test_that("read_bib returns empty data.frame for empty bib file", {
+  tmp <- tempfile(fileext = ".bib")
+  writeLines("% empty placeholder", tmp)
+  result <- read_bib(tmp)
+  expect_true(is.data.frame(result))
+  expect_equal(nrow(result), 0)
+  unlink(tmp)
+})
+
+test_that("read_bib parses a minimal BibTeX entry", {
+  bib_content <- c(
+    '@ARTICLE{TestKey2021,',
+    '  author = "Del Castillo, Darwin and Smith, Jane",',
+    '  title = "Test Publication",',
+    '  journal = "Test Journal",',
+    '  year = "2021",',
+    '  volume = "1",',
+    '  number = "2",',
+    '  doi = "10.1234/test"',
+    '}'
+  )
+  tmp <- tempfile(fileext = ".bib")
+  writeLines(bib_content, tmp)
+  result <- read_bib(tmp)
+  expect_equal(nrow(result), 1)
+  expect_equal(result$BIBTEXKEY, "TestKey2021")
+  expect_equal(result$YEAR, "2021")
+  expect_equal(result$JOURNAL, "Test Journal")
+  expect_equal(length(result$AUTHOR[[1]]), 2)
+  unlink(tmp)
+})
