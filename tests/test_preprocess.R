@@ -227,3 +227,17 @@ test_that("render_publications groups entries by category using bib data", {
   expect_true(grepl("Test Publication", result))
   unlink(tmp)
 })
+
+# ── main() integration ────────────────────────────────────────────────────────
+test_that("main() writes build/cv.md with all required sections", {
+  main()
+  expect_true(file.exists("build/cv.md"))
+  content <- paste(readLines("build/cv.md"), collapse = "\n")
+  expect_true(grepl("documentclass: scrartcl", content))
+  expect_true(grepl("\\\\section\\{Professional Summary\\}", content))
+  expect_true(grepl("\\\\section\\{Education\\}", content))
+  expect_true(grepl("\\\\section\\{Skills\\}", content))
+  expect_true(grepl("\\\\section\\{Professional Experience\\}", content))
+  expect_true(grepl("\\\\section\\{Licensure and Certification\\}", content))
+  expect_true(grepl("\\\\section\\{Publications", content))
+})
