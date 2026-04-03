@@ -144,5 +144,71 @@ render_summary <- function(summary) {
   ))
 }
 
+render_edu_entry <- function(e) {
+  c(
+    paste0("\\textbf{", e$degree, "} & \\textbf{", e$start, " -- ", e$end, "} \\\\"),
+    paste0("\\textsc{", e$institution, "} & \\textsc{", e$location, "} \\\\"),
+    "& \\\\"
+  )
+}
+
+render_education <- function(education, additional = list()) {
+  entries   <- unlist(lapply(education, render_edu_entry), recursive = FALSE)
+  edu_block <- raw_latex(c(
+    "\\section{Education}",
+    "\\vspace{-1.5em}",
+    "\\textcolor{darkgray}{\\rule{\\textwidth}{0.5pt}}",
+    "\\begin{longtable}{p{14cm}>{\\raggedleft\\arraybackslash}p{4cm}}",
+    entries,
+    "\\end{longtable}"
+  ))
+
+  if (length(additional) == 0) return(edu_block)
+
+  add_entries <- unlist(lapply(additional, render_edu_entry), recursive = FALSE)
+  add_block   <- raw_latex(c(
+    "\\section{Additional Education}",
+    "\\vspace{-1.5em}",
+    "\\textcolor{darkgray}{\\rule{\\textwidth}{0.5pt}}",
+    "\\begin{longtable}{p{14cm}>{\\raggedleft\\arraybackslash}p{4cm}}",
+    add_entries,
+    "\\end{longtable}"
+  ))
+
+  c(edu_block, add_block)
+}
+
+render_exp_entry <- function(e) {
+  header <- c(
+    paste0("\\textbf{", e$title, "} & \\textbf{", e$start, " -- ", e$end, "} \\\\"),
+    paste0("\\textsc{", e$institution, "} & \\textsc{", e$location, "} \\\\")
+  )
+  bullets_block <- if (!is.null(e$bullets) && length(e$bullets) > 0) {
+    c(
+      "\\multicolumn{2}{p{18cm}}{%",
+      "\\begin{itemize}",
+      paste0("  \\item ", unlist(e$bullets)),
+      "\\end{itemize}",
+      "} \\\\",
+      "\\\\"
+    )
+  } else character(0)
+
+  page_break <- if (isTRUE(e$new_page_before)) "\\newpage" else character(0)
+  c(page_break, header, bullets_block)
+}
+
+render_experience <- function(experience) {
+  entries <- unlist(lapply(experience, render_exp_entry), recursive = FALSE)
+  raw_latex(c(
+    "\\section{Professional Experience}",
+    "\\vspace{-1.5em}",
+    "\\textcolor{darkgray}{\\rule{\\textwidth}{0.5pt}}",
+    "\\begin{longtable}{p{14cm}>{\\raggedleft\\arraybackslash}p{4cm}}",
+    entries,
+    "\\end{longtable}"
+  ))
+}
+
 # ── Entry point ───────────────────────────────────────────────────────────────
 if (sys.nframe() == 0) main()

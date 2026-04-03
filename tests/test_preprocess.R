@@ -101,3 +101,47 @@ test_that("render_summary produces a LaTeX Professional Summary section", {
   expect_true(grepl("Test summary paragraph\\.", result))
   expect_true(grepl("```\\{=latex\\}", result))
 })
+
+# ── render_education ──────────────────────────────────────────────────────────
+test_that("render_education produces longtable for primary entries", {
+  edu    <- list(list(degree = "MPH", institution = "UW",
+                      location = "Seattle -- USA", start = "Sep 2023", end = "Jun 2025"))
+  result <- paste(render_education(edu, additional = list()), collapse = "\n")
+  expect_true(grepl("\\\\section\\{Education\\}", result))
+  expect_true(grepl("longtable", result))
+  expect_true(grepl("MPH", result))
+  expect_true(grepl("Sep 2023", result))
+})
+
+test_that("render_education adds Additional Education block when provided", {
+  edu <- list(list(degree = "MPH", institution = "UW",
+                   location = "Seattle", start = "2023", end = "2025"))
+  add <- list(list(degree = "Certificate", institution = "UPCH",
+                   location = "Lima", start = "2021", end = "2022"))
+  result <- paste(render_education(edu, add), collapse = "\n")
+  expect_true(grepl("\\\\section\\{Additional Education\\}", result))
+  expect_true(grepl("Certificate", result))
+})
+
+# ── render_experience ─────────────────────────────────────────────────────────
+test_that("render_experience includes bullets in itemize environment", {
+  exp    <- list(list(title = "Research Assistant", institution = "Test University",
+                      location = "Seattle -- USA", start = "Jan 2024", end = "Current",
+                      bullets = list("Did research.", "Wrote papers.")))
+  result <- paste(render_experience(exp), collapse = "\n")
+  expect_true(grepl("\\\\section\\{Professional Experience\\}", result))
+  expect_true(grepl("\\\\begin\\{itemize\\}", result))
+  expect_true(grepl("Did research\\.", result))
+})
+
+test_that("render_experience inserts newpage when new_page_before is true", {
+  exp <- list(
+    list(title = "Job 1", institution = "Inst", location = "City",
+         start = "2020", end = "2022", bullets = list("Bullet.")),
+    list(title = "Job 2", institution = "Inst", location = "City",
+         start = "2022", end = "Current", new_page_before = TRUE,
+         bullets = list("Bullet."))
+  )
+  result <- paste(render_experience(exp), collapse = "\n")
+  expect_true(grepl("\\\\newpage", result))
+})
