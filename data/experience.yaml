@@ -1,0 +1,40 @@
+- title: "Research Assistant -- Epidemiology"
+  institution: "School of Health and Wellbeing -- University of Glasgow"
+  location: "Glasgow -- UK"
+  start: "Dec 2025"
+  end: "Current"
+  bullets:
+    - "Generated real-world evidence on the health effects of unemployment using nationally representative longitudinal survey data and a parametric g-formula."
+    - "Estimated the causal effects of relative income on all-cause mortality using linked administrative data and inverse-probability-weighted marginal structural models."
+    - "Estimating the effect of implementing economic policies on health outcomes using microsimulation modelling, delivering dashboards to be shared with key stakeholders."
+
+- title: "Research Assistant -- Clinical Informatics"
+  institution: "Institute for Health Metrics and Evaluation"
+  location: "Seattle -- USA"
+  start: "Jul 2024"
+  end: "Jun 2025"
+  new_page_before: true
+  bullets:
+    - "Developed data-driven inputs for Bayesian hierarchical meta-regression models through a systematic review and a meta-analysis to estimate the burden and clinical outcomes of lower respiratory tract infections worldwide."
+    - "Analysed large-scale real-world data, including structured and unstructured electronic health records from 2 countries with 60+ million records, to generate epidemiological summaries of GBD risk factors stratified by age and sex."
+    - "Executed MCMC-based analyses with data-driven priors and uncertainty propagation to estimate overlap among inclusion health populations in 22 high-income countries and compute population-attributable fractions and standardized mortality ratios."
+
+- title: "Real-World Evidence Consultant -- Health Technology Assessment"
+  institution: "Social Security System (ESSALUD)"
+  location: "Lima -- Peru"
+  start: "Jan 2023"
+  end: "Jan 2024"
+  bullets:
+    - "Generated real-world evidence from harmonised claims and inpatient data from 20+ hospitals (>5 million encounters) using ICD-10 phenotyping and probabilistic linkage."
+    - "Built regression and survival analysis pipelines in R with quality control for reimbursement policy analyses and healthcare decision-making."
+    - "Developed state-transition models to evaluate reimbursement policy options with deterministic and probabilistic sensitivity analyses."
+
+- title: "Epidemiology Trainee"
+  institution: "CRONICAS Center of Excellence in Chronic Diseases"
+  location: "Lima -- Peru"
+  start: "Mar 2019"
+  end: "Aug 2023"
+  bullets:
+    - "Analysed longitudinal data from population cohorts and randomised trials using generalised linear methods and survival analysis in cardiometabolic epidemiology."
+    - "Conducted exploratory analyses of clinical, demographic, and biological biomarkers to support research grant proposals and scientific outputs."
+    - "Co-authored 5 scientific manuscripts involving longitudinal analyses and machine learning models."

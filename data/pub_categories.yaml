@@ -1,0 +1,4 @@
+# Map Paperpile BibTeX cite keys to CV subsections.
+# Add keys here after bib/references.bib is populated by Paperpile.
+peer_reviewed: []
+conference: []

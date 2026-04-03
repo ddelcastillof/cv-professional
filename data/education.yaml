@@ -1,0 +1,25 @@
+primary:
+  - degree: "Master of Public Health (MPH) -- Epidemiology"
+    institution: "University of Washington"
+    location: "Seattle -- USA"
+    start: "Sep 2023"
+    end: "Jun 2025"
+
+  - degree: "Doctor of Medicine (MD)"
+    institution: "Universidad Nacional Mayor de San Marcos"
+    location: "Lima -- Peru"
+    start: "Mar 2014"
+    end: "Dec 2020"
+
+additional:
+  - degree: "Professional Certificate in Clinical Research"
+    institution: "Universidad Peruana Cayetano Heredia"
+    location: "Lima -- Peru"
+    start: "Sep 2021"
+    end: "Apr 2022"
+
+  - degree: "Non-Certificate Trainee in Demographic Methods"
+    institution: "Center for Studies in Demography and Ecology -- University of Washington"
+    location: "Seattle -- USA"
+    start: "Sep 2024"
+    end: "Jun 2025"

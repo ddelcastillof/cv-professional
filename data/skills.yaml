@@ -1,0 +1,8 @@
+programming: "R, Stata, SQL (MySQL), Python"
+cloud: "Slurm HPC, Docker, Linux environments (bash)"
+tools: "VS Code, Jupyter, Quarto, \\LaTeX, Shiny (R), ArcGIS, Power BI, Git version control (GitHub, Bitbucket, GitLab), REDCap, Office 365 Suite (Word, Excel, PowerPoint), Generative AI tools for coding (Claude Code)"
+data_standards: "HIPAA, ICH E6, HL7 FHIR, GDPR, UK GDPR, DPA 2018, ICD-10/ICD-9/SNOMED"
+packages: "\\texttt{tidyverse}, \\texttt{data.table}, \\texttt{ggplot2}, \\texttt{lme4}, \\texttt{survival}, \\texttt{sf}, \\texttt{cmprsk}, \\texttt{mice}, \\texttt{geepack}, \\texttt{metafor}, \\texttt{rstan}, \\texttt{caret}, \\texttt{ivreg}, \\texttt{Pandas}, \\texttt{NumPy}, \\texttt{Matplotlib}, MR-BRT"
+methods: "Bayesian hierarchical modelling (MCMC), GLM/GLMM, sample-size \\& power, time-to-event models, propensity score matching, marginal structural models, competing risks, multiple imputation, meta-analysis, crosswalking, uncertainty quantification (confidence \\& posterior intervals)"
+languages: "English (fluent), Spanish (native)"
+competencies: "Real-world evidence generation, literature reviews, project coordination, stakeholder communication, scientific writing, problem solving, mentorship"
