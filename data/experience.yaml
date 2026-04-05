@@ -13,7 +13,6 @@
   location: "Seattle -- USA"
   start: "Jul 2024"
   end: "Jun 2025"
-  new_page_before: true
   bullets:
     - "Developed data-driven inputs for Bayesian hierarchical meta-regression models through a systematic review and a meta-analysis to estimate the burden and clinical outcomes of lower respiratory tract infections worldwide."
     - "Analysed large-scale real-world data, including structured and unstructured electronic health records from 2 countries with 60+ million records, to generate epidemiological summaries of GBD risk factors stratified by age and sex."
