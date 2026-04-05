@@ -5,7 +5,7 @@ build:
 	pandoc build/cv.md \
 		--pdf-engine=xelatex \
 		--template=templates/cv-template.tex \
-		--lua-filter=filters/underline-author.lua \
+		--lua-filter=filters/bold-author.lua \
 		-o DelCastillo_Resume.pdf
 
 clean:

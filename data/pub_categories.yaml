@@ -1,4 +1,8 @@
 # Map Paperpile BibTeX cite keys to CV subsections.
 # Add keys here after bib/references.bib is populated by Paperpile.
-peer_reviewed: []
+peer_reviewed: 
+  - Del-Castillo-Fernandez2021-kl
+  - Lapidaire2023-pr
+  - Vidyasagaran2024-wx
+  - Bazo-Alvarez2024-sw
 conference: []
