@@ -98,7 +98,7 @@ text_gs <- invisible(gscholar_stats(url = gscholar_page))
 \begin{itemize}
   \item Estimated the causal marginal means of unemployement on physical and mental health outcomes using g-methods with survey data.
   \item Calculating causal risk differences for the effect of relative income on mortality using marginal structural models and electronic health records in a trusted research environment.
-  \item Supporting evidence synthesis for a systematic review and meta-analysis on the health effects of active labour market policies.
+  \item Estimating the effect of implementing economic policies on health outcomes using microsimulation modelling, delivering dashboards to be shared with key stakeholders.
 \end{itemize}
 } \\
 \\

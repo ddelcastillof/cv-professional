@@ -1,0 +1,74 @@
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(papersize)$$papersize$paper,$endif$]{$documentclass$}
+
+% ── Encoding & Language ───────────────────────────────────────────────────────
+\usepackage[english]{babel}
+
+% ── Page Layout ───────────────────────────────────────────────────────────────
+$if(geometry)$
+\usepackage[$for(geometry)$$geometry$$sep$,$endfor$]{geometry}
+$endif$
+\usepackage{parskip}
+\usepackage{ragged2e}
+\usepackage{lastpage}
+
+% ── Fonts (XeLaTeX) ───────────────────────────────────────────────────────────
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+
+% ── Tables ────────────────────────────────────────────────────────────────────
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+
+% ── Links & Colors ────────────────────────────────────────────────────────────
+\usepackage{xcolor}
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\definecolor{darkgray}{gray}{0.4}
+$if(colorlinks)$
+\hypersetup{colorlinks=true, urlcolor=linkcolour, linkcolor=linkcolour}
+$endif$
+
+% ── Misc Packages ─────────────────────────────────────────────────────────────
+\usepackage{float}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage{marvosym}
+\usepackage{soul}
+\usepackage{ulem}
+
+% ── Section Formatting ────────────────────────────────────────────────────────
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\normalsize\bfseries\raggedright\uppercase}
+  {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\raggedright}
+  {\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\raggedright}
+  {\thesubsubsection}{1em}{}
+
+% ── Table Environment ─────────────────────────────────────────────────────────
+\let\oldtable\table
+\let\endoldtable\endtable
+\renewenvironment{table}[1][h!]
+  {\oldtable[#1]\center}
+  {\endcenter\endoldtable}
+
+% ── Tightlist (required by Pandoc for bullet lists) ───────────────────────────
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\setcounter{secnumdepth}{0}
+
+% ─────────────────────────────────────────────────────────────────────────────
+
+\begin{document}
+
+$body$
+
+\end{document}
