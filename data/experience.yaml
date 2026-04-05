@@ -12,7 +12,6 @@
   location: "Seattle -- USA"
   start: "Jul 2024"
   end: "Jun 2025"
-  new_page_before: true
   bullets:
     - "Developed hyperparameters for a Bayesian hierarchical meta-regression model to estimate prevalence, incidence, and clinical-outcome occurrence of lower respiratory tract infections across 225 countries."
     - "Modelled using data-driven priors and an MCMC algorithm the distribution of inclusion health populations in 22 high-income countries."
@@ -22,6 +21,7 @@
   location: "Lima -- Peru"
   start: "Jan 2023"
   end: "Jan 2024"
+  new_page_before: true
   bullets:
     - "Harmonized claims and inpatient data from 20+ hospitals (>5 million encounters) using ICD-10 phenotyping and probabilistic linkage."
     - "Built regression and survival analysis pipelines in R with quality control for reimbursement policy analysis."
