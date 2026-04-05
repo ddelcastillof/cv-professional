@@ -135,14 +135,7 @@ render_contact_header <- function(contact) {
   ))
 }
 
-# render_summary <- function(summary) {
-#   raw_latex(c(
-#     "\\section{Professional Summary}",
-#     "\\vspace{-1.5em}",
-#     "\\textcolor{darkgray}{\\rule{\\textwidth}{0.5pt}}",
-#     summary$text
-#   ))
-# }
+# render_summary omitted — not used in this CV
 
 render_edu_entry <- function(e) {
   c(
@@ -319,7 +312,6 @@ main <- function() {
   dir.create("build", showWarnings = FALSE)
 
   contact      <- yaml::read_yaml("data/contact.yaml")
-  #summary_data <- yaml::read_yaml("data/summary.yaml")
   edu_raw      <- yaml::read_yaml("data/education.yaml")
   experience   <- yaml::read_yaml("data/experience.yaml")
   skills_data  <- yaml::read_yaml("data/skills.yaml")

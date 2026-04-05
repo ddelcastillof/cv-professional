@@ -93,15 +93,6 @@ test_that("render_contact_header produces raw LaTeX block with FontAwesome icons
   expect_true(grepl("Test Name, MD", result))
 })
 
-# ── render_summary ────────────────────────────────────────────────────────────
-test_that("render_summary produces a LaTeX Professional Summary section", {
-  data   <- list(text = "Test summary paragraph.")
-  result <- paste(render_summary(data), collapse = "\n")
-  expect_true(grepl("\\\\section\\{Professional Summary\\}", result))
-  expect_true(grepl("Test summary paragraph\\.", result))
-  expect_true(grepl("```\\{=latex\\}", result))
-})
-
 # ── render_education ──────────────────────────────────────────────────────────
 test_that("render_education produces longtable for primary entries", {
   edu    <- list(list(degree = "MPH", institution = "UW",
@@ -234,7 +225,6 @@ test_that("main() writes build/cv.md with all required sections", {
   expect_true(file.exists("build/cv.md"))
   content <- paste(readLines("build/cv.md"), collapse = "\n")
   expect_true(grepl("documentclass: scrartcl", content))
-  expect_true(grepl("\\\\section\\{Professional Summary\\}", content))
   expect_true(grepl("\\\\section\\{Education\\}", content))
   expect_true(grepl("\\\\section\\{Skills\\}", content))
   expect_true(grepl("\\\\section\\{Professional Experience\\}", content))
