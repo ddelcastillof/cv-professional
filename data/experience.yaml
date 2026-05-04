@@ -4,9 +4,9 @@
   start: "Dec 2025"
   end: "Current"
   bullets:
-    - "Generated real-world evidence on the health effects of unemployment using nationally representative longitudinal survey data and a parametric g-formula."
-    - "Estimated the causal effects of relative income on all-cause mortality using linked administrative data and inverse-probability-weighted marginal structural models."
-    - "Estimating the effect of implementing economic policies on health outcomes using microsimulation modelling, delivering dashboards to be shared with key stakeholders."
+    - "Generated real-world evidence on the health effects of unemployment using nationally representative longitudinal survey data with the parametric g-formula."
+    - "Estimating the direct and indirect effects of household income and financial distress on all-cause mortality using linked administrative data and doubly robust causal methods."
+    - "Modelling the effect of implementing economic policies on health outcomes using microsimulation modelling, delivering dashboards to be shared with key stakeholders."
 
 - title: "Research Assistant -- Clinical Informatics"
   institution: "Institute for Health Metrics and Evaluation"
