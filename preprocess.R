@@ -319,7 +319,7 @@ main <- function() {
   dir.create("build", showWarnings = FALSE)
 
   contact      <- yaml::read_yaml("data/contact.yaml")
-  summary_data <- yaml::read_yaml("data/summary.yaml")
+#  summary_data <- yaml::read_yaml("data/summary.yaml")
   edu_raw      <- yaml::read_yaml("data/education.yaml")
   experience   <- yaml::read_yaml("data/experience.yaml")
   skills_data  <- yaml::read_yaml("data/skills.yaml")
@@ -333,7 +333,7 @@ main <- function() {
   sections <- list(
     write_front_matter(contact),
     render_contact_header(contact),
-    render_summary(summary_data),
+#    render_summary(summary_data),
     render_education(education, additional_edu),
     render_skills(skills_data),
     render_experience(experience),
