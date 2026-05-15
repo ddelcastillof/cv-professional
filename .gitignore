@@ -62,3 +62,6 @@ CLAUDE.md
 dump_text.txt
 
 /.luarc.json
+
+# Cover letters
+cover_letters/
