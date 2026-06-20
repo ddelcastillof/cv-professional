@@ -12,6 +12,7 @@ cv:
 
 cover-letter:
 	xelatex -output-directory=cover_letters/output cover_letters/cover_letter.tex
+	xelatex -output-directory=cover_letters/output cover_letters/cover_letter.tex
 	rm -f cover_letters/output/cover_letter.{aux,log,out}
 
 clean:
