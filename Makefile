@@ -17,4 +17,4 @@ cover-letter:
 
 clean:
 	rm -f build/cv.md DelCastillo_Resume.pdf
-	rm -f cover_letters/output/cover_letter.pdf cover_letters/output/cover_letter.aux cover_letters/output/cover_letter.log
+	rm -f cover_letters/output/cover_letter.{pdf,aux,log,out}
