@@ -22,10 +22,10 @@ check: build
 	  "PUBLICATIONS" \
 	  "Peer-Reviewed Publications" \
 	  "An Fac med" \
-	  "Int. J. Epidemiol" \
-	  "BMJ Glob. Health" \
-	  "Am. J. Epidemiol" \
-	  "Endocrinol. Metab" \
+	  "Int J Epidemiol" \
+	  "BMJ Glob Health" \
+	  "Am J Epidemiol" \
+	  "Endocrinol Metab" \
 	  "Del Castillo" \
 	  "Among authors: Del Castillo" \
 	; do \
