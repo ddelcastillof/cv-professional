@@ -65,3 +65,6 @@ dump_text.txt
 
 # Cover letters
 cover_letters/
+
+# .claude hidden files
+.claude/
