@@ -86,6 +86,13 @@
 \DeclareBibliographyCategory{conference}
 \newcommand{\cvpub}[2]{\addtocategory{#1}{#2}\nocite{#2}}
 
+% Own name as literal text (addendum notes etc.). The \mkbibnamefamily hook
+% below only fires on parsed name lists, never on plain fields, so anywhere the
+% name is typed as free text it must be bolded through this macro instead.
+% Must be defined *before* \DeclareSourcemap: biblatex expands the fieldvalue
+% when it writes the sourcemap to build/cv.bcf, not at bibliography time.
+\newcommand*{\ownnamebf}{\textbf{Del Castillo Fernandez, D.}}
+
 % Field patches Paperpile will never carry.
 %
 % maxnames=6 truncates long author lists to "et al", which hides the own name
@@ -93,42 +100,65 @@
 % at position 26, so the addendum states the contribution explicitly. Add one
 % \map block per affected cite key — only needed when the own name sits beyond
 % position 6.
-%
-% The name is bolded literally here: addendum is a plain field, so the
-% \mkbibnamefamily hook below never sees it.
 \DeclareSourcemap{%
   \maps[datatype=bibtex]{%
     \map{%
       \step[fieldsource=entrykey, match={Vidyasagaran2024-wx}, final]
       \step[fieldset=addendum,
-            fieldvalue={Among authors: \textbf{Del Castillo Fernandez, D.}}]%
+            fieldvalue={Among authors: \ownnamebf}]%
     }%
   }%
 }
 
-% Bold own name (replaces filters/bold-author.lua). Same rule: family name
-% beginning "Del Castillo" (covers "Del Castillo", "Del Castillo Fernández",
-% "Del Castillo-Fernández") anchored on a given name starting with "D".
+% Bold own name (replaces filters/bold-author.lua).
+%
+% Paperpile spells the name inconsistently across entries — "Del Castillo,
+% Darwin" in four, "Del Castillo-Fernández, Darwin" in one — so the test keys
+% on the family-name prefix, which every spelling shares.
+%
+% \namepartfamily is a macro whose tokens are joined by delimiter *macros*, and
+% biblatex picks which one by token count, verified with \meaning:
+%   Del\bibnamedelima Castillo
+%   Del\bibnamedelimb Castillo\bibnamedelima Fernandez
+%   Del\bibnamedelimb Río\bibnamedelima Castillo
+% So no fixed-string test matches the raw macro. Flatten every delimiter to a
+% plain space, \edef the result, then test the *ordered* prefix.
+%
+% Ordering is what makes this safe against new entries. An unordered
+% "contains Del AND contains Castillo" test also bolds coauthors who merely
+% share substrings — "Delgado Castillo, Diego", "Castillo Delgado, Daniel",
+% "Del Río Castillo, Diana" all match it, and bib/references.bib already
+% carries a "Delgado, Carlos A" one position ahead of the own name in
+% Lapidaire2023-pr. The prefix test rejects all three and still accepts
+% "Del Castillo", "Del Castillo Fernandez" and "Del Castillo-Fernández".
+%
+% Residual limitation: a coauthor named "Del Castillo, D…" (say Diana) would
+% still match. Tighten \ownnamegiveninitial to {Darwin} if that ever happens —
+% at the cost of missing entries that abbreviate the given name to "D".
 \usepackage{xstring}
 \newif\ifownname
+\newcommand*{\ownnamefamilyprefix}{Del Castillo}
+\newcommand*{\ownnamegiveninitial}{D}
+\makeatletter
 \newcommand*{\checkownname}{%
   \global\ownnamefalse
   \ifdefvoid{\namepartgiven}{}{%
     \ifdefvoid{\namepartfamily}{}{%
-      \begingroup\expandarg
-        % \namepartfamily is 'Del\bibnamedelima Castillo' — delimiter macro
-        % between tokens, so prefix-match on 'Del Castillo' can never hit.
-        % Substring tests skip the delimiter: family must contain both
-        % 'Del' and 'Castillo', given name must start with 'D'.
-        \IfSubStr{\namepartfamily}{Castillo}
-          {\IfSubStr{\namepartfamily}{Del}
-            {\IfBeginWith{\namepartgiven}{D}{\global\ownnametrue}{}}
-            {}}%
+      \begingroup
+        \def\bibnamedelima{ }\def\bibnamedelimb{ }\def\bibnamedelimc{ }%
+        \def\bibnamedelimd{ }\def\bibnamedelimi{ }\def\bibhyphendelim{-}%
+        \protected@edef\ownnameflatfamily{\namepartfamily}%
+        \protected@edef\ownnameflatgiven{\namepartgiven}%
+        \expandarg
+        \IfBeginWith{\ownnameflatfamily}{\ownnamefamilyprefix}
+          {\IfBeginWith{\ownnameflatgiven}{\ownnamegiveninitial}
+            {\global\ownnametrue}{}}%
           {}%
       \endgroup
     }%
   }%
 }
+\makeatother
 \renewcommand*{\mkbibnamefamily}[1]{\checkownname\ifownname\textbf{#1}\else#1\fi}
 \renewcommand*{\mkbibnamegiven}[1]{\checkownname\ifownname\textbf{#1}\else#1\fi}
 
