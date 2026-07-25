@@ -1,8 +1,0 @@
-programming: "R, Python, SQL (MySQL), SAS"
-cloud: "Slurm HPC, Linux (bash)"
-tools: "Quarto, Shiny (R), REDCap, Git (GitHub, GitLab)"
-data_standards: "ICH E6, HIPAA, GDPR/UK GDPR, ICD-10/ICD-9, SNOMED CT"
-packages: "\\texttt{tidyverse}, \\texttt{survival}, \\texttt{lme4}, \\texttt{rstan}, \\texttt{mice}, \\texttt{cmprsk}, \\texttt{ivreg}, \\texttt{metafor}"
-methods: "Bayesian hierarchical modelling (MCMC), GLM/GLMM, time-to-event models, marginal structural models, propensity score methods, competing risks, multiple imputation, meta-analysis, uncertainty estimation"
-languages: "English (fluent), Spanish (native)"
-competencies: "Real-world evidence generation, observational study design, scientific writing, stakeholder communication"
