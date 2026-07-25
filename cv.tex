@@ -1,0 +1,175 @@
+% cv.tex — professional résumé. Build: make build  (latexmk: XeLaTeX + biber)
+% Content lives in content/*.tex (one file per section).
+% bib/references.bib is Paperpile-owned — never hand-edit it.
+% Output is copied to DelCastillo_Resume.pdf by the Makefile.
+\documentclass[9pt,letterpaper]{scrartcl}
+
+% ── Language ─────────────────────────────────────────────────────────────────
+\usepackage[english]{babel}
+
+% ── Page layout ──────────────────────────────────────────────────────────────
+\usepackage[margin=0.5in,heightrounded,includefoot,footskip=0.5in]{geometry}
+\usepackage{parskip}
+
+% ── Fonts (XeLaTeX) ──────────────────────────────────────────────────────────
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+
+% ── Tables ───────────────────────────────────────────────────────────────────
+\usepackage{longtable}
+\usepackage{array}
+
+% ── Lists ────────────────────────────────────────────────────────────────────
+% Replaces Pandoc's \tightlist: experience bullets sit flush under their entry.
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=0pt,parsep=0pt}
+
+% ── Colors & links ───────────────────────────────────────────────────────────
+\usepackage{xcolor}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\definecolor{darkgray}{gray}{0.4}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=linkcolour, linkcolor=linkcolour}
+
+% ── Section formatting ───────────────────────────────────────────────────────
+\usepackage{titlesec}
+\titleformat{\section}
+  {\normalfont\normalsize\bfseries\raggedright\uppercase}
+  {\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\normalsize\bfseries\raggedright}
+  {\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries\raggedright}
+  {\thesubsubsection}{1em}{}
+\setcounter{secnumdepth}{0}   % résumé: no section numbers
+
+% ── Bibliography (replaces read_bib/format_*_vancouver in preprocess.R) ─────
+% maxnames/minnames=6 reproduces the old 6-authors-then-"et al" rule.
+\usepackage[backend=biber,style=vancouver,maxnames=6,minnames=6,
+            defernumbers=true,sorting=none]{biblatex}
+\addbibresource{bib/references.bib}
+
+% Vancouver/ICMJE output corrections:
+% - drop language ("en.") and urldate ("[Accessed on: ...]") from entries
+% - drop url: the DOI is already printed, and vancouver.bbx would otherwise
+%   append "Available from: <url>" to every entry
+% - drop month/day: Paperpile writes legacy values like month = 15~2, which
+%   biber flags and vancouver.bbx would render as a stray "2026 Apr"
+% - comma (not "and") before the final author
+% - ragged-right bibliography: stops justification stretching DOI/URL breaks
+\AtEveryBibitem{\clearlist{language}\clearfield{langid}\clearfield{urldate}\clearfield{urlday}\clearfield{urlmonth}\clearfield{urlyear}\clearfield{urldateera}%
+  \clearfield{url}\clearfield{month}\clearfield{day}}
+\renewcommand*{\finalnamedelim}{\multinamedelim}
+\appto{\bibsetup}{\raggedright}
+
+% vancouver.bbx's volume+number+eid macro prints \printfield{issue}, but
+% Paperpile writes the issue into `number`, so the issue silently vanished
+% (e.g. "An Fac med 2021; 81" instead of "81(4)"). Print `number` when
+% `issue` is absent, formatted the same way vancouver.bbx formats `issue`.
+% Journal titles italic. vancouver.bbx:72 prints them upright (strict ICMJE);
+% the old pandoc template emphasised them too, though `ulem` turned that
+% emphasis into an underline. Delete this line for upright ICMJE journals.
+\DeclareFieldFormat*{journaltitle}{\mkbibemph{#1}}
+
+\DeclareFieldFormat*[article]{number}{(#1)}
+\renewbibmacro*{volume+number+eid}{%
+  \printfield{volume}%
+  \iffieldundef{issue}{\printfield{number}}{\printfield{issue}}%
+  \printfield{eid}%
+}
+
+% Categories (replaces data/pub_categories.yaml + section_labels registry).
+% \DeclareBibliographyCategory is preamble-only; key assignment happens in
+% content/publications.tex via \cvpub.
+\DeclareBibliographyCategory{peerreviewed}
+\DeclareBibliographyCategory{conference}
+\newcommand{\cvpub}[2]{\addtocategory{#1}{#2}\nocite{#2}}
+
+% Own name as literal text (addendum notes etc.). The \mkbibnamefamily hook
+% below only fires on parsed name lists, never on plain fields, so anywhere the
+% name is typed as free text it must be bolded through this macro instead.
+% Must be defined *before* \DeclareSourcemap: biblatex expands the fieldvalue
+% when it writes the sourcemap to build/cv.bcf, not at bibliography time.
+\newcommand*{\ownnamebf}{\textbf{Del Castillo Fernandez, D.}}
+
+% Field patches Paperpile will never carry.
+%
+% maxnames=6 truncates long author lists to "et al", which hides the own name
+% on large collaborations. Vidyasagaran2024-wx has 61 authors with Del Castillo
+% at position 26, so the addendum states the contribution explicitly. Add one
+% \map block per affected cite key — only needed when the own name sits beyond
+% position 6.
+\DeclareSourcemap{%
+  \maps[datatype=bibtex]{%
+    \map{%
+      \step[fieldsource=entrykey, match={Vidyasagaran2024-wx}, final]
+      \step[fieldset=addendum,
+            fieldvalue={Among authors: \ownnamebf}]%
+    }%
+  }%
+}
+
+% Bold own name (replaces filters/bold-author.lua).
+%
+% Paperpile spells the name inconsistently across entries — "Del Castillo,
+% Darwin" in four, "Del Castillo-Fernández, Darwin" in one — so the test keys
+% on the family-name prefix, which every spelling shares.
+%
+% \namepartfamily is a macro whose tokens are joined by delimiter *macros*, and
+% biblatex picks which one by token count, verified with \meaning:
+%   Del\bibnamedelima Castillo
+%   Del\bibnamedelimb Castillo\bibnamedelima Fernandez
+%   Del\bibnamedelimb Río\bibnamedelima Castillo
+% So no fixed-string test matches the raw macro. Flatten every delimiter to a
+% plain space, \edef the result, then test the *ordered* prefix.
+%
+% Ordering is what makes this safe against new entries. An unordered
+% "contains Del AND contains Castillo" test also bolds coauthors who merely
+% share substrings — "Delgado Castillo, Diego", "Castillo Delgado, Daniel",
+% "Del Río Castillo, Diana" all match it, and bib/references.bib already
+% carries a "Delgado, Carlos A" one position ahead of the own name in
+% Lapidaire2023-pr. The prefix test rejects all three and still accepts
+% "Del Castillo", "Del Castillo Fernandez" and "Del Castillo-Fernández".
+%
+% Residual limitation: a coauthor named "Del Castillo, D…" (say Diana) would
+% still match. Tighten \ownnamegiveninitial to {Darwin} if that ever happens —
+% at the cost of missing entries that abbreviate the given name to "D".
+\usepackage{xstring}
+\newif\ifownname
+\newcommand*{\ownnamefamilyprefix}{Del Castillo}
+\newcommand*{\ownnamegiveninitial}{D}
+\makeatletter
+\newcommand*{\checkownname}{%
+  \global\ownnamefalse
+  \ifdefvoid{\namepartgiven}{}{%
+    \ifdefvoid{\namepartfamily}{}{%
+      \begingroup
+        \def\bibnamedelima{ }\def\bibnamedelimb{ }\def\bibnamedelimc{ }%
+        \def\bibnamedelimd{ }\def\bibnamedelimi{ }\def\bibhyphendelim{-}%
+        \protected@edef\ownnameflatfamily{\namepartfamily}%
+        \protected@edef\ownnameflatgiven{\namepartgiven}%
+        \expandarg
+        \IfBeginWith{\ownnameflatfamily}{\ownnamefamilyprefix}
+          {\IfBeginWith{\ownnameflatgiven}{\ownnamegiveninitial}
+            {\global\ownnametrue}{}}%
+          {}%
+      \endgroup
+    }%
+  }%
+}
+\makeatother
+\renewcommand*{\mkbibnamefamily}[1]{\checkownname\ifownname\textbf{#1}\else#1\fi}
+\renewcommand*{\mkbibnamegiven}[1]{\checkownname\ifownname\textbf{#1}\else#1\fi}
+
+\newcommand{\myorcid}{0000-0002-8609-0312}
+
+\begin{document}
+\input{content/header}
+\input{content/summary}
+\input{content/education}
+\input{content/skills}
+\input{content/experience}
+\input{content/certifications}
+\input{content/publications}
+\end{document}
