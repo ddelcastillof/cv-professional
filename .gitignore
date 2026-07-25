@@ -68,3 +68,6 @@ cover_letters/
 
 # .claude hidden files
 .claude/
+
+# add vscode files
+.vscode/
