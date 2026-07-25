@@ -86,18 +86,25 @@
 \DeclareBibliographyCategory{conference}
 \newcommand{\cvpub}[2]{\addtocategory{#1}{#2}\nocite{#2}}
 
-% Field patches Paperpile will never carry. Nothing is patched today; the
-% résumé prints entries as-is. To annotate an entry where "et al" hides the
-% author, uncomment and adjust the cite key:
-% \DeclareSourcemap{%
-%   \maps[datatype=bibtex]{%
-%     \map{%
-%       \step[fieldsource=entrykey, match={Vidyasagaran2024-wx}, final]
-%       \step[fieldset=addendum,
-%             fieldvalue={Among authors: Del Castillo Fernandez, D.}]%
-%     }%
-%   }%
-% }
+% Field patches Paperpile will never carry.
+%
+% maxnames=6 truncates long author lists to "et al", which hides the own name
+% on large collaborations. Vidyasagaran2024-wx has 61 authors with Del Castillo
+% at position 26, so the addendum states the contribution explicitly. Add one
+% \map block per affected cite key — only needed when the own name sits beyond
+% position 6.
+%
+% The name is bolded literally here: addendum is a plain field, so the
+% \mkbibnamefamily hook below never sees it.
+\DeclareSourcemap{%
+  \maps[datatype=bibtex]{%
+    \map{%
+      \step[fieldsource=entrykey, match={Vidyasagaran2024-wx}, final]
+      \step[fieldset=addendum,
+            fieldvalue={Among authors: \textbf{Del Castillo Fernandez, D.}}]%
+    }%
+  }%
+}
 
 % Bold own name (replaces filters/bold-author.lua). Same rule: family name
 % beginning "Del Castillo" (covers "Del Castillo", "Del Castillo Fernández",

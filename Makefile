@@ -27,6 +27,7 @@ check: build
 	  "Am. J. Epidemiol" \
 	  "Endocrinol. Metab" \
 	  "Del Castillo" \
+	  "Among authors: Del Castillo" \
 	; do \
 	  echo "$$txt" | grep -qF "$$s" || { echo "make check FAIL — missing: $$s"; exit 1; }; \
 	done; \
