@@ -2,7 +2,7 @@
 % Content lives in content/*.tex (one file per section).
 % bib/references.bib is Paperpile-owned — never hand-edit it.
 % Output is copied to DelCastillo_Resume.pdf by the Makefile.
-\documentclass[9pt,letterpaper]{scrartcl}
+\documentclass[9pt,a4paper]{scrartcl}
 
 % ── Language ─────────────────────────────────────────────────────────────────
 \usepackage[english]{babel}
@@ -118,6 +118,31 @@
       \step[fieldset=addendum,
             fieldvalue={Among authors: \ownnamebf}]%
     }%
+    % Conference presentations, NLM form:
+    %   Author. Title. Presented at: Event; Year Mon; City, Country.
+    % Three things stop vancouver.bbx producing that on its own:
+    %   - its @misc driver reads neither eventtitle nor venue, so the event
+    %     vanishes; addendum is the field it does print (see Vidyasagaran above)
+    %   - \AtEveryBibitem clears month/day (the Paperpile "month = 15~2" fix),
+    %     so date={2026-09-11} renders as a bare "2026" — the month and day
+    %     have to be written into addendum by hand to survive. Keep them in
+    %     sync if Paperpile revises the entry's date.
+    %   - a bare year would then print twice, so date is nulled here
+    % "and" not "&": a literal ampersand is an alignment tab, and \& would have
+    % to survive biblatex serialising the fieldvalue into build/cv.bcf.
+    % The title's "Rapid-Fire Presentation:" prefix is Paperpile's; stripped so
+    % the format marker sits where NLM puts it, next to the event.
+    \map{%
+      \step[fieldsource=entrykey, match={Del-Castillo2026-jq}, final]
+      \step[fieldsource=title,
+            match=\regexp{Rapid-Fire\s+Presentation:\s*}, replace={}]
+      \step[fieldset=addendum,
+            fieldvalue={Rapid-fire presentation at: 70th Society for Social
+                        Medicine and Population Health Conference -- European
+                        Congress of Epidemiology; 2026 Sep 11; London, UK
+                        (forthcoming)}]%
+      \step[fieldset=date, null]%
+    }%
   }%
 }
 
@@ -180,6 +205,7 @@
 \input{content/education}
 \input{content/skills}
 \input{content/experience}
+\newpage
 \input{content/certifications}
 \input{content/publications}
 \end{document}
