@@ -38,11 +38,22 @@
   {\thesection}{1em}{}
 \titleformat{\subsection}
   {\normalfont\normalsize\bfseries\raggedright}
-  {\thesubsection}{1em}{}
+  {\thesubsection}{0.5ex}{}
 \titleformat{\subsubsection}
   {\normalfont\normalsize\bfseries\raggedright}
-  {\thesubsubsection}{1em}{}
+  {\thesubsubsection}{0.5ex}{}
 \setcounter{secnumdepth}{0}   % résumé: no section numbers
+
+% \titleformat sets appearance only; \titlespacing sets the vertical gaps
+% around every \subsection. Args: {left indent}{space before}{space after}.
+% The publications subbibliography headings are \subsection.
+\titlespacing*{\subsection}{0pt}{1.5ex plus .5ex minus 1ex}{1ex}
+\titlespacing*{\subsubsection}{0pt}{1.5ex plus .5ex minus 1ex}{1ex}
+
+% longtable adds \bigskipamount (12pt) above AND below every table, on top of
+% the title spacing above. This is the bulk of the section-to-table gap.
+\setlength{\LTpre}{0.5\baselineskip}
+\setlength{\LTpost}{0.5\baselineskip}
 
 % ── Bibliography (replaces read_bib/format_*_vancouver in preprocess.R) ─────
 % maxnames/minnames=6 reproduces the old 6-authors-then-"et al" rule.
