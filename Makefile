@@ -20,9 +20,12 @@ check: build
 	  "SKILLS" \
 	  "PROFESSIONAL EXPERIENCE" \
 	  "Master of Public Health (MPH) – Epidemiology" \
-	  "RWD Analyst" \
+	  "Health Technology Assessment Analyst" \
 	  "Epidemiology Trainee" \
 	  "5 million encounters" \
+	  "budget impact" \
+	  "systematic review" \
+	  "Health economics" \
 	  "LICENSURE AND CERTIFICATION" \
 	  "PUBLICATIONS" \
 	  "Peer-Reviewed Publications" \
